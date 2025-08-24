@@ -8,23 +8,26 @@
 	
 	<!-- CSS FILES -->
     <link rel="stylesheet" href="/styles/main.css">
+	<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
 </head>
-<body class="dark-theme">
+<body class="light-theme playfair-display-font" id = "main-body">
 
 	<!-- HEADER SECTION -->
 	<header class="header" id="header">
-		<h1 class="header-title">Quiz Master</h1>
-		<div class="dark-mode-button">Dark Mode</div>
+		<div class="header-title">Quiz Master</div>
+		<div id="dm-button" class="bx bxs-sun-dim"></div>
 	</header>
 
 	<!-- MAIN SECTION -->
 	<section class="main" id="main">
+		<div class="main-text">Available Quizzes</div>
         <div class="quiz-container" id="quiz-container">
-			<div class="add-card">Hello</div>
+			<div class="add-card"><div class="bx bx-plus logo"></div></div>
             <div class="quiz-card">Hello</div>
             <div class="quiz-card">World</div>
         </div>
 	</section>
-	
+	<script type="text/javascript" src="/js/dark_mode.js"></script>
 </body>
 </html>

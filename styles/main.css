@@ -12,19 +12,22 @@
     --light-bg-1: #ffffff;
     --light-bg-2: #f0f5f9;
     --light-border: #d1dadf;
+    --light-hover: #edeff0;
     --dark-bg-1: #1f2730;
     --dark-bg-2: #28313b;
     --dark-border: #3f4e5f;
+    --dark-hover: #364049;
     --font-color-light: #2d3845;
     --font-color-dark: #ffffff;
     --card-color:#38cc79;
+    --card-hover: #46ff97;
 }
 
 /* FONTS */
 .playfair-display-font {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -37,7 +40,9 @@
     background: var(--light-bg-1);
     border-bottom: var(--light-border) 2px solid;
 }
-
+.light-theme .add-card{
+    background: var(--light-bg-1);
+}
 /* DARK MODE */
 .dark-theme{
     background: var(--dark-bg-2);
@@ -57,12 +62,28 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 1rem 2rem;
+    font-size: 2rem;
+}
+.header .bx{
+    padding: 0.3rem;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+.header .bxs-moon:hover{
+    background: var(--dark-hover);
+}
+.header .bxs-sun-dim:hover{
+    background: var(--light-hover);
 }
 
 /* MAIN */
 .main{
     padding-top: 10vh;
     height: 100%;
+}
+.main-text{
+    font-size: 1.5rem;
+    padding: 1rem 2rem 0rem 2rem;
 }
 
 /* QUIZ CONTAINER */
@@ -87,6 +108,13 @@
     color:var(--font-color-light);
     border-radius: 1rem;
     box-shadow: var(--dark-border) 0px 10px 20px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-card:hover{
+    background: var(--card-hover);
+    cursor: pointer;
 }
 
 .add-card{
@@ -94,6 +122,21 @@
     flex: 0 1 210px;
     color:var(--font-color-light);
     border-radius: 1rem;
-    border: 2px dashed var(--card-color);
+    border: 3px dashed var(--card-color);
     box-shadow: var(--dark-border) 0px 10px 20px -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-card>.logo{
+    font-size: 2rem;
+    background: var(--card-color);
+    border-radius: 30px;
+}
+.add-card:hover{
+    border: 3px dashed var(--card-hover);
+    cursor: pointer;
+}
+.add-card:hover>.logo{
+    background: var(--card-hover);
 }
