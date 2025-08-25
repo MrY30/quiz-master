@@ -30,7 +30,7 @@
 	<section class="main" id="main">
 		<div class="main-text">Available Quizzes</div>
         <div class="quiz-container" id="quiz-container">
-			<div class="add-card"><div class="bx bx-plus logo"></div></div>
+			<div id="add-card" class="add-card"><div class="bx bx-plus logo"></div></div>
             <div class="quiz-card">Hello</div>
             <div class="quiz-card">World</div>
         </div>
@@ -38,8 +38,8 @@
 	
 	<!-- POP-UP: ADD NEW QUIZ -->
 	<!-- POP-UP: SELECT TO EDIT QUIZ OR TAKE THE QUIZ -->
-	<div class="transparent-bg"></div>
-	<div class="quiz-modal">
+	<div class="transparent-bg hidden"></div>
+	<div class="quiz-modal hidden">
 			<div class="modal-header">
 				<div>Add Quiz</div>
 				<div class="modal-close-button bx bx-x"></div>
@@ -53,11 +53,11 @@
 					</div>
 					<div class="quiz-bottom"><div class="add-quiz-button">Add Quiz</div></div>
 				</div>
-				<div class="start-quiz hidden">
+				<div class="start-quiz">
 					<div class="start-quiz-text">What do you want to do?</div>
 					<div class="start-quiz-buttons">
-						<div class="take-quiz-button"><i class="bx bxs-play"></i>Let's Play</div>
-						<div class="edit-quiz-button"><i class="bx bxs-edit"></i>Edit</div>
+						<div id="take-quiz-button" class="take-quiz-button"><i class="bx bxs-play"></i>Let's Play</div>
+						<div id="edit-quiz-button" class="edit-quiz-button"><i class="bx bxs-edit"></i>Edit</div>
 					</div>
 				</div>
 			</div>

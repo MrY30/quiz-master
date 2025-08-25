@@ -39,10 +39,16 @@ body.dark-theme{
 }
 
 /* HIDE */
-.hidden{
+/* .hidden{
     display: none !important;
     visibility: hidden;
     opacity: 0;
+} */
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none; /* Prevents interaction when hidden */
 }
 
 /* FONTS */
@@ -163,7 +169,10 @@ body{
     height: 100vh;
     background: var(--font-color-light);
     z-index: 1;
+
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 .quiz-modal{
     position: fixed;
     top:50%;
@@ -178,7 +187,16 @@ body{
     border-radius: 20px;
     border: var(--header-border) 2px solid;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    transform: scale(0.8) translateY(-20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+
 }
+
+.quiz-modal:not(.hidden) {
+    transform: scale(1) translateY(0);
+}
+
 .modal-header{
     width: 100%;
     height: 15%;
@@ -206,4 +224,8 @@ body{
     width: 100%;
     height: 85%;
     position: relative;
+}
+
+.add-quiz, .start-quiz {
+  transition: opacity 0.3s ease;
 }
