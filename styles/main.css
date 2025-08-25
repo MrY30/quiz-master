@@ -150,7 +150,7 @@ body{
     background: var(--card-hover);
 }
 
-/* QUIZ MODAL */
+/* MODAL */
 .transparent-bg{
     position: fixed;
     top:10vh;
@@ -168,7 +168,7 @@ body{
     translate: -50% -50%;
 
     width: 700px;
-    height: 300px;
+    height: 350px;
     z-index: 2;
 
     background: var(--header-color);
@@ -178,7 +178,7 @@ body{
 }
 .modal-header{
     width: 100%;
-    height: 10%;
+    height: 15%;
     border-bottom: var(--header-border) 2px solid;
 
     display: flex;
@@ -193,7 +193,7 @@ body{
     background: var(--close-button-color);
     color: var(--font-color-dark);
     border-radius: 50%;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 .modal-close-button:hover{
     background: var(--close-hover);
@@ -201,51 +201,8 @@ body{
 }
 .modal-content{
     width: 100%;
-    height: 90%;
+    height: 85%;
     position: relative;
-    /* border: 1px solid red; */
-}
-
-/* ADD QUIZ MODAL */
-.add-quiz{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width: 100%;
-    height: 100%;
-    translate: -50% -50%;
-    border-radius: 0 0 20px 20px;
-
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-}
-.add-quiz-text{
-    font-size: 2.5rem;
-}
-/* MODAL INPUT */
-#quiz-input{
-    height: 5vh;
-    border-radius: 7px 7px 0 0;
-    border: none;
-    border-bottom: 2px solid var(--font-color);
-    padding: 1rem;
-    background: var(--font-color-light);
-}
-/* MODAL BUTTON */
-.add-quiz-button{
-    width: 20%;
-    height: 4vh;
-    background: var(--card-color);
-    color: var(--font-color-dark);
-    border-radius: 30px;
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
 }
 
 /* START QUIZ MODAL */

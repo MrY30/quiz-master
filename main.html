@@ -8,6 +8,7 @@
 	
 	<!-- CSS FILES -->
     <link rel="stylesheet" href="/styles/main.css">
+	<link rel="stylesheet" href="/styles/add-quiz-modal.css">
 	<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 
 	<!-- FONTS -->
@@ -45,8 +46,11 @@
 			<div class="modal-content">
 				<div class="add-quiz">
 					<div class="add-quiz-text">Enter the Quiz Name.</div>
-					<input id="quiz-input" class="inter" type="text" placeholder="Quiz Name*">
-					<div class="add-quiz-button">Add Quiz</div>
+					<div class="quiz-name-input">
+						<input type="text" id="quiz-input" required/>
+						<div class="placeholder inter-font">Class code<span>*</span></div>
+					</div>
+					<div class="quiz-bottom"><div class="add-quiz-button">Add Quiz</div></div>
 				</div>
 				<div class="start-quiz hidden">World</div>
 			</div>
