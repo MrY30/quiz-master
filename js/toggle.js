@@ -1,3 +1,4 @@
+// TOGGLE DARK MODE
 const darkModeButton = document.getElementById('dm-button');
 const body = document.getElementById('main-body');
 
@@ -6,3 +7,9 @@ darkModeButton.addEventListener('click', ()=>{
     darkModeButton.classList.toggle('bxs-moon');
     darkModeButton.classList.toggle('bxs-sun-dim');
 });
+
+// TOGGLE ADD BUTTON
+
+
+
+// TOGGLE SELECT BUTTON
