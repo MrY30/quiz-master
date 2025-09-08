@@ -1,0 +1,42 @@
+{
+  "title": "Math Quiz",
+  "description": "Basic math operations quiz.",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "What is 2 + 2?",
+      "image": null,
+      "choices": ["3", "4", "5", "22"],
+      "correct": ["4"]
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which of the following numbers are prime?",
+      "image": null,
+      "choices": ["2", "3", "4", "5", "6"],
+      "correct": ["2", "3", "5"]
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "Solve this equation: x² = 9",
+      "image": null,
+      "choices": ["-3", "0", "3", "9"],
+      "correct": ["-3", "3"]
+    },
+    {
+      "id": 4,
+      "type": "matching",
+      "question": "Match the operation with its symbol.",
+      "image": null,
+      "pairs": [
+        { "left": "Addition", "right": "+" },
+        { "left": "Subtraction", "right": "-" },
+        { "left": "Multiplication", "right": "×" },
+        { "left": "Division", "right": "÷" }
+      ]
+    }
+  ]
+}

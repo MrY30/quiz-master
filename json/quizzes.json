@@ -1,0 +1,5 @@
+[
+  { "file": "math.json", "title": "Math Quiz" },
+  { "file": "science.json", "title": "Science Quiz" },
+  { "file": "history.json", "title": "History Quiz" }
+]
