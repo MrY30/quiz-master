@@ -5,48 +5,123 @@
     {
       "id": 1,
       "type": "multiple_choice",
-      "question": "What is the capital of France?",
+      "question": "A network engineer must create a diagram of a multivendor network.which command must be configured on the Cisco devices so that the topology of the network can be mapped?",
       "image": null,
       "details": {
-        "choices": ["Paris", "London", "Berlin", "Rome"],
+        "choices": ["Device(config)#lldp run", "Device(config)#cdp run", "Device(config)# cdp enable", "Device(config)# flow-sampler-map topology"],
         "correct": [0]
       }
     },
     {
       "id": 2,
       "type": "multiple_choice",
-      "question": "Which of the following are prime numbers?",
+      "question": "Which feature on the Cisco Wireless LAN Controller when enabled restricts management access from specific networks?",
       "image": null,
       "details": {
-        "choices": ["2", "3", "4", "6"],
-        "correct": [0, 1]
+        "choices": ["CPU ACL", "TACACS", "Flex ACL", "RADIUS"],
+        "correct": [0]
       }
     },
     {
       "id": 3,
-      "type": "matching",
-      "question": "Classify the animals into the correct group.",
+      "type": "multiple_choice",
+      "question": "When a site-to-site VPN is used, which protocol is responsible for the transport of user data?",
       "image": null,
       "details": {
-        "groups": ["Carnivore", "Herbivore", "Omnivore"],
-        "items": [
-          { "text": "Lion", "group": "Carnivore" },
-          { "text": "Horse", "group": "Herbivore" },
-          { "text": "Pig", "group": "Omnivore" }
-        ]
+        "choices": ["IKEv2", "IKEv1", "IPsec", "MD5"],
+        "correct": [2]
       }
     },
     {
       "id": 4,
-      "type": "matching",
-      "question": "Match the fruit or vegetable to its color.",
+      "type": "multiple_choice",
+      "question": "How do TCP and UDP differ in the way that they establish a connection between two endpoints?",
       "image": null,
       "details": {
-        "pairs": [
-          { "left": "Banana", "right": "Yellow" },
-          { "left": "Carrot", "right": "Orange" },
-          { "left": "Lettuce", "right": "Green" }
-        ]
+        "choices": ["TCP use the three-way handshake,and UDP dose no guarantee message delivery",
+                    "TCP use synchronization packets,and UDP uses acknowledgement packets",
+                    "UDP provides reliable message transfer,and TCP is a connectionless protocol.", 
+                    "UDP use SYN,SYN ACK,and FIN bits in the frame header while TCP uses SYN,SYN ACK,and ACK bis."],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 5,
+      "type": "multiple_choice",
+      "question": "What are two reasons that cause late collisions to increment on an Ethernet interface?(choose two)",
+      "image": null,
+      "details": {
+        "choices": ["when the sending device waits 15 seconds before sending the frame again",
+                    "when the cable length limits are exceeded",
+                    "when one side of the connection is configured for half-duplex", 
+                    "when Carner Sense Multiple Access/Collision Detection is used",
+                    "when a collision occurs after the 32nd byte of a frame has been transmitted"],
+        "correct": [1,2]
+      }
+    },
+    {
+      "id": 6,
+      "type": "multiple_choice",
+      "question": "A Cisco IP phone receive untagged data traffic from an attached PC. Which action is taken by the phone?",
+      "image": null,
+      "details": {
+        "choices": ["It allows the traffic to pass through unchanged",
+                    "It drops the traffic",
+                    "It tags the traffic with the default VLAN", 
+                    "It tags the traffic with the native VLAN"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 7,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. The show ip ospf interface command has been executed on R1 How is OSPF configured?",
+      "image": "img/7.png",
+      "details": {
+        "choices": ["The interface is not participating in OSPF",
+                    "A point-to-point network type is configured",
+                    "The default Hello and Dead timers are in use", 
+                    "There are six OSPF neighbors on this interface"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 8,
+      "type": "multiple_choice",
+      "question": "What benefit does controller-based networking provide versus traditional networking?",
+      "image": null,
+      "details": {
+        "choices": ["provides an added layer of security to protect from DDoS attacks",
+                    "combines control and data plane functionality on a single device to minimize latency",
+                    "moves from a two-tier to a three-tier network architecture to provide maximum redundancy", 
+                    "allows configuration and monitoring of the network from one centralized point"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 9,
+      "type": "multiple_choice",
+      "question": "When a floating static route is configured, which action ensures that the backup route is used when the primary route fails?",
+      "image": null,
+      "details": {
+        "choices": ["The floating static route must have a higher administrative distance than the primary route so it is used as a backup",
+                    "The administrative distance must be higher on the primary route so that the backup route becomes secondary.",
+                    "The floating static route must have a lower administrative distance than the primary route so it is used as a backup", 
+                    "The default-information originate command must be configured for the route to be installed into the routing table"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 10,
+      "type": "multiple_choice",
+      "question": "Which mode must be used to configure EtherChannel between two switches without using a negotiation protocol?",
+      "image": null,
+      "details": {
+        "choices": ["on",
+                    "auto",
+                    "active", 
+                    "desirable"],
+        "correct": [0]
       }
     }
   ]

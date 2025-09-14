@@ -1,3 +1,63 @@
 {
-
+  "title": "CCNA (200-301) V1.1",
+  "description": "CCNA Networking Exam",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "A network engineer must create a diagram of a multivendor network.which command must be configured on the Cisco devices so that the topology of the network can be mapped?",
+      "image": null,
+      "details": {
+        "choices": ["Device(config)#lldp run", "Device(config)#cdp run", "Device(config)# cdp enable", "Device(config)# flow-sampler-map topology"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which feature on the Cisco Wireless LAN Controller when enabled restricts management access from specific networks?",
+      "image": null,
+      "details": {
+        "choices": ["CPU ACL", "TACACS", "Flex ACL", "RADIUS"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 3,
+      "type": "multiple_choice",
+      "question": "When a site-to-site VPN is used, which protocol is responsible for the transport of user data?",
+      "image": null,
+      "details": {
+        "choices": ["IKEv2", "IKEv1", "IPsec", "MD5"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 3,
+      "type": "matching",
+      "question": "Classify the animals into the correct group.",
+      "image": null,
+      "details": {
+        "groups": ["Carnivore", "Herbivore", "Omnivore"],
+        "items": [
+          { "text": "Lion", "group": "Carnivore" },
+          { "text": "Horse", "group": "Herbivore" },
+          { "text": "Pig", "group": "Omnivore" }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "type": "matching",
+      "question": "Match the fruit or vegetable to its color.",
+      "image": null,
+      "details": {
+        "pairs": [
+          { "left": "Banana", "right": "Yellow" },
+          { "left": "Carrot", "right": "Orange" },
+          { "left": "Lettuce", "right": "Green" }
+        ]
+      }
+    }
+  ]
 }
