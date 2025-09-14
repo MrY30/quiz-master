@@ -164,13 +164,25 @@ body {
 
 .choice-item {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding: 15px;
     border: 2px solid #e1e5e9;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
     background: #f8f9fa;
+}
+
+.choice-item label {
+    white-space: pre-line;  /* This preserves line breaks from \n */
+    /* font-family: 'Courier New', monospace; */
+    line-height: 1.4;
+    text-align: left;
+}
+
+.choice-item {
+    align-items: flex-start;  /* Align to top instead of center for multi-line */
+    min-height: auto;
 }
 
 .choice-item:hover {

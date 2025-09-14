@@ -123,6 +123,786 @@
                     "desirable"],
         "correct": [0]
       }
+    },
+    {
+      "id": 11,
+      "type": "multiple_choice",
+      "question": "What are two descriptions of three-tier network topologies? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["The distribution layer runs Layer 2 and Layer 3 technologies.",
+                    "The network core is designed to maintain continuous connectivity when devices fail.",
+                    "The core layer maintains wired connections for each host.", 
+                    "The core and distribution layers perform the same functions",
+                    "The access layer manages routing between devices in different domains."],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 12,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.which statement explains the configuration error message that is received?",
+      "image": "img/12.png",
+      "details": {
+        "choices": ["it belongs to a private IP address range",
+                    "the router dose not support /28 mask",
+                    "it is a network IP address", 
+                    "it is a broadcast IP address"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 13,
+      "type": "multiple_choice",
+      "question": "what is the expected outcome when an EUI-64 address is generated?",
+      "image": null,
+      "details": {
+        "choices": ["The seventh bit of original MAC address of the interface is inverted",
+                    "The interface ID is configured as a random 64-bit value",
+                    "The characters FE80 are inserted at the beginning of the MAC address of the interface", 
+                    "The MAC address of the interface is used as the interface ID without modification"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 14,
+      "type": "multiple_choice",
+      "question": "Which function does an SNMP agent perform?",
+      "image": null,
+      "details": {
+        "choices": ["It manages routing between Layer 3 devices in a network,",
+                    "It coordinates user authentication between a network device and a TACACS+ or RADIUS server.",
+                    "It sends information about MIB variables in response to requests from the NMS.", 
+                    "It requests information from remote network nodes about catastrophic system events."],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 15,
+      "type": "multiple_choice",
+      "question": " Refer to the exhibit.The default-information originate command is configured under the R1 OSPF configuration.After testing,workstation on VLAN 20 at Site B cannot reach a DNS server on the Internet. wihch action corrects the configuration issue?",
+      "image": "img/15.png",
+      "details": {
+        "choices": ["Add the default-information originate command on R2",
+                    "Add the always keyword to the default-information originate command on R1",
+                    "Configure the ip route 0.0.0.0 0.0.0.0 10.10.10.18 command on R1", 
+                    "Configure the ip route 0.0.0.0 0.0.0.0 10.10.10.2 command on R2"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 16,
+      "type": "multiple_choice",
+      "question": "What are two benefits of network automation? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["reduced operational costs",
+                    "reduced hardware footprint",
+                    "faster changes with more reliable results", 
+                    "fewer network failures",
+                    "increased network security"],
+        "correct": [0,2]
+      }
+    },
+    {
+      "id": 17,
+      "type": "multiple_choice",
+      "question": "Which two command sequences must you configure on a switch to establish a Layer 3 EtherChannel with an open-standard protocol?(choose two)",
+      "image": null,
+      "details": {
+        "choices": ["interface GigabitEthernet0/0/1\nChannel-group 10 mode active",
+                    "interface GigabitEthernet0/0/1\nChannel-group 10 mode auto",
+                    "interface GigabitEthernet0/0/1\nChannel-group 10 mode on",
+                    "interface port-channel 10\nno switchport\nip address 172.16.0.1 255.255.255.0", 
+                    "interface port-channel 10\nswitchport\nSwitchport mode trunk"],
+        "correct": [0,3]
+      }
+    },
+    {
+      "id": 18,
+      "type": "multiple_choice",
+      "question": "Which command prevents passwords from being stored in the configuration as plaintext on a router or switch?",
+      "image": null,
+      "details": {
+        "choices": ["enable secret",
+                    "service password-encryption",
+                    "username Cisco password encrypt", 
+                    "enable password"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 19,
+      "type": "multiple_choice",
+      "question": "R1 has learned route 10.10.10.0/24 via numerous routing protocols,which route is installed?",
+      "image": null,
+      "details": {
+        "choices": ["route with the lowest cost",
+                    "route with the shortest prefix length",
+                    "route with the next hop that has the highest IP", 
+                    "route with the lowest administrative distance"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 20,
+      "type": "multiple_choice",
+      "question": "which network allows devices to communicate without the need to access the internet?",
+      "image": null,
+      "details": {
+        "choices": ["172.9.0.0/16",
+                    "172.28.0.0/16",
+                    "192.0.0.0/18.", 
+                    "209.165.201.0/24"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 21,
+      "type": "multiple_choice",
+      "question": "Which attribute does a router use to select the best path when two or more different routes to the same destination exist from two different routing protocols?",
+      "image": null,
+      "details": {
+        "choices": ["dual algorithm",
+                    "metric",
+                    "administrative distance", 
+                    "hop count"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 22,
+      "type": "multiple_choice",
+      "question": "which command must be entered when a device is configured as an NTP server?",
+      "image": null,
+      "details": {
+        "choices": ["ntp master",
+                    "ntp sever",
+                    "ntp authenticate", 
+                    "ntp peer"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 23,
+      "type": "multiple_choice",
+      "question": "When OSPF learns multiple paths to a network, how does it select a route?",
+      "image": null,
+      "details": {
+        "choices": ["It multiple the active K value by 256 to calculate the route with the lowest metric.",
+                    "For each existing interface, it adds the metric from the source router to the destination to calculate the route with the lowest bandwidth.",
+                    "It divides a reference bandwidth of 100 Mbps by the actual bandwidth of the existing interface to calculate the router with the lowest cost.", 
+                    "It count the umber of hops between the source router and the destination to determine the router with the lowest metric"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 24,
+      "type": "multiple_choice",
+      "question": "What is a characteristic of spine-and-leaf architecture?",
+      "image": null,
+      "details": {
+        "choices": ["It provides variable latency.",
+                    "Each link between leaf switches allows for higher bandwidth.",
+                    "Each device is separated by the same number of hops.", 
+                    "It provides greater predictability on STP blocked ports."],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 25,
+      "type": "multiple_choice",
+      "question": "Which two outcomes are predictable behaviors for HSRP? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["The two routers share a virtual IP address that is used as the default gateway for devices on the LAN.",
+                    "The two routers negotiate one router as the active router and the other as the standby router",
+                    "Each router has a different IP address both routers act as the default gateway on the LAN, and traffic is load balanced between them.", 
+                    "The two routers synchronize configurations to provide consistent packet forwarding",
+                    "The two routed share the same IP address, and default gateway traffic is load-balanced between them"],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 26,
+      "type": "multiple_choice",
+      "question": "Which action must be taken to assign a global unicast IPv6 address on an interface that is derived from the MAC address of that interface?",
+      "image": null,
+      "details": {
+        "choices": ["explicitly assign a link-local address",
+                    "disable the EUI-64 bit process",
+                    "enable SLAAC on an interface", 
+                    "configure a stateful DHCPv6 server on the network"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 27,
+      "type": "multiple_choice",
+      "question": " Refer to the exhibit. What is the effect of this configuration?",
+      "image": "img/27.png",
+      "details": {
+        "choices": ["The switch port interface trust state becomes untrusted",
+                    "The switch port remains administratively down until the interface is connected to another switch",
+                    "Dynamic ARP inspection is disabled because the ARP ACL is missing", 
+                    "The switch port remains down until it is configured to trust or untrust incoming packets"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 28,
+      "type": "multiple_choice",
+      "question": "In which way does a spine-and-leaf architecture allow for scalability in a network when additional access ports are required?",
+      "image": null,
+      "details": {
+        "choices": ["A spine switch and a leaf switch can be added with redundant connections between them",
+                    "A spine switch can be added with at least 40 GB uplinks",
+                    "A leaf switch can be added with connections to every spine switch", 
+                    "A leaf switch can be added with a single connection to a core spine switch"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 29,
+      "type": "multiple_choice",
+      "question": " Refer to the exhibit.Router R1 is running three different routing protocols.Which route characteristic is used by the router to forward the packet that receives for destination IP 172.16.32.1?",
+      "image": "img/29.png",
+      "details": {
+        "choices": ["metric",
+                    "longest prefix",
+                    "cost", 
+                    "administrative distance"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 30,
+      "type": "multiple_choice",
+      "question": "Which configuration is needed to generate an RSA key for SSH on a router?",
+      "image": null,
+      "details": {
+        "choices": ["Configure the version of SSH",
+                    "Configure VTY access",
+                    "Create a user with a password", 
+                    "Assign a DNS domain name"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 31,
+      "type": "multiple_choice",
+      "question": "Which API is used in controller-based architectures to interact with edge devices?",
+      "image": null,
+      "details": {
+        "choices": ["overlay",
+                    "northbound",
+                    "underlay", 
+                    "southbound"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 32,
+      "type": "multiple_choice",
+      "question": "Router R1 must send all traffic without a matching routing-table entry to 192.168.1.1.which configuration accomplishes this task?",
+      "image": null,
+      "details": {
+        "choices": ["R1# config t\nR1(config)# ip routing\nR1(config)# ip route default-route 192.168.1.1",
+                    "R1# config t\nR1(config)# ip routing\nR1(config)# ip route 0.0.0.0 0.0.0.0 192.168.1.1",
+                    "R1# config t\nR1(config)# ip routing\nR1(config)# ip route 192.168.1.1 0.0.0.0 0.0.0.0", 
+                    "R1# config t\nR1(config)# ip routing\nR1(config)# ip default-gateway 192.168.1.1"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 33,
+      "type": "multiple_choice",
+      "question": "What is a benefit of using a Cisco Wireless LAN Controller?",
+      "image": null,
+      "details": {
+        "choices": ["Central AP management requires more complex configurations",
+                    "Unique SSIDs cannot use the same authentication method",
+                    "It supports autonomous and lightweight APs", 
+                    "It eliminates the need to configure each access point individually"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 34,
+      "type": "multiple_choice",
+      "question": "An engineer must configure a /30 subnet between two routers.which usable IP address and subnet mask combination meets this criteria?",
+      "image": null,
+      "details": {
+        "choices": ["nterface e0/0\ndescription to HQ-A370:98968\nip address 10.2.1.3 255.255.255.252",
+                    "interface e0/0\ndescription to HQ-A370:98968\nip address 192.168.1.1 255.255.255.248",
+                    "interface e0/0\ndescription to HQ-A370:98968\nip address 172.16.1.4 255.255.255.248", 
+                    "interface e0/0\ndescription to HQ-A370:98968\nip address 209.165.201.2 255.255.255.252"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 35,
+      "type": "multiple_choice",
+      "question": "Which unified access point mode continues to serve wireless clients after losing connectivity to the Cisco Wireless LAN Controller?",
+      "image": null,
+      "details": {
+        "choices": ["sniffer",
+                    "mesh",
+                    "flexconnect.", 
+                    "local"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 36,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Based on the LACP neighbor status, in which mode is the SW1 port channel configured?",
+      "image": "img/36.png",
+      "details": {
+        "choices": ["passive",
+                    "mode on",
+                    "auto", 
+                    "active"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 37,
+      "type": "multiple_choice",
+      "question": "which WPA3 enhancement protects against hackers viewing traffic on the Wi-Fi network?",
+      "image": null,
+      "details": {
+        "choices": ["TKIP encryption",
+                    "SAE encryption",
+                    "AES encryption", 
+                    "scrambled encryption key"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 38,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An engineer is bringing up a new circuit to the MPLS provider on the Gi0/1 interface of Router1.The new circuit uses eBGP and teams the route to VLAN25 from the BGP path. What is the expected behavior for the traffic flow for route 10.10.13.0/25?",
+      "image": "img/38.png",
+      "details": {
+        "choices": ["Traffic to 10.10.13.0.25 is load balanced out of multiple interfaces",
+                    "Route 10.10.13.0/25 is updated in the routing table as being learned from interface Gi0/1.",
+                    "Traffic to 10.10.13.0/25 is a symmetrical", 
+                    "Route 10.10.13.0/25 learned via the Gi0/0 interface remains in the routing table"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 39,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.How does router R1 handle traffic to 192.168.10.16?",
+      "image": "img/39.png",
+      "details": {
+        "choices": ["It selects the EIGRP route because it has the lowest administrative distance",
+                    "It selects the RIP route because it has the longest prefix inclusive of the destination address",
+                    "It selects the OSFP route because it has the lowest cost", 
+                    "It selects the IS-IS route because it has the shortest prefix inclusive of the destination address"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 40,
+      "type": "multiple_choice",
+      "question": "Which two actions influence the EIGRP route selection process? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["The router calculates the reported distance by multiplying the delay on the exiting Interface by 256.",
+                    "The router calculates the best backup path to the destination route and assigns it as the feasible successor.",
+                    "The router calculates the feasible distance of all paths to the destination route", 
+                    "The advertised distance is calculated by a downstream neighbor to inform the local router of the bandwidth on the link",
+                    "The router must use the advertised distance as the metric for any given route"],
+        "correct": [1,2]
+      }
+    },
+    {
+      "id": 41,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.which two commands were used to create port channel 10?(choose two)",
+      "image": "img/41.png",
+      "details": {
+        "choices": ["int range g0/0-1\nChannel-group 10 mode active",
+                    "Bint range g0/0-1\nChannel-group 10 mode desirable",
+                    "int range g0/0-1\nChannel-group 10 mode passive", 
+                    "int range g0/0-1\nChannel-group 10 mode auto",
+                    "int range g0/0-1\nChannel-group 10 mode on"],
+        "correct": [0,2]
+      }
+    },
+    {
+      "id": 42,
+      "type": "multiple_choice",
+      "question": "What is a difference between RADIUS and TACACS+?",
+      "image": null,
+      "details": {
+        "choices": ["TACACS+ encrypts only password information and RADIUS encrypts the entire payload",
+                    "RADIUS logs all commands that are entered by the administrator, but TACACS+ logs only start, stop, and interim commands",
+                    "RADIUS is most appropriate for dial authentication, but TACACS+ can be used for multiple types of authentication", 
+                    "TACACS+ separates authentication and authorization, and RADIUS merges them"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 43,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A network engineer must block access for all computers on VLAN 20 to the web server via HTTP. All other computers must be able to access the web server.Which configuration when applied to switch A accomplishes this task?",
+      "image": "img/43.png",
+      "details": {
+        "choices": ["config t\nip access—list extended wwwblock\npermit ip any any\ndeny tcp any host 10.30.0.100 eq 80\nint vlan 20\nip access—group wwwblock in",
+                    "config t\nip access—list extended wwwblock\npermit ip any any\ndeny tcp any host 10.30.0.100 eq 80\nint vlan 30\nip access—group wwwblock in",
+                    "config t\nip access—list extended wwwblock\ndeny tcp any host 10.30.0.100 eq 80\nint vlan 10\nip access—group wwwblock in", 
+                    "config t\nip access—list extended wwwblock\ndeny tcp any host 10.30.0.100 eq 80\npermit ip any any\nint vlan 20\nip access—group wwwblock in"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 44,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. How does the router manage traffic to 192.168.12.16?",
+      "image": "img/44.png",
+      "details": {
+        "choices": ["It selects RIP route because it has the longest prefix inclusive of the destination address",
+                    "It chooses the EIGRP route because it has the lowest administrative distance",
+                    "It load-balances traffic between all three routes", 
+                    "It chooses the OSPF route because it has the longest prefix inclusive of the destination address"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 45,
+      "type": "What is an advantage of Cisco DNA Center versus traditional campus device management?",
+      "question": "which WPA3 enhancement protects against hackers viewing traffic on the Wi-Fi network?",
+      "image": null,
+      "details": {
+        "choices": ["It supports numerous extensibility options including cross-domain adapters and third-party SDKs.",
+                    "It supports high availability for management functions when operating in cluster mode.",
+                    "It enables easy autodiscovery of network elements m a brownfield deployment", 
+                    "It is designed primarily to provide network assurance"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 46,
+      "type": "multiple_choice",
+      "question": "While examining excessive traffic on the network,it is noted that all incoming packets on an interface appear to be allowed even though an IPv4 ACL is applied to the interface. Which two misconfigurations cause this behavior? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["The packets fail to match any permit statement",
+                    "A matching permit statement is too high in the access test",
+                    "A matching deny statement is too high in the access list", 
+                    "A matching permit statement is too broadly defined",
+                    "The ACL is empty"],
+        "correct": [1,3]
+      }
+    },
+    {
+      "id": 47,
+      "type": "multiple_choice",
+      "question": "Which design element is a best practice when deploying an 802.11b wireless infrastructure?",
+      "image": null,
+      "details": {
+        "choices": ["disabling TPC so that access points can negotiate signal levels with their attached wireless devices.",
+                    "setting the maximum data rate to 54 Mbps on the Cisco Wireless LAN Controller",
+                    "allocating non overlapping channels to access points that are in close physical proximity to one another", 
+                    "configuring access points to provide clients with a maximum of 5 Mbps"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 48,
+      "type": "multiple_choice",
+      "question": "How do traditional campus device management and Cisco DNA Center device management differ in regards to deployment?",
+      "image": null,
+      "details": {
+        "choices": ["Cisco DNA Center device management can be implemented at a lower cost than most traditional campus device management options",
+                    "Traditional campus device management schemes can typically deploy patches and updates more quickly than Cisco DNA Center device management",
+                    "Cisco DNA Center device management can deploy a network more quickly than traditional campus device management", 
+                    "Traditional campus device management allows a network to scale more quickly than with Cisco DNA Center device management."],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 49,
+      "type": "multiple_choice",
+      "question": "Which two actions are performed by the Weighted Random Early Detection mechanism?(Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["It drops lower-priority packets before it drops higher-priority packets",
+                    "It can identify different flows with a high level of granularity",
+                    "It guarantees the delivery of high-priority packets", 
+                    "It can mitigate congestion by preventing the queue from filling up",
+                    "IT supports protocol discovery"],
+        "correct": [0,3]
+      }
+    },
+    {
+      "id":50,
+      "type": "multiple_choice",
+      "question": "Which set of action satisfy the requirement for multi-factor authentication?",
+      "image": null,
+      "details": {
+        "choices": ["The user swipes a key fob, then clicks through an email link",
+                    "The user enters a user name and password, and then clicks a notification in an authentication app on a mobile device",
+                    "The user enters a PIN into an RSA token, and then enters the displayed RSA key on a login scre", 
+                    "The user enters a user name and password and then re-enters the credentials on a second screen"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 51,
+      "type": "multiple_choice",
+      "question": "How do AAA operations compare regarding user identification,user services,and access control?",
+      "image": null,
+      "details": {
+        "choices": ["Authorization provides access control,and authentication tracks user services",
+                    "Accounting tracks user services,and authentication provides access control.",
+                    "Authorization identifies users,and authentication provides access control", 
+                    "Authentication identifies users,and accounting tracks user services"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 52,
+      "type": "multiple_choice",
+      "question": "What is a difference between local AP mode and FlexConnect AP mode?",
+      "image": null,
+      "details": {
+        "choices": ["FlexConnect AP mode fails to function if the AP loses connectivity with the WLC",
+                    "FlexConnect AP mode bridges the traffic from the AP to the WLC when local switching is configured.",
+                    "Local AP mode creates two CAPWAP tunnels per AF to the WLC", 
+                    "Local AP mode causes the AP to behave as if it were an autonomous AP."],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 53,
+      "type": "multiple_choice",
+      "question": "which function dose the range of private IPv4 addresses perform?",
+      "image": null,
+      "details": {
+        "choices": ["allow multiple companies to each use the same address without conflicts",
+                    "provides a direct connection for hosts from outside of the enterprise network",
+                    "ensues that NAT is not required to reach the internet with private range addressing", 
+                    "enable secure communications to the internet for all external hosts"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 54,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.Which prefix does Router 1 use to Host A ?",
+      "image": "img/54.png",
+      "details": {
+        "choices": ["10.10.10.0/28",
+                    "10.10.13.0/25",
+                    "10.10.13.144/28", 
+                    "10.10.13.208/29"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 55,
+      "type": "multiple_choice",
+      "question": "A fram that enters a switch fails the Frame Check Sequence.Which two interface counters are incremented? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["input erros",
+                    "frame",
+                    "giants", 
+                    "CRC",
+                    "runts"],
+        "correct": [0,3]
+      }
+    },
+    {
+      "id": 56,
+      "type": "multiple_choice",
+      "question": "what event has occurred if a router sends a notice level message to a syslog server?",
+      "image": null,
+      "details": {
+        "choices": ["An interface line has changed status",
+                    "An ICMP connection has been built",
+                    "A certificate has expired", 
+                    "A TCP connection has been torn down"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 57,
+      "type": "multiple_choice",
+      "question": "An organization has decided to start using cloud-provided services.Which cloud service allows the organization to install its own operating system on a virtual machine?",
+      "image": null,
+      "details": {
+        "choices": ["platform-as-a-service",
+                    "software-as-a-service",
+                    "network-as-a-service", 
+                    "infrastructure-as-a-service"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 58,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which route does R1 select for traffic that is destined to 192 168.16.2?",
+      "image": null,
+      "details": {
+        "choices": ["192.168.16.0/21",
+                    "192.168.16.0/24",
+                    "192.168 26.0/26", 
+                    "192.168.16.0/27"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 59,
+      "type": "multiple_choice",
+      "question": "Which two must be met before SSH can operate normally on a Cisco IOS switch? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["The switch must be running a k9 (crypto) IOS image",
+                    "The ip domain-name command must be configured on the switch",
+                    "IP routing must be enabled on the switch", 
+                    "A console password must be configured on the switch",
+                    "Telnet must be disabled on the switch"],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 60,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An engineer configured NAT translations and has verified that the configuration is correct. Which IP address is the source IP?",
+      "image": "img/60.png",
+      "details": {
+        "choices": ["10.4.4.4",
+                    "10.4.4.5",
+                    "172.23.103.10", 
+                    "172.23.104.4"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 61,
+      "type": "multiple_choice",
+      "question": "Which command is used to specify the delay time in seconds for LLDP to initialize on any interface?",
+      "image": null,
+      "details": {
+        "choices": ["lldp timer",
+                    "lldp holdtime",
+                    "lldp reinit", 
+                    "lldp tlv-select"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 62,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.An administrator configures four switches for local authentication using passwords that are stored as a ctyptographic hash.The four switches must also support SSH access for administrators to manage the network infrastructure.Which switch is configured correctly to meet these requirements ?",
+      "image": "img/62.png",
+      "details": {
+        "choices": ["SW1",
+                    "SW2",
+                    "SW3", 
+                    "SW4"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 63,
+      "type": "multiple_choice",
+      "question": "which statement identifies the functionality of virtual machines?",
+      "image": null,
+      "details": {
+        "choices": ["The hypervisor communicates on Layer 3 without the need for additional resources",
+                    "Each hypervisor can support a single virtual machine and a single software switch",
+                    "The hypervisor can virtual physical components including CPU,memory,and storage", 
+                    "Virtualized servers run most efficiently when they are physically connected to a switch that is separate from the hypervisor."],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 64,
+      "type": "multiple_choice",
+      "question": "when configuring IPv6 on an interafce,which two IPv6 multicast groups are joined?(choose two)",
+      "image": null,
+      "details": {
+        "choices": ["2000::/3",
+                    "2000::5",
+                    "FC00::/7", 
+                    "FF02::1",
+                    "FF02::2"],
+        "correct": [3,4]
+      }
+    },
+    {
+      "id": 65,
+      "type": "multiple_choice",
+      "question": "Which option about JSON is true?",
+      "image": null,
+      "details": {
+        "choices": ["uses predefined tags or angle brackets () to delimit markup text",
+                    "used to describe structured data that includes arrays",
+                    "used for storing information", 
+                    "similar to HTML, it is more verbose than XML"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 66,
+      "type": "multiple_choice",
+      "question": "Which statement correctly compares traditional networks and controller-based networks?",
+      "image": null,
+      "details": {
+        "choices": ["Only traditional networks offer a centralized control plane",
+                    "Only traditional networks natively support centralized management",
+                    "Traditional and controller-based networks abstract policies from device configurations", 
+                    "Only controller-based networks decouple the control plane and the data plane"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 67,
+      "type": "multiple_choice",
+      "question": "What are two fundamentals of virtualization? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["It allows multiple operating systems and applications to run independently on one physical server.",
+                    "It allows a physical router to directly connect NICs from each virtual machine into the network.",
+                    "The environment must be configured with one hypervisor that serves solely as a network manager to monitor SNMP traffic.", 
+                    "It allows logical network devices to move traffic between virtual machines and the rest of the physical network.",
+                    "It requires that some servers, virtual machines, and network gear reside on the Internet."],
+        "correct": [0,3]
+      }
+    },
+    {
+      "id": 68,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.What two conclusions should be made about this configuration?(choose two)",
+      "image": null,
+      "details": {
+        "choices": ["The root port is FastEthernet 2/1",
+                    "The spanning-tree mode is Rapid PVST+",
+                    "The designated port is FastEthernet 2/1", 
+                    "The spanning-tree mode is PVST+",
+                    "This is a root bridge"],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 69,
+      "type": "multiple_choice",
+      "question": "Which command enables a router to become a DHCP client?",
+      "image": null,
+      "details": {
+        "choices": ["ip address dhcp",
+                    "ip helper-address",
+                    "ip dhcp pool", 
+                    "ip dhcp client"],
+        "correct": [0]
+      }
     }
   ]
 }
