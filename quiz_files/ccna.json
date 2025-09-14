@@ -1,0 +1,53 @@
+{
+  "title": "CCNA (200-301) V1.1",
+  "description": "CCNA Networking Exam",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple_choice",
+      "question": "What is the capital of France?",
+      "image": null,
+      "details": {
+        "choices": ["Paris", "London", "Berlin", "Rome"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 2,
+      "type": "multiple_choice",
+      "question": "Which of the following are prime numbers?",
+      "image": null,
+      "details": {
+        "choices": ["2", "3", "4", "6"],
+        "correct": [0, 1]
+      }
+    },
+    {
+      "id": 3,
+      "type": "matching",
+      "question": "Classify the animals into the correct group.",
+      "image": null,
+      "details": {
+        "groups": ["Carnivore", "Herbivore", "Omnivore"],
+        "items": [
+          { "text": "Lion", "group": "Carnivore" },
+          { "text": "Horse", "group": "Herbivore" },
+          { "text": "Pig", "group": "Omnivore" }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "type": "matching",
+      "question": "Match the fruit or vegetable to its color.",
+      "image": null,
+      "details": {
+        "pairs": [
+          { "left": "Banana", "right": "Yellow" },
+          { "left": "Carrot", "right": "Orange" },
+          { "left": "Lettuce", "right": "Green" }
+        ]
+      }
+    }
+  ]
+}

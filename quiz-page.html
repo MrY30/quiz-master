@@ -12,12 +12,21 @@
   </header>
 
   <main id="quiz-container">
-    <button id="start-btn">Start Quiz</button>
+    <div id="setup-box">
+      <button id="start-btn">Start Quiz</button>
+      <div id="question-count-box" class="hidden">
+        <label for="question-count">How many questions?</label>
+        <input type="number" id="question-count" min="1" />
+        <button id="confirm-count-btn">Confirm</button>
+      </div>
+    </div>
+
     <div id="quiz-box" class="hidden">
       <div id="question-box"></div>
       <div id="answers-box"></div>
       <button id="next-btn" class="hidden">Next</button>
     </div>
+
     <div id="result-box" class="hidden"></div>
   </main>
 

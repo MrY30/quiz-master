@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start Modal -->
+    <div id="startModal" class="modal">
+        <div class="modal-content">
+            <h1 id="modal-title">Loading...</h1>
+            <p id="modal-description">Please wait...</p>
+            <div class="input-group">
+                <label for="question-count">Number of Questions:</label>
+                <input type="number" id="question-count" min="1" max="50" value="10">
+            </div>
+            <button id="startButton" class="btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container hidden">
+        <!-- Header with Progress -->
+        <div class="quiz-header">
+            <h2 id="quiz-progress">Question 1 of 10</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Quiz Body -->
+        <div class="quiz-body">
+            <div id="quiz-question" class="question-container">
+                <!-- Question content will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="quiz-controls">
+            <button id="submitButton" class="btn">Submit Answer</button>
+            <button id="nextButton" class="btn btn-secondary hidden">Next Question</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
