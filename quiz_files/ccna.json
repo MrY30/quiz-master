@@ -903,6 +903,803 @@
                     "ip dhcp client"],
         "correct": [0]
       }
+    },
+    {
+      "id": 70,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.A router received these five routes form different routing information sources.which two routes dose the router install in the routing table? (choose two)",
+      "image": "img/70.png",
+      "details": {
+        "choices": ["iBGP route 10.0.0.0/30",
+                    "RIP route 10.0.0.0/30",
+                    "EIGRP route 10.0.0.1/32", 
+                    "OSPF route 10.0.0.0/30",
+                    "OSPF route 10.0.0.0/16"],
+        "correct": [2,4]
+      }
+    },
+    {
+      "id": 71,
+      "type": "multiple_choice",
+      "question": "what is the default behavior of a layer 2 switch when a frame with an unknown destination MAC address is received ?",
+      "image": null,
+      "details": {
+        "choices": ["The Layer 2 switch forwards the packet and adds the destination MAC address to its MAC address table",
+                    "The Layer 2 switch sends a copy of a packet to CPU for destination MAC address learning",
+                    "The Layer 2 switch floods packets to all ports except the receiving port in the given VLAN", 
+                    "The Layer 2 switch dorps the received frame"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 72,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An extended ACL has been configured and applied to router R2 The configuration farted to work as intended.Which two changes stop outbound traffic on TCP ports 25 and 80 to 10.0.20.0/26 from the 10.0.10.0/26 subnet while still allowing all other traffic? (Choose two)",
+      "image": "img/72.png",
+      "details": {
+        "choices": ["Add a \"permit ip any any\" statement to the beginning of ACL 101 for allowed traffic.",
+                    "Add a \"permit ip any any\" statement at the end of ACL 101 for allowed traffic",
+                    "The source and destination IPs must be swapped in ACL 101", 
+                    "The ACL must be configured the Gi0/2 interface in bound on R1",
+                    "The ACL must be moved to the Gi0/1interface outbound onR2"],
+        "correct": [1,2]
+      }
+    },
+    {
+      "id": 73,
+      "type": "multiple_choice",
+      "question": "Which two tasks must be performed to configure NTP to a trusted server in client mode on a single network device? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["Enable NTP authentication",
+                    "Verify the time zone",
+                    "Disable NTP broadcasts", 
+                    "Specify the IP address of the NTP server",
+                    "Set the NTP server private key"],
+        "correct": [0,3]
+      }
+    },
+    {
+      "id": 74,
+      "type": "multiple_choice",
+      "question": "A user configured OSPF in a single area between two routers A serial interface connecting R1 and R2 is running encapsulation PPP.By default which OSPF network type is seen on this interface when the user types show ip ospf interface on R1 or R2?",
+      "image": null,
+      "details": {
+        "choices": ["port-to-multipoint",
+                    "broadcast",
+                    "point-to-point", 
+                    "non-broadcast"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 75,
+      "type": "multiple_choice",
+      "question": "Refer to Exhibit. An engineer is configuring the NEW York router to reach the Lo1 interface of the Atlanta router using interface Se0/0/0 as the primary path.Which two commands must be configured on the New York router so that it can reach the Lo1 interface of the Atlanta router via Washington when the link between New York and Atlanta goes down? (Choose two)",
+      "image": "img/75.png",
+      "details": {
+        "choices": ["ipv6 router 2000::1/128 2012::1",
+                    "ipv6 router 2000::1/128 2012::1 5",
+                    "ipv6 router 2000::1/128 2012::2", 
+                    "ipv6 router 2000::1/128 2023::2 5",
+                    "ipv6 router 2000::1/128 2023::3 5"],
+        "correct": [0,4]
+      }
+    },
+    {
+      "id": 76,
+      "type": "multiple_choice",
+      "question": "The network administrator wants VLAN 67 traffic to be untagged between Switch 1 and Switch 2 while all other VLANs are to remain tagged. Which command accomplishes this task?",
+      "image": "img/76.png",
+      "details": {
+        "choices": ["switchport access vlan 67",
+                    "switchport trunk allowed vlan 67",
+                    "switchport private-vlan association host 67", 
+                    "switchport trunk native vlan 67"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 77,
+      "type": "multiple_choice",
+      "question": "What are two differences between optical-fiber cabling and copper cabling? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["Fiber connects to physical interfaces using RJ-45 connections.",
+                    "The data can pass through the cladding.",
+                    "Light is transmitted through the core of the fiber.", 
+                    "The glass core component is encased in a cladding",
+                    "A BNC connector is used for fiber connections."],
+        "correct": [2,3]
+      }
+    },
+    {
+      "id": 78,
+      "type": "multiple_choice",
+      "question": "which IPv6 address type provides communication between subnets and cannot route on the internet?",
+      "image": null,
+      "details": {
+        "choices": ["link-local",
+                    "unique local",
+                    "multicast", 
+                    "global unicast"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 79,
+      "type": "multiple_choice",
+      "question": "which 802.11 frame type is association reponse ?",
+      "image": null,
+      "details": {
+        "choices": ["management",
+                    "protected frame",
+                    "action", 
+                    "control"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 80,
+      "type": "multiple_choice",
+      "question": "which two minimum parameters must be configured on an active interface to enable OSPFv2 to operate?(choose two)",
+      "image": null,
+      "details": {
+        "choices": ["IPv6 address",
+                    "OSPF process ID",
+                    "OSPF MD5 authentication key", 
+                    "OSPF stub flag",
+                    "OSPF area"],
+        "correct": [1,4]
+      }
+    },
+    {
+      "id": 81,
+      "type": "multiple_choice",
+      "question": "Refer to the Exhibit. After the switch configuration the ping test fails between PC A and PC B Based on the output for switch 1. Which error must be corrected?",
+      "image": "img/81.png",
+      "details": {
+        "choices": ["There is a native VLAN mismatch",
+                    "Access mode is configured on the switch ports",
+                    "The PCs are m the incorrect VLAN", 
+                    "All VLANs are not enabled on the trunk"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 82,
+      "type": "multiple_choice",
+      "question": "Which action is taken by a switch port enabled for PoE power classification override?",
+      "image": null,
+      "details": {
+        "choices": ["When a powered device begins drawing power from a PoE switch port a syslog message is generated",
+                    "As power usage on a PoE switch port is checked data flow to the connected device is temporarily paused",
+                    "If a switch determines that a device is using less than the minimum configured power it assumes the device has failed and disconnects", 
+                    "If a monitored port exceeds the maximum administrative value for power, the port is shutdown and err-disabled"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 83,
+      "type": "multiple_choice",
+      "question": "What are two characteristics of a controller-based network? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["The administrator can make configuration updates from the CLI",
+                    "It uses northbound and southbound APIs to communicate between architectural layers",
+                    "It moves the control plane to a central point", 
+                    "It decentralizes the control plane, which allows each device to make its own forwarding decisions",
+                    "It uses Telnet to report system issues"],
+        "correct": [1,2]
+      }
+    },
+    {
+      "id": 84,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which password must an engineer use to enter the enable mode?",
+      "image": "img/84.png",
+      "details": {
+        "choices": ["adminadmin123",
+                    "default",
+                    "testing 1234", 
+                    "cisco123"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 85,
+      "type": "multiple_choice",
+      "question": "Which QoS Profile is selected in the GUI when configuring a voice over WLAN deployment?",
+      "image": null,
+      "details": {
+        "choices": ["Bronze",
+                    "Platinum",
+                    "Silver", 
+                    "Gold"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 86,
+      "type": "multiple_choice",
+      "question": "A router running EIGRP has learned the same route from two different paths.Which parameter does the router use to select the best path?",
+      "image": null,
+      "details": {
+        "choices": ["cost",
+                    "administrative distance",
+                    "metric", 
+                    "as-path"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 87,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. After the configuration is applied, the two routers fail to establish an OSPF neighbor relationship. what is the reason for the problem?",
+      "image": "img/87.png",
+      "details": {
+        "choices": ["The OSPF router IDs are mismatched",
+                    "Router2 is using the default hello timer",
+                    "The network statement on Router1 is misconfigured", 
+                    "The OSPF process IDs are mismatched"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 88,
+      "type": "multiple_choice",
+      "question": "How do TCP and UDP differ in the way they provide reliability for delivery of packets?",
+      "image": null,
+      "details": {
+        "choices": ["TCP does not guarantee delivery or error checking to ensure that there is no corruption of data; UDP provides message acknowledgement and retransmits data if lost.",
+                    "TCP provides flow control to avoid overwhelming a receiver by sending too many packets at once; UDP sends packets to the receiver in a continuous stream without checking for sequencing",
+                    "TCP uses windowing to deliver packets reliably; UDP provides reliable message transfer between hosts by establishing a three-way handshake", 
+                    "TCP is a connectionless protocol that does not provide reliable delivery of data; UDP is a connection-oriented protocol that uses sequencing to provide reliable delivery."],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 89,
+      "type": "multiple_choice",
+      "question": "Which output displays a JSON data representation?",
+      "image": null,
+      "details": {
+        "choices": ["{\n\t\"response\":{\n\t\"taskId\":{};\n\t\"url\":\"string\"\n\t};\n\t\"version\":\"string\"\n}",
+                    "{\n\t\"response\"-{\n\t\"taskId\"-{},\n\t\"url\"-\"string\"\n\t},\n\t\"version\"-\"string\"\n}",
+                    "{\n\t\"response\":{\n\t\"taskId\":{},\n\t\"url\":\"string\"\n\t},\n\t\"version\":\"string\"\n}", 
+                    "{\n\t\"response\".{\n\t\"taskId\".{};\n\t\"url\".\"string\"\n\t};\n\t\"version\".\"string\"\n}"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 90,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. With which metric was the route to host 172.16.0.202 learned?",
+      "image": "img/90.png",
+      "details": {
+        "choices": ["0",
+                    "110",
+                    "38443", 
+                    "3184439"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 91,
+      "type": "multiple_choice",
+      "question": "A packet is destined for 10.10.1.22 .which static route does the router choose to forward the packet ?",
+      "image": null,
+      "details": {
+        "choices": ["ip route 10.10.1.0 255.255.255.240 10.10.255.1",
+                    "ip route 10.10.1.20 255.255.255.252 10.10.255.1",
+                    "ip route 10.10.1.20 255.255.255.254 10.10.255.1", 
+                    "ip route 10.10.1.16 255.255.255.252 10.10.255.1"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 92,
+      "type": "multiple_choice",
+      "question": "An email user has been lured into clicking a link in an email sent by their company's security organization. The webpage that opens reports that it was safe but the link could have contained malicious code. Which type of security program is in place?",
+      "image": null,
+      "details": {
+        "choices": ["Physical access control",
+                    "Social engineering attack",
+                    "brute force attack", 
+                    "user awareness"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 93,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.Router R1 Fa0/0 cannot ping router R3 Fa0/1.Which action must be taken in router R1 to help resolve the configuration issue?",
+      "image": "img/93.png",
+      "details": {
+        "choices": ["set the default network as 20.20.20.0/24",
+                    "configure a static route with Fa0/1 as the egress interface to reach the 20.20.20.0/24 network",
+                    "set the default gateway as 20.20.20.2", 
+                    "configure a static route with 10.10.10.2 as the next hop to reach the 20.20.20.0/24 network"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 94,
+      "type": "multiple_choice",
+      "question": "Refer to Exhibit. Which action do the switches take on the trunk link?",
+      "image": "img/94.png",
+      "details": {
+        "choices": ["The trunk does not form and the ports go into an err-disabled status.",
+                    "The trunk forms but the mismatched native VLANs are merged into a single broadcast domain.",
+                    "The trunk does not form, but VLAN 99 and VLAN 999 are allowed to traverse the link", 
+                    "The trunk forms but VLAN 99 and VLAN 999 are in a shutdown state"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 95,
+      "type": "multiple_choice",
+      "question": "which IPv6 address block sends packets to a group address rather than a single address ?",
+      "image": null,
+      "details": {
+        "choices": ["2000::/3",
+                    "FC00::/7",
+                    "FE80::/10", 
+                    "FF00::/8"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 96,
+      "type": "multiple_choice",
+      "question": "Two switches are connected and using Cisco Dynamic Trunking Protocol SW1 is set to Dynamic Desirable What is the result of this configuration?",
+      "image": null,
+      "details": {
+        "choices": ["The link is in a downstate",
+                    "The link is in an error disables state",
+                    "The link is becomes an access port.", 
+                    "The link becomes a trunk port."],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 97,
+      "type": "multiple_choice",
+      "question": " Refer to the exhibit. Which command provides this output?",
+      "image": "img/97.png",
+      "details": {
+        "choices": ["show ip route",
+                    "show ip interface",
+                    "show interface", 
+                    "show cdp neighbor"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 98,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. If configuring a static default route on the router with the ip route 0.0.0.0 0.0.0.0 10.13.0.1 120 command, how does the router respond?",
+      "image": "img/98.png",
+      "details": {
+        "choices": ["It ignores the new static route until the existing OSPF default route is removed",
+                    "It immediately replaces the existing OSPF route in the routing table with the newly configured static route",
+                    "It starts load-balancing traffic between the two default routes", 
+                    "It starts sending traffic without a specific matching entry in the routing table to Gigabit Ethernet0/1"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 99,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An engineer must add a subnet for a new office that will add 20 users to the network. Which IPv4 network and subnet mask combination does the engineer assign to minimize wasting addresses?",
+      "image": "img/99.png",
+      "details": {
+        "choices": ["10.10.225.48 255.255.255.240",
+                    "10.10.225.32 255.255.255.240",
+                    "10.10.225.48 255.255.255.224", 
+                    "10.10.225.32 255.255.255.224"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 100,
+      "type": "multiple_choice",
+      "question": "An engineer must configure a WLAN using the strongest encryption type for WPA2- PSK. Which cipher fulfills the configuration requirement?",
+      "image": null,
+      "details": {
+        "choices": ["WEP",
+                    "RC4",
+                    "AES", 
+                    "TKIP"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 101,
+      "type": "multiple_choice",
+      "question": "which command automatically generates an IPv6 address from a specified IPv6  prefix and MAC address of an interface?",
+      "image": null,
+      "details": {
+        "choices": ["ipv6 address dhcp",
+                    "ipv6 address 2001:DB8:5:112::/64 eui-64",
+                    "ipv6 address autoconfig", 
+                    "ipv6 address 2001:DB8:5:112::2/64 link-local"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 102,
+      "type": "multiple_choice",
+      "question": "A corporate office uses four floors in a building\n>Floor 1 has 24 users\n>Floor 2 has 29 users\n>Floor 3 has 28 users\n>Floor 4 has 22 users\nWhich subnet summarizes and gives the most efficient distribution of IP addresses for the router configuration?",
+      "image": null,
+      "details": {
+        "choices": ["192.168.0.0/25 as summary and 192.168.0.0/27 for each floor",
+                    "192.168.0.0/26 as summary and 192.168.0.0/29 for each floor",
+                    "192.168.0.0/24 as summary and 192.168.0.0/28 for each floor", 
+                    "192.168.0.0/23 as summary and 192.168.0.0/25 for each floor"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 103,
+      "type": "multiple_choice",
+      "question": "By default, how does EIGRP determine the metric of a route for the routing table?",
+      "image": null,
+      "details": {
+        "choices": ["It uses the bandwidth and delay values of the path to calculate the route metric.",
+                    "It uses a default metric of 10 for all routes that are learned by the router",
+                    "It counts the number of hops between the receiving and destination routers and uses that value as the metric", 
+                    "It uses a reference bandwidth and the actual bandwidth of the connected link to calculate the route metric"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 104,
+      "type": "multiple_choice",
+      "question": "When configuring a WLAN with WPA2 PSK in the Cisco Wireless LAN Controller GUI, which two formats are available to select? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["ASCII",
+                    "base64",
+                    "binary", 
+                    "decimal",
+                    "hexadecimal"],
+        "correct": [0,4]
+      }
+    },
+    {
+      "id": 105,
+      "type": "multiple_choice",
+      "question": "What is the primary different between AAA authentication and authorization?",
+      "image": null,
+      "details": {
+        "choices": ["Authentication verifies a username and password, and authorization handles the communication between the authentication agent and the user database",
+                    "Authentication identifies a user who is attempting to access a system, and authorization validates the users password",
+                    "Authentication identifies and verifies a user who is attempting to access a system, and authorization controls the tasks the user can perform.", 
+                    "Authentication controls the system processes a user can access and authorization logs the activities the user initiates"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 106,
+      "type": "multiple_choice",
+      "question": "Which configuration issue is preventing the OSPF neighbor relationship from being established between the two routers?",
+      "image": "img/106.png",
+      "details": {
+        "choices": ["R2 is using the passive-interface default command",
+                    "R1 has an incorrect network command for interface Gi1/0",
+                    "R2 should have its network command in area 1", 
+                    "R1 interface Gi1/0 has a larger MTU size"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 107,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What does router R1 use as its OSPF router-ID?",
+      "image": "img/107.png",
+      "details": {
+        "choices": ["10.10.1.10",
+                    "10.10.10.20",
+                    "172.16.15.10", 
+                    "192.168.0.1"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 108,
+      "type": "multiple_choice",
+      "question": "Which type of address is the public IP address of a NAT device?",
+      "image": null,
+      "details": {
+        "choices": ["outside global",
+                    "outside local",
+                    "inside global", 
+                    "inside local",
+                    "outside public",
+                    "inside public"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 109,
+      "type": "multiple_choice",
+      "question": "What makes Cisco DNA Center different from traditional network management applications and their management of networks?",
+      "image": null,
+      "details": {
+        "choices": ["It only supports auto-discovery of network elements in a green field deployment.",
+                    "It modular design allows someone to implement different versions to meet the specific needs of an organization",
+                    "It abstracts policy from the actual device configuration", 
+                    "It does not support high availability of management functions when operating in cluster mode"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 110,
+      "type": "multiple_choice",
+      "question": "What are two southbound APIs? (Choose two )",
+      "image": null,
+      "details": {
+        "choices": ["OpenFlow",
+                    "NETCONF",
+                    "Thrift", 
+                    "CORBA",
+                    "DSC"],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 111,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What is the effect of this configuration?",
+      "image": "img/111.png",
+      "details": {
+        "choices": ["All ARP packets are dropped by the switch",
+                    "Egress traffic is passed only if the destination is a DHCP server.",
+                    "All ingress and egress traffic is dropped because the interface is untrusted", 
+                    "The switch discard all ingress ARP traffic with invalid MAC-to-IP address bindings."],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 112,
+      "type": "multiple_choice",
+      "question": "What are two roles of the Dynamic Host Configuration Protocol (DHCP)? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["The DHCP client maintains a pool of IP addresses it can assign",
+                    "The DHCP server assigns IP addresses without requiring the client to renew them.",
+                    "The DHCP client can request up to four DNS server addresses.", 
+                    "The DHCP server offers the ability to exclude specific IP addresses from a pool of IP addresses",
+                    "The DHCP server leases client IP addresses dynamically"],
+        "correct": [3,4]
+      }
+    },
+    {
+      "id": 113,
+      "type": "multiple_choice",
+      "question": "Which type of wireless encryption is used for WPA2 in preshared key mode?",
+      "image": null,
+      "details": {
+        "choices": ["TKIP with RC4",
+                    "RC4",
+                    "AES-128", 
+                    "AES-256"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 114,
+      "type": "multiple_choice",
+      "question": "How does CAPWAP communicate between an access point in local mode and a WLC?",
+      "image": null,
+      "details": {
+        "choices": ["The access point must not be connected to the wired network, as it would create a loop",
+                    "The access point must directly connect to the WLC using a copper cable",
+                    "The access point must be connected to the same switch as the WLC", 
+                    "The access point has the ability to link to any switch in the network, assuming connectivity to the WLC."],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 115,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit which action is expected from SW1 when the untagged from is received on the GigabitEthernet0/1 interface ?",
+      "image": "img/115.png",
+      "details": {
+        "choices": ["The frame is dropped",
+                    "The frame is processed in VLAN 5",
+                    "The frame is processed in VLAN 11", 
+                    "The frame is processed in VLAN 1"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 116,
+      "type": "multiple_choice",
+      "question": "Which statement about Link Aggregation when implemented on a Cisco Wireless LAN Controller is true?",
+      "image": null,
+      "details": {
+        "choices": ["To pass client traffic two or more ports must be configured",
+                    "The EtherChannel must be configured in \"mode active\"",
+                    "When enabled the WLC bandwidth drops to 500 Mbps", 
+                    "One functional physical port is needed to pass client traffic"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 117,
+      "type": "multiple_choice",
+      "question": " R1 has learned route 192.168.12.0/24 via IS-IS, OSPF, RIP and Internal EIGRP Under normal operating conditions, which routing protocol is installed in the routing table?",
+      "image": null,
+      "details": {
+        "choices": ["IS-IS",
+                    "RIP",
+                    "Internal EIGRP", 
+                    "OSPF"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 118,
+      "type": "multiple_choice",
+      "question": "Which two values or settings must be entered when configuring a new WLAN in the Cisco Wireless LAN Controller GUI? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["management interface settings",
+                    "QoS settings",
+                    "Ip address of one or more access points", 
+                    "SSID",
+                    "Profile name"],
+        "correct": [3,4]
+      }
+    },
+    {
+      "id": 119,
+      "type": "multiple_choice",
+      "question": "What are two reasons for an engineer to configure a floating static route? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["to route traffic differently based on the source IP of the packet",
+                    "to enable fallback static routing when the dynamic routing protocol fails",
+                    "to automatically route traffic on a secondary path when the primary path goes down", 
+                    "to control the return path of traffic that is sent from the router",
+                    "to support load balancing via static routing"],
+        "correct": [1,2]
+      }
+    },
+    {
+      "id": 120,
+      "type": "multiple_choice",
+      "question": "A network engineer must back up 20 network router configurations globally within a customer environment.Which protocol allows the engineer to perform this function using the Cisco IOS MIB?",
+      "image": null,
+      "details": {
+        "choices": ["ARP",
+                    "SNMP",
+                    "SMTP", 
+                    "CDP"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 121,
+      "type": "multiple_choice",
+      "question": "Which two encoding methods are supported by REST APIs? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["YAML",
+                    "JSON",
+                    "EBCDIC", 
+                    "SGML",
+                    "XML"],
+        "correct": [1,4]
+      }
+    },
+    {
+      "id": 122,
+      "type": "multiple_choice",
+      "question": "An engineer configured an OSPF neighbor as a designated router. Which state verifies the designated router is in the proper mode?",
+      "image": null,
+      "details": {
+        "choices": ["Exchange",
+                    "2-way",
+                    "Full", 
+                    "Init"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 123,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. The New York router is configured with static routes pointing to the Atlanta and Washington sites. Which two tasks must be performed so that the Serial0/0/0 interfaces on the Atlanta and Washington routers can reach one another? (Choose two.)",
+      "image": "img/123.png",
+      "details": {
+        "choices": ["Configure the ipv6 route 2012::/126 2023::1 command on the Washington router",
+                    "Configure the ipv6 route 2023::/126 2012::1 command on the Atlanta router.",
+                    "Configure the Ipv6 route 2012::/126 s0/0/0 command on the Atlanta router", 
+                    "Configure the ipv6 route 2023::/126 2012::2 command on the Atlanta router",
+                    "Configure the ipv6 route 2012::/126 2023::2 command on the Washington router"],
+        "correct": [3,4]
+      }
+    },
+    {
+      "id": 124,
+      "type": "multiple_choice",
+      "question": "Which two capacities of Cisco DNA Center make it more extensible? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["adapters that support all families of Cisco IOS software",
+                    "SDKs that support interaction with third-party network equipment",
+                    "customized versions for small, medium, and large enterprises", 
+                    "REST APIs that allow for external applications to interact natively with Cisco DNA Center",
+                    "modular design that is upgradable as needed"],
+        "correct": [1,3]
+      }
+    },
+    {
+      "id": 125,
+      "type": "multiple_choice",
+      "question": "Refer to Exhibit. How does SW2 interact with other switches in this VTP domain?",
+      "image": "img/125.png",
+      "details": {
+        "choices": ["It processes VTP updates from any VTP clients on the network on its access ports",
+                    "It receives updates from all VTP servers and forwards all locally configured VLANs out all trunk ports",
+                    "It forwards only the VTP advertisements that it receives on its trunk ports", 
+                    "It transmits and processes VTP updates from any VTP Clients on the network on its trunk ports"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 126,
+      "type": "multiple_choice",
+      "question": "Which mode allows access points to be managed by Cisco Wireless LAN Controllers?",
+      "image": null,
+      "details": {
+        "choices": ["autonomous",
+                    "lightweight",
+                    "bridge", 
+                    "mobility express"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 127,
+      "type": "multiple_choice",
+      "question": "Which result occurs when PortFast is enabled on an interface that is connected to another switch?",
+      "image": null,
+      "details": {
+        "choices": ["Spanning tree may fail to detect a switching loop in the network that causes broadcast storms",
+                    "VTP is allowed to propagate VLAN configuration information from switch to switch automatically",
+                    "Root port choice and spanning tree recalculation are accelerated when a switch link goes down", 
+                    "After spanning tree converges PortFast shuts down any port that receives BPDUs."],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 128,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. If OSPF is running on this network,how does Router 2 handle traffic from Site B to 10.10.13.128/25 at Site A?",
+      "image": "img/128.png",
+      "details": {
+        "choices": ["It sends packets out of interface Fa0/2 only",
+                    "It sends packets out of interface Fa0/1 only.",
+                    "It cannot send packets to 10.10.13 128/25", 
+                    "It load-balances traffic out of Fa0/1 and Fa0/2"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 129,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.Which type of route does R1 use to reach host 10.10.13.10/32?",
+      "image": "img/129.png",
+      "details": {
+        "choices": ["default route",
+                    "network route",
+                    "host route", 
+                    "floating static route"],
+        "correct": [1]
+      }
     }
   ]
 }

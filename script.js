@@ -69,6 +69,34 @@ class QuizApp {
         this.showQuestion();
     }
 
+    // Start the quiz SPECIFIC QUESTION
+    // startQuiz() {
+    //     const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
+        
+    //     // FOR TESTING: Show only question with ID 89
+    //     const testQuestionId = 102;
+    //     const specificQuestion = this.quizData.questions.find(q => q.id === testQuestionId);
+        
+    //     if (specificQuestion) {
+    //         this.questions = [specificQuestion]; // Show only this question
+    //     } else {
+    //         console.error(`Question with ID ${testQuestionId} not found!`);
+    //         // Fallback to normal behavior
+    //         this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
+    //     }
+        
+    //     this.currentIndex = 0;
+    //     this.userAnswers = [];
+    //     this.score = 0;
+    //     this.timeStarted = new Date();
+
+    //     // Hide modal and show quiz
+    //     document.getElementById("startModal").classList.add("hidden");
+    //     document.querySelector(".quiz-container").classList.remove("hidden");
+
+    //     this.showQuestion();
+    // }
+
     // Display current question
     showQuestion() {
         const question = this.questions[this.currentIndex];
