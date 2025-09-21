@@ -1700,6 +1700,568 @@
                     "floating static route"],
         "correct": [1]
       }
+    },
+    {
+      "id": 130,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.which route type is configured to reach the internet?",
+      "image": "img/130.png",
+      "details": {
+        "choices": ["network route",
+                    "floating static route",
+                    "host route", 
+                    "default route"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 131,
+      "type": "multiple_choice",
+      "question": "Router A learns the same route from two different neighbors, one of the neighbor routers is an OSPF neighbor and the other is an EIGRP neighbor.What is the administrative distance of the route that will be installed in the routing table?",
+      "image": null,
+      "details": {
+        "choices": ["20",
+                    "90",
+                    "110", 
+                    "115"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 132,
+      "type": "multiple_choice",
+      "question": "Which MAC address is recognized as a VRRP virtual address?",
+      "image": null,
+      "details": {
+        "choices": ["0000.5E00.010a",
+                    "0005.3711.0975",
+                    "0000.0C07.AC99", 
+                    "0007.C070/AB01"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 133,
+      "type": "multiple_choice",
+      "question": "How does Cisco DNA Center gather data from the network?",
+      "image": null,
+      "details": {
+        "choices": ["Devices establish an IPsec tunnel to exchange data with the controller",
+                    "Devices use the call-home protocol to periodically send data to the controller.",
+                    "Network devices use different services like SNMP, syslog, and streaming telemetry to send data to the controller", 
+                    "The Cisco CLI Analyzer tool gathers data from each licensed network device .and streams it to the controller"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 134,
+      "type": "multiple_choice",
+      "question": "A user configured OSPF and advertised the Gigabit Ethernet interface in OSPF By default, which type of OSPF network does this interface belong to?",
+      "image": null,
+      "details": {
+        "choices": ["point-to-multipoint",
+                    "point-to-point",
+                    "broadcast", 
+                    "nonbroadcast"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 135,
+      "type": "multiple_choice",
+      "question": "what is the difference regrading reliability and communication type between TCP and UDP?",
+      "image": null,
+      "details": {
+        "choices": ["TCP is reliable and is a connectionless protocol; UDP is not reliable and is a connection-oriented protocol",
+                    "TCP is not reliable and is a connectionless protocol; UDP is reliable and is a connection-oriented protocol",
+                    "TCP is reliable and is a connection-oriented protocol; UDP is not reliable and is a connectionless protocol", 
+                    "TCP is not reliable and is a connection-oriented protocol; UDP is reliable and is a connectionless protocol."],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 136,
+      "type": "multiple_choice",
+      "question": "An engineer is asked to protect unused ports that are configured in the default VLAN on a switch. Which two steps will fulfill the request? (Choose two)",
+      "image": null,
+      "details": {
+        "choices": ["Configure the ports in an EtherChannel.",
+                    "Administratively shut down the ports",
+                    "Configure the port type as access and place in VLAN 99", 
+                    "Configure the ports as trunk ports",
+                    "Enable the Cisco Discovery Protocol"],
+        "correct": [1,2]
+      }
+    },
+    {
+      "id": 137,
+      "type": "multiple_choice",
+      "question": " If a notice-level messaging is sent to a syslog server, which event has occurred?",
+      "image": null,
+      "details": {
+        "choices": ["A network device has restarted",
+                    "An ARP inspection has failed",
+                    "A routing instance has flapped", 
+                    "A debug operation is running"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 138,
+      "type": "multiple_choice",
+      "question": "How does HSRP provide first hop redundancy?",
+      "image": null,
+      "details": {
+        "choices": ["It load-balances traffic by assigning the same metric value to more than one route to the same destination in the IP routing table.",
+                    "It load-balances Layer 2 traffic along the path by flooding traffic out all interfaces configured with the same VLAN",
+                    "It forwards multiple packets to the same destination over different routed links n the data path", 
+                    "It uses a shared virtual MAC and a virtual IP address to a group of routers that serve as the default gateway for hosts on a LAN"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 139,
+      "type": "multiple_choice",
+      "question": "What is the primary effect of the spanning-tree portfast command?",
+      "image": null,
+      "details": {
+        "choices": ["it enables BPDU messages",
+                    "It minimizes spanning-tree convergence time",
+                    "It immediately puts the port into the forwarding state when the switch is reloaded", 
+                    "It immediately enables the port in the listening state"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 140,
+      "type": "multiple_choice",
+      "question": "which IPv6 address block forwards packets to a multicast address rather than a unicast address?",
+      "image": null,
+      "details": {
+        "choices": ["2000::/3",
+                    "FC00::/7",
+                    "FE80::/10", 
+                    "FF00::/12"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 141,
+      "type": "multiple_choice",
+      "question": "which purpose does a northbound API serve in a controller-based networking architecture?",
+      "image": null,
+      "details": {
+        "choices": ["communicates between the controller and the physical network hardware",
+                    "reports device errors to a controller",
+                    "generates statistics for network hardware and traffic", 
+                    "facilitates communication between the controller and the applications"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 142,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An administrator is tasked with configuring a voice VLAN. What is the expected outcome when a Cisco phone is connected to the GigabitEfriemet3/1/4 port on a switch?",
+      "image": "img/142.png",
+      "details": {
+        "choices": ["The phone and a workstation that is connected to the phone do not have VLAN connectivity",
+                    "The phone and a workstation that is connected to the phone send and receive data in VLAN 50",
+                    "The phone sends and receives data in VLAN 50, but a workstation connected to the phone has no VLAN connectivity", 
+                    "The phone sends and receives data in VLAN 50, but a workstation connected to the phone sends and receives data in VLAN 1"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 143,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.which path is used by the router for internet traffic ?",
+      "image": "img/143.png",
+      "details": {
+        "choices": ["209.165.200.0/27",
+                    "10.10.10.0/28",
+                    "0.0.0.0/0", 
+                    "10.10.13.0/24"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 144,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit,if the network environment is operating normally,which type of device must be connected to interface fastethernet0/1?",
+      "image": "img/144.png",
+      "details": {
+        "choices": ["DHCP client",
+                    "PC",
+                    "router", 
+                    "access point"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 145,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.An engineer deploys a topology in which R1 obtains its IP configuration from DHCP.if the switch and DHCP server configuration are complete and correct,which two sets of commands must be configured on R1 and R2 to complete the task?(choose two)",
+      "image": "img/145.png",
+      "details": {
+        "choices": ["R1(config)# interface fa0/0\nR1(config-if)#ip address dhcp\nR1(config-if)# no shutsown",
+                    "R1(config)# interface fa0/0\nR1(config-if)#ip helper-address 192.0.2.2",
+                    "R2(config)# interface gi0/0\nR2(config-if)#ip address dhcp", 
+                    "R1(config)# interface fa0/0\nR1(config-if)#ip helper-address 198.51.100.100",
+                    "R2(config)# interface gi0/0\nR2(config-if)#ip helper-address 198.51.100.100"],
+        "correct": [0,4]
+      }
+    },
+    {
+      "id": 146,
+      "type": "multiple_choice",
+      "question": "In which two ways does a password manager reduce the chance of a hacker stealing a users password? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["It automatically provides a second authentication factor that is unknown to the original user.",
+                    "It uses an internal firewall to protect the password repository from unauthorized access.",
+                    "It protects against keystroke logging on a compromised device or web site", 
+                    "It stores the password repository on the local workstation with built-in antivirus and anti-malware functionality",
+                    "It encourages users to create stronger passwords."],
+        "correct": [2,4]
+      }
+    },
+    {
+      "id": 147,
+      "type": "multiple_choice",
+      "question": "Several new coverage cells are required to improve the Wi-Fi network of an organization. Which two standard designs are recommended? (choose two.)",
+      "image": null,
+      "details": {
+        "choices": ["5GHz provides increased network capacity with up to 23 nonoveriapping channels",
+                    "For maximum throughput, the WLC is configured to dynamically set adjacent access points to the same channel.",
+                    "5GHz channel selection requires an autonomous access point", 
+                    "Adjacent cells with overlapping channels use a repeater access point.",
+                    "Cells that overlap one another are configured to use nonoveriapping channels."],
+        "correct": [0,2]
+      }
+    },
+    {
+      "id": 148,
+      "type": "multiple_choice",
+      "question": "The SW1 interface g0/1 is in the down/down state.which two configurations are valid reasons for the interface conditions?(choose two)",
+      "image": null,
+      "details": {
+        "choices": ["There is a duplex mismatch",
+                    "There is a speed mismatch",
+                    "There is a protocol mismatch", 
+                    "The interface is shut down",
+                    "The interface is error-disabled"],
+        "correct": [1,4]
+      }
+    },
+    {
+      "id": 149,
+      "type": "multiple_choice",
+      "question": "which type of IPv6 address is publicly routable in the same way as IPv4 public address?",
+      "image": null,
+      "details": {
+        "choices": ["global unicast",
+                    "link-local",
+                    "unique local", 
+                    "multicast"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 150,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.which configuration on RTR-1 denies SSH access from PC-1 to any RTP-1 interface and allows all other traffic?",
+      "image": "img/150.png",
+      "details": {
+        "choices": ["access-list 100 deny tcp host 172.16.1.33 any eq 22\naccess-list 100 permit ip any any\ninterface GigabitEthernet0/0\nip access-group 100 in",
+                    "access-list 100 deny top host 172.16.1.33 any eq 22\naccess-list 100 permit ip any any\nline vty 0 15\naccess-class 100 in",
+                    "access-list 100 deny tcp host 172.16.1.33 any eq 23\naccess-list 100 permit ip any any\ninterface GigabitEthernet0/0\nip access-group 100 in", 
+                    "access-list 100 deny tcp host 172.16.1.33 any eq 23\naccess-list 100 permit ip any any\nline vty 0 15\naccess-class 100 in"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 151,
+      "type": "multiple_choice",
+      "question": "The service password-encryption command is entered on a router. What is the effect of this configuration?",
+      "image": null,
+      "details": {
+        "choices": ["restricts unauthorized users from viewing clear-text passwords in the running configuration",
+                    "encrypts the password exchange when a VPN tunnel is established",
+                    "prevents network administrators from configuring clear-text passwords", 
+                    "protects the VLAN database from unauthorized PC connections on the switch"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 152,
+      "type": "multiple_choice",
+      "question": "what occurs to frames during the process of frame flooding?",
+      "image": null,
+      "details": {
+        "choices": ["Frames are sent to every port on the switch in the same VLAN except from the originating port",
+                    "Frames are sent to every port on the switch that has a matching entry in the MAC address table.",
+                    "Frames are sent to all ports, including those that are assigned to other VLANs.", 
+                    "Frames are sent to every port on the switch in the same VLAN."],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 153,
+      "type": "multiple_choice",
+      "question": "What is the primary purpose of a First Hop Redundancy Protocol?",
+      "image": null,
+      "details": {
+        "choices": ["It allows directly connected neighbors to share configuration information.",
+                    "It allows a router to use bridge priorities to create multiple loop-free paths to a single destination.",
+                    "It reduces routing failures by allowing Layer 3 load balancing between OSPF neighbors that have the same link metric.", 
+                    "It reduces routing failures by allowing more than one router to represent itself, as the default gateway of a network."],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 154,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit,what commands are needed to add a subinterface to Ethernet0/0 on R1 to allow for VLAN 20.with IP address 10.20.20.1/24?",
+      "image": "img/154.png",
+      "details": {
+        "choices": ["R(config)#interface ethernet0/0\nR(config)#encapsulation dot1q 20\nR(config)#ip address 10.20.20.1 255.255.255.0",
+                    "R(config)#interface ethernet0/0.20\nR(config)#encapsulation dot1q 20\nR(config)#ip address 10.20.20.1 255.255.255.0",
+                    "R(config)#interface ethernet0/0\nR(config)#ip address 10.20.20.1 255.255.255.0", 
+                    "R(config)#interface ethernet0/0.20\nR(config)#ip address 10.20.20.1 255.255.255.0"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 155,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.To which device does Router 1 send packets that are destined to host 10.10.13.165?",
+      "image": "img/155.png",
+      "details": {
+        "choices": ["Router2",
+                    "Router3",
+                    "Router4", 
+                    "Router5"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 156,
+      "type": "matching",
+      "question": " Drap and drop AAA functions from the left onto the correct AAA services on the right",
+      "image": null,
+      "details": {
+        "groups": ["Authentication", "Authorization", "Accounting"],
+        "items": [
+          { "text": "verifies the password associated with a user", "group": "Authentication" },
+          { "text": "identifies the user", "group": "Authentication" },
+          { "text": "controls the actions that a user can perform", "group": "Authorization" },
+          { "text": "restricts the services that are available to a user", "group": "Authorization" },
+          { "text": "provides analytical information for the network administrator", "group": "Accounting" },
+          { "text": "records user activities", "group": "Accounting" }
+        ]
+      }
+    },
+    {
+      "id": 157,
+      "type": "matching",
+      "question": "Drag and drop to the characteristics of networking from the left onto the correct networking types on the right.",
+      "image": null,
+      "details": {
+        "groups": ["Control-based networking","Traditional Networking"],
+        "items": [
+          { "text": "focused on network", "group": "Control-based networking" },
+          { "text": "user input is a policy", "group": "Control-based networking" },
+          { "text": "users white list security model", "group": "Control-based networking" },
+          { "text": "focused on device", "group": "Traditional Networking" },
+          { "text": "user input is a configuration", "group": "Traditional Networking" },
+          { "text": "uses black list security model", "group": "Traditional Networking" }
+        ]
+      }
+    },
+    {
+      "id": 158,
+      "type": "matching",
+      "question": "Drog and drop the Cisco Wireless LAN Controller security setting from the left onto the correct security mechanism categories on the right.",
+      "image": null,
+      "details": {
+        "groups": ["Layer 2 Security Mechanisms","Layer 3 Security mechanisms (for WLAN)"],
+        "items": [
+          { "text": "WPA+WPA2", "group": "Layer 2 Security Mechanisms" },
+          { "text": "802.1X", "group": "Layer 2 Security Mechanisms" },
+          { "text": "web policy", "group": "Layer 3 Security mechanisms (for WLAN)" },
+          { "text": "Passthrough", "group": "Layer 3 Security mechanisms (for WLAN)" }
+        ]
+      }
+    },
+    {
+      "id": 169,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.The loopback 1 interface of the Atlanta router must reach the loopback 3 interface of the Washington router.Which two static host routes must be configured on the New York router?(choose two)",
+      "image": "img/169.png",
+      "details": {
+        "choices": ["ipv6 route 2000::1/128 2012::2",
+                    "ipv6 route 2000::3/128 2023::3",
+                    "ipv6 route 2000::3/128 s0/0/0", 
+                    "ipv6 route 2000::1/128 s0/0/1",
+                    "ipv6 route 2000::1/128 2012::1"],
+        "correct": [1,4]
+      }
+    },
+    {
+      "id": 170,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A packet is being sent across router R1 to host 172.16.3.14. To which destination does the router send the packet?",
+      "image": "img/170.png",
+      "details": {
+        "choices": ["207.165.200.246 via Serial0/1/0",
+                    "207.165.200.254 via Serial0/0/0",
+                    "207.165 200.254 via Serial0/0/1", 
+                    "207.165.200.250 via Serial0/0/0"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 171,
+      "type": "multiple_choice",
+      "question": "Which goal is achieved by the implementation of private IPv4 addressing on a network?",
+      "image": null,
+      "details": {
+        "choices": ["allows servers and workstations to communicate across public network boundaries",
+                    "provides a reduction in size of the forwarding table on network routers",
+                    "allows communication across the Internet to other private networks", 
+                    "provides an added level of protection against Internet exposure"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 172,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A network administrator assumes a task to complete the connectivity between PC A and the File Server Switch A and Switch B have been partially configured with VLANs 10, 11, 12, and 13 What is the next step in the configuration?",
+      "image": "img/172.png",
+      "details": {
+        "choices": ["Add PDA to VLAN 10 and the File Server to VLAN 11 for VLAN segmentation",
+                    "Add VLAN 13 to the trunk links on Switch A and Switch B for VLAN propagation",
+                    "Add a router on a stick between Switch A and Switch B allowing for Inter VLAN routing", 
+                    "Add PC A to the same subnet as the File Server allowing for intra-VLAN communication"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 173,
+      "type": "multiple_choice",
+      "question": "When a WPA2-PSK WLAN is configured in the Wireless LAN Controller, what is the minimum number of characters that is required in ASCII formar?",
+      "image": null,
+      "details": {
+        "choices": ["6",
+                    "8",
+                    "12", 
+                    "18"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 174,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit Which outcome is expected when PC_A sends data to PC_B?",
+      "image": "img/174.png",
+      "details": {
+        "choices": ["The switch rewrites the source and destination MAC addresses with its own",
+                    "The source and destination MAC addresses remain the same",
+                    "The source MAC address is changed", 
+                    "The destination MAC address is replaced with ffff.ffff.ffff"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 175,
+      "type": "multiple_choice",
+      "question": "An engineer needs to configure LLDP to send the port description time length value (TLV). What command sequence must be implemented?",
+      "image": null,
+      "details": {
+        "choices": ["switch#lldp port-description",
+                    "switch(config)#lldp port-description",
+                    "switch(config-line}#lldp port-description", 
+                    "switch(config-if)#lldp port-description"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 176,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which switch becomes the root bridge?",
+      "image": "img/176.png",
+      "details": {
+        "choices": ["S1",
+                    "S2",
+                    "S3", 
+                    "S4"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 177,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What is the next hop address for traffic that is destined to host 10.0.1.5?",
+      "image": "img/177.png",
+      "details": {
+        "choices": ["Loopback 0",
+                    "10.0.1.4",
+                    "10.0.1.50", 
+                    "10.0.1.3"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 178,
+      "type": "multiple_choice",
+      "question": "When the active router in an HSRP group fails, what router assumes the role and forwards packets?",
+      "image": null,
+      "details": {
+        "choices": ["forwarding",
+                    "backup",
+                    "standby", 
+                    "listening"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 179,
+      "type": "multiple_choice",
+      "question": "An organization secures its network with multi-factor authentication using an authenticator app on employee smartphones. How is the applic secured in the case of a user's smartphone being lost or stolen?",
+      "image": null,
+      "details": {
+        "choices": ["The application requires the user to enter a PIN before it provides the second factor",
+                    "the application challenges a user by requiring an administrator password to reactivate when the smartphone is rebooted",
+                    "The application requires an aadministrator password to reactivate after a configured interval", 
+                    "The application verifies that the user is in a specific location before it provides the second factor"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 180,
+      "type": "multiple_choice",
+      "question": " Refer to the exhibit. What action establishes the OSPF neighbor relationship without forming an adjacency?",
+      "image": "img/180.png",
+      "details": {
+        "choices": ["modify priority",
+                    "modify process ID",
+                    "modify hello interval", 
+                    "modify network type"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 129,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit.Which type of route does R1 use to reach host 10.10.13.10/32?",
+      "image": null,
+      "details": {
+        "choices": ["default route",
+                    "network route",
+                    "host route", 
+                    "floating static route"],
+        "correct": [1]
+      }
     }
   ]
 }

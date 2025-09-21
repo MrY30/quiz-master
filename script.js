@@ -74,7 +74,7 @@ class QuizApp {
     //     const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
         
     //     // FOR TESTING: Show only question with ID 89
-    //     const testQuestionId = 102;
+    //     const testQuestionId = 156;
     //     const specificQuestion = this.quizData.questions.find(q => q.id === testQuestionId);
         
     //     if (specificQuestion) {
