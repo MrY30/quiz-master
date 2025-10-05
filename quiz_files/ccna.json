@@ -2251,16 +2251,653 @@
       }
     },
     {
-      "id": 129,
+      "id": 181,
       "type": "multiple_choice",
-      "question": "Refer to the exhibit.Which type of route does R1 use to reach host 10.10.13.10/32?",
+      "question": "Refer to the exhibit. An engineer booted a new switch and applied this configuration via the console port. Which additional configuration must be applied to allow administrators to authenticate directly to enable privilege mode via Telnet using a local username and password?",
+      "image": "img/181.png",
+      "details": {
+        "choices": [
+          "R1(config)#username admin\nR1(config-if)#line vty 0 4\nR1(config-line)#password p@ss1234",
+          "R1(config)#username admin\nR1(config-if)#line vty 0 4\nR1(config-line)#password p@ss1234\nR1(config-line)#transport input telnet",
+          "R1(config)#username admin secret p@ss1234\nR1(config-if)#line vty 0 4\nR1(config-line)#login local\nR1(config)#enable secret p@ss1234",
+          "R1(config)#username admin privilege 15 secret p@ss1234\nR1(config-if)#line vty 0 4\nR1(config-line)#login local"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 182,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which switch in this configuration will be elected as the root bridge?\n SW1: 0C:E0:38:00:36:75\nSW2: 0C:0E:15:22:05:97\nSW3: 0C:0E:15:1A:3C:9D\nSW4: 0C:E0:18:A1:B3:19",
+      "image": "img/182.png",
+      "details": {
+        "choices": ["SW1", "SW2", "SW3", "SW4"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 183,
+      "type": "multiple_choice",
+      "question": "An engineer is configuring NAT to translate the source subnet of 10.10.0.0/24 to any of three addresses 192.168.30.1, 192.168.3.2, 192.168.3.3. Which configuration should be used?",
       "image": null,
       "details": {
-        "choices": ["default route",
-                    "network route",
-                    "host route", 
-                    "floating static route"],
+        "choices": [
+          "enable\nconfigure terminal\nip nat pool mypool 192.168.3.1 192.168.3.3 prefix-length 30\nroute-map permit 10.10.0.0 255.255.255.0\nip nat outside destination list 1 pool mypool\ninterface g1/1\nip nat inside\ninterface g1/2\nip nat outside",
+          "enable\nconfigure terminal\nip nat pool mypool 192.168.3.1 192.168.3.3 prefix-length 30\naccess-list 1 permit 10.10.0.0 0.0.0.255\nip nat outside destination list 1 pool mypool\ninterface g1/1\nip nat inside\ninterface g1/2\nip nat outside",
+          "enable\nconfigure terminal\nip nat pool mypool 192.168.3.1 192.168.3.3 prefix-length 30\naccess-list 1 permit 10.10.0.0 0.0.0.255\nip nat inside source list 1 pool mypool\ninterface g1/1\nip nat inside\ninterface g1/2\nip nat outside",
+          "enable\nconfigure terminal\nip nat pool mypool 192.168.3.1 192.168.3.3 prefix-length 30\naccess-list 1 permit 10.10.0.0 0.0.0.255\ninterface g1/1\nip nat inside\ninterface g1/2\nip nat outside"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 184,
+      "type": "multiple_choice",
+      "question": "An office has 8 floors with approximately 30-40 users per floor. What command must be configured on the router Switched Virtual Interface to use address space efficiently?",
+      "image": null,
+      "details": {
+        "choices": [
+          "ip address 192.168.0.0 255.255.0.0",
+          "ip address 192.168.0.0 255.255.254.0",
+          "ip address 192.168.0.0 255.255.255.128",
+          "ip address 192.168.0.0 255.255.255.224"
+        ],
         "correct": [1]
+      }
+    },
+    {
+      "id": 185,
+      "type": "multiple_choice",
+      "question": "Which device performs stateful inspection of traffic?",
+      "image": null,
+      "details": {
+        "choices": ["firewall", "switch", "access point", "wireless controller"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 186,
+      "type": "multiple_choice",
+      "question": "What criteria is used first during the root port selection process?",
+      "image": null,
+      "details": {
+        "choices": [
+          "local port ID",
+          "lowest path cost to the root bridge",
+          "lowest neighbor’s bridge ID",
+          "lowest neighbor’s port ID"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 187,
+      "type": "multiple_choice",
+      "question": "Router R2 is configured with multiple routes to reach network 10.1.1.0/24 from router R1. What protocol is chosen by router R2 to reach the destination network?",
+      "image": null,
+      "details": {
+        "choices": ["eBGP", "static", "OSPF", "EIGRP"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 188,
+      "type": "multiple_choice",
+      "question": "A network administrator enabled port security on a switch interface connected to a printer. What is the next configuration action in order to allow the port to learn the MAC address of the printer and insert it into the table automatically?",
+      "image": null,
+      "details": {
+        "choices": [
+          "enable dynamic MAC address learning",
+          "implement static MAC addressing",
+          "enable sticky MAC addressing",
+          "implement auto MAC address learning"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 189,
+      "type": "multiple_choice",
+      "question": "Which configuration ensures that the switch is always the root for VLAN 750?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Switch(config)#spanning-tree vlan 750 priority 38003685",
+          "Switch(config)#spanning-tree vlan 750 root primary",
+          "Switch(config)#spanning-tree vlan 750 priority 614440",
+          "Switch(config)#spanning-tree vlan 750 priority 0"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 190,
+      "type": "multiple_choice",
+      "question": "An engineer must configure an OSPF neighbor relationship between router R1 and R3. The authentication configuration has been configured and the connecting interfaces are in the same 192.168.1.0/30 subnet. What are the next two steps to complete the configuration?",
+      "image": null,
+      "details": {
+        "choices": [
+          "configure the hello and dead timers to match on both sides",
+          "configure the same process ID for the router OSPF process",
+          "configure the same router ID on both routing processes",
+          "configure the interfaces as OSPF active on both sides",
+          "configure both interfaces with the same area ID"
+        ],
+        "correct": [0,4]
+      }
+    },
+    {
+      "id": 191,
+      "type": "multiple_choice",
+      "question": "What protocol allows an engineer to back up 20 network router configurations globally while using the copy function?",
+      "image": null,
+      "details": {
+        "choices": ["SMTP", "SNMP", "TCP", "FTP"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 192,
+      "type": "multiple_choice",
+      "question": "Which state does the switch port move to when PortFast is enabled?",
+      "image": null,
+      "details": {
+        "choices": ["learning", "forwarding", "blocking", "listening"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 193,
+      "type": "multiple_choice",
+      "question": "What are two roles of Domain Name Services (DNS)?",
+      "image": null,
+      "details": {
+        "choices": [
+          "builds a flat structure of DNS names for more efficient IP operations",
+          "encrypts network traffic as it travels across a WAN by default",
+          "improves security by protecting IP addresses under Fully Qualified Domain Names (FQDNs)",
+          "enables applications to identify resources by name instead of IP address",
+          "allows a single host name to be shared across more than one IP address"
+        ],
+        "correct": [3,4]
+      }
+    },
+    {
+      "id": 194,
+      "type": "multiple_choice",
+      "question": "How do TCP and UDP differ in the way they guarantee packet delivery?",
+      "image": null,
+      "details": {
+        "choices": [
+          "TCP uses checksum, acknowledgement, and retransmissions, and UDP uses checksums only.",
+          "TCP uses retransmissions, acknowledgement, and parity checks, and UDP uses cyclic redundancy checks only.",
+          "TCP uses checksum, parity checks, and retransmissions, and UDP uses acknowledgements only.",
+          "TCP uses two-dimensional parity checks, checksums, and cyclic redundancy checks, and UDP uses retransmissions only."
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 195,
+      "type": "multiple_choice",
+      "question": "A device detects two stations transmitting frames at the same time. This condition occurs after the first 64 bytes of the frame is received. Which interface counter increments?",
+      "image": null,
+      "details": {
+        "choices": ["collision", "CRC", "runt", "late collision"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 196,
+      "type": "multiple_choice",
+      "question": "Which technology is used to improve web traffic performance by proxy caching?",
+      "image": null,
+      "details": {
+        "choices": ["WSA", "Firepower", "ASA", "FireSIGHT"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 197,
+      "type": "multiple_choice",
+      "question": "Using direct sequence spread spectrum, which three 2.4-GHz channels are used to limit collisions?",
+      "image": null,
+      "details": {
+        "choices": ["1,6,11", "1,5,10", "1,2,3", "5,6,7"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 198,
+      "type": "multiple_choice",
+      "question": "Which type of attack can be mitigated by dynamic ARP inspection?",
+      "image": null,
+      "details": {
+        "choices": ["worm", "malware", "DDoS", "man-in-the-middle"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 199,
+      "type": "multiple_choice",
+      "question": "What are two benefits of controller-based networking compared to traditional networking?",
+      "image": null,
+      "details": {
+        "choices": [
+          "controller-based increases network bandwidth usage, while traditional lightens the load on the network.",
+          "controller-based inflates software costs, while traditional decreases individual licensing costs.",
+          "controller-based reduces network configuration complexity, while traditional increases the potential for errors.",
+          "controller-based provides centralization of key IT functions, while traditional requires distributed management functions.",
+          "controller-based allows for fewer network failures, while traditional increases failure rates."
+        ],
+        "correct": [2,3]
+      }
+    },
+    {
+      "id": 200,
+      "type": "multiple_choice",
+      "question": "What software-defined architecture plane assists network devices with making packet-forwarding decisions by providing Layer 2 reachability and Layer 3 routing information?",
+      "image": null,
+      "details": {
+        "choices": ["data plane", "control plane", "policy plane", "management plane"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 201,
+      "type": "multiple_choice",
+      "question": "Which WAN access technology is preferred for a small office / home office architecture?",
+      "image": null,
+      "details": {
+        "choices": ["broadband cable access", "frame-relay packet switching", "dedicated point-to-point leased line", "Integrated Services Digital Network switching"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 202,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which route type does the routing protocol Code D represent in the output?",
+      "image": "img/202.png",
+      "details": {
+        "choices": ["internal BGP route", "/24 route of a locally configured IP", "statically assigned route", "route learned through EIGRP"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 203,
+      "type": "multiple_choice",
+      "question": "Which two WAN architecture options help a business scalability and reliability for the network?",
+      "image": null,
+      "details": {
+        "choices": ["asynchronous routing", "single-homed branches", "dual-homed branches", "static routing", "dynamic routing"],
+        "correct": [2,4]
+      }
+    },
+    {
+      "id": 204,
+      "type": "multiple_choice",
+      "question": "A wireless administrator has configured a WLAN; however, the clients need access to a less congested 5-GHz network for their voice quality. What action must be taken to meet the requirement?",
+      "image": null,
+      "details": {
+        "choices": ["enable AAA override", "enable RX-SOP", "enable DTIM", "enable Band Select"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 205,
+      "type": "multiple_choice",
+      "question": "What mechanism carries multicast traffic between remote sites and supports encryption?",
+      "image": null,
+      "details": {
+        "choices": ["ISATAP", "GRE over IPsec", "IPsec over ISATAP", "GRE"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 206,
+      "type": "matching",
+      "question": "Match the functions to the corresponding layers. (Not all options are used.)",
+      "image": null,
+      "details": {
+          "groups": ["Acess Layer", "Distribution Layer", "Core Layer"],
+          "items": [
+            { "text": "provides network access to the user", "group": "Acess Layer" },
+            { "text": "Represents the network edge", "group": "Acess Layer" },
+            { "text": "Implements Network Access policy", "group": "Distribution Layer" },
+            { "text": "establishes layer 3 routing boundaries", "group": "Distribution Layer" },
+            { "text": "provides high-speed backbone connectivity", "group": "Core Layer" },
+            { "text": "functions as an aggregator for al campus blocks", "group": "Core Layer" },
+            { "text": "implements personal firewalls on the client computers", "group": "" }
+          ]
+      }
+    },
+    {
+      "id": 207,
+      "type": "matching",
+      "question": "Drag the descriptions of device management from the left onto the types of device management on the right.",
+      "image": null,
+      "details": {
+          "groups": ["Cisco DNA Center Device Management", "Traditional device management"],
+          "items": [
+            { "text": "monitor the cloud for software update", "group": "Cisco DNA Center Device Management" },
+            { "text": "uses CLI templates to apply consistent configuration to multiple devices at an individual location", "group": "Cisco DNA Center Device Management" },
+            { "text": "Uses NetFlow to analyze potential security threats throughout the network and take appropriate action on that traffic", "group": "Cisco DNA Center Device Management" },
+            { "text": "Implements changes via an SSH terminal", "group": "Traditional device management" },
+            { "text": "manages device configuration on a per-device basis", "group": "Traditional device management" },
+            { "text": "Security is manages near the perimeter od the network with firewalls, VPNs, and IPS", "group": "Traditional device management" }
+          ]
+      }
+    },
+    {
+      "id": 208,
+      "type": "matching",
+      "question": "Drag the descriptions of IP protocol transmissions from the left onto the IP traffic types on the right.",
+      "image": null,
+      "details": {
+          "groups": ["TCP", "UDP"],
+          "items": [
+            { "text": "sends transmissions in sequence", "group": "TCP" },
+            { "text": "transmits packets as a stream", "group": "TCP" },
+            { "text": "uses a lower transmission rate to ensure relability", "group": "TCP" },
+            { "text": "transmissions include an 8-byte header", "group": "UDP" },
+            { "text": "transmits packets individually", "group": "UDP" },
+            { "text": "uses a higher transmission rate to support latency-sensitive application", "group": "UDP" }
+          ]
+      }
+    },
+    {
+      "id": 209,
+      "type": "matching",
+      "question": "Drag the characteristics of networking from the left onto the correct networking types on the right.",
+      "image": null,
+      "details": {
+          "groups": ["controller-cased networking", "traditional networking"],
+          "items": [
+            { "text": "focused on network", "group": "controller-cased networking" },
+            { "text": "user input is a policy", "group": "controller-cased networking" },
+            { "text": "user white list security model", "group": "controller-cased networking" },
+            { "text": "focused on deivces", "group": "traditional networking" },
+            { "text": "user input is a configuration", "group": "traditional networking" },
+            { "text": "user black list security model", "group": "traditional networking" }
+          ]
+      }
+    },
+    {
+      "id": 210,
+      "type": "matching",
+      "question": "An engineer is tasked with verifying network configuration parameters on a client workstation to report back to the team lead. Drag and drop the node identifiers from the left onto the network parameters on the right.",
+      "image": "img/210.png",
+      "details": {
+          "pairs": [
+            { "left": "192.168.1.255", "right": "broadcast address" },
+            { "left": "192.168.1.1", "right": "default gateway" },
+            { "left": "192.168.1.20", "right": "host IP address" },
+            { "left": "192.168.1.254", "right": "last assignable IP address in the subnet" },
+            { "left": "B8-76-3F-7C-57-DF", "right": "MAC address" },
+            { "left": "192.168.1.0", "right": "network address" },
+            { "left": "1A-76-3F-7C-57-DF", "right": "" }
+          ]
+        }
+    },
+    {
+      "id": 211,
+      "type": "multiple_choice",
+      "question": "A network analyst is tasked with configuring the date and time on a router using EXEC mode. The date must be set to January 1, 2020 and the time must be set to 12:00 am. What command should be used?",
+      "image": null,
+      "details": {
+        "choices": ["clock timezone", "clock summer-time date", "clock set", "clock summer-time recurring"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 212,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. After the election process, what is the root bridge in the HQ LAN?\nSwitch 1: 0C:E0:38:57:24:59\nSwitch 2: 0C:0E:15:22:1A:61\nSwitch 3: 0C:0E:15:1D:3C:9A\nSwitch 4: 0C:E0:19:A1:4D:16",
+      "image": "img/212.png",
+      "details": {
+        "choices": ["Switch 1", "Switch 2", "Switch 3", "Switch 4"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 213,
+      "type": "multiple_choice",
+      "question": "Which function is performed by the collapsed core layer in a two-tier architecture?",
+      "image": null,
+      "details": {
+        "choices": ["applying security policies", "attaching users to the edge of the network", "enforcing routing policies", "marking interesting traffic for data policies"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 214,
+      "type": "multiple_choice",
+      "question": "What are two functions of a server on a network?",
+      "image": null,
+      "details": {
+        "choices": [
+          "runs applications that send and retrieve data for workstations that make requests",
+          "handles requests from multiple workstations at the same time",
+          "housed solely in a data center that is dedicated to a single client",
+          "achieves redundancy by exclusively using virtual server clustering",
+          "runs the same operating system in order to communicate with other servers"
+        ],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 215,
+      "type": "multiple_choice",
+      "question": "What is a function of a remote access VPN?",
+      "image": null,
+      "details": {
+        "choices": [
+          "used exclusively when a user is connected to a company's internal network",
+          "allows the users to access company internal network resources through a secure tunnel",
+          "uses cryptographic tunneling to protect the privacy of data for multiple users simultaneously",
+          "establishes a secure tunnel between two branch sites"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 216,
+      "type": "multiple_choice",
+      "question": "What are two recommendations for protecting network ports from being exploited when located in an office space outside of an IT closet?",
+      "image": null,
+      "details": {
+        "choices": ["shut down unused ports", "configure static ARP entries", "enable the PortFast feature on ports", "implement port-based authentication", "configure ports to a fixed speed"],
+        "correct": [0,3]
+      }
+    },
+    {
+      "id": 217,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A network administrator must permit SSH access to remotely manage routers in a network. The operations team resides on the 10.20.1.0/25 network. Which command will accomplish this task?",
+      "image": "img/217.png",
+      "details": {
+        "choices": [
+          "access-list 2699 permit udp 10.20.1.0 0.0.0.255",
+          "no access-list 2699 deny tcp any 10.20.1.0 0.0.0.127 eq 22",
+          "access-list 2699 permit tcp any 10.20.1.0 0.0.0.255 eq 22",
+          "no access-list 2699 deny ip any 10.20.1.0 0.0.0.255"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 218,
+      "type": "matching",
+      "question": "Drag the characteristics of network architectures from the left onto the type of architecture on the right.",
+      "image": null,
+      "details": {
+          "groups": ["Collapsed Core", "Three-tier"],
+          "items": [
+            { "text": "single device handles the core and the distribution layer", "group": "Collapsed Core" },
+            { "text": "more cost-effective than other options", "group": "Collapsed Core" },
+            { "text": "most appropriate for small network designs", "group": "Collapsed Core" },
+            { "text": "enhances network availability", "group": "Three-tier" },
+            { "text": "separate devices handle the core and the distribution layer", "group": "Three-tier" }
+          ]
+      }
+    },
+    {
+      "id": 219,
+      "type": "matching",
+      "question": "Drag and drop the SNMP components from the left onto the descriptions on the right.",
+      "image": null,
+      "details": {
+          "pairs": [
+              { "left": "MIB", "right": "collection of variables that can be monitored" },
+              { "left": "SNMP trap", "right": "unsolicited message" },
+              { "left": "SNMP agent", "right": "responds to status requests and requests for information about a device" },
+              { "left": "SNMP manager", "right": "resides on an NMS" }
+          ]
+      }
+    },
+    {
+      "id": 220,
+      "type": "matching",
+      "question": "An engineer is tasked to configure a switch with port security to ensure devices that forward unicasts, multicasts, and broadcasts are unable to flood the port. The port must be configured to permit only two random MAC addresses at a time. Drag and drop the required configuration commands from the left onto the sequence on the right.",
+      "image": null,
+      "details": {
+          "pairs": [
+              { "left": "1", "right": "switchport mode access" },
+              { "left": "2", "right": "switchport port-security"},
+              { "left": "3", "right": "switchport port-security mac-address sticky"},
+              { "left": "4", "right": "switchport port-security maximum 2" }
+          ]
+      }
+    },
+    {
+      "id": 221,
+      "type": "multiple_choice",
+      "question": "Which two functions are performed by the core layer in a three-tier architecture?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Ensure timely data transfer between layers",
+          "Provide uninterrupted forwarding service",
+          "Inspect packets for malicious activity",
+          "Police traffic that is sent to the edge of the network",
+          "Provide direct connectivity for end user devices"
+        ],
+        "correct": [0,1]
+      }
+    },
+    {
+      "id": 222,
+      "type": "multiple_choice",
+      "question": "What is the purpose of traffic shaping?",
+      "image": null,
+      "details": {
+        "choices": [
+          "to provide fair queuing for buffered flows",
+          "to mitigate delays over slow links",
+          "to limit the bandwidth that a flow can use",
+          "to be a marking mechanism that identifies different flows"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 223,
+      "type": "multiple_choice",
+      "question": "When using Rapid PVST+, which command guarantees the switch is always the root bridge for VLAN 200?",
+      "image": null,
+      "details": {
+        "choices": [
+          "spanning-tree vlan 200 priority 614440",
+          "spanning-tree vlan 200 priority 0",
+          "spanning-tree vlan 200 priority 38572422",
+          "spanning-tree vlan 200 root primary"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 224,
+      "type": "multiple_choice",
+      "question": "Which command must be entered to configure a DHCP relay?",
+      "image": null,
+      "details": {
+        "choices": ["ip helper-address", "ip address dhcp", "ip dhcp pool", "ip dhcp relay"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 225,
+      "type": "multiple_choice",
+      "question": "When implementing a router as a DHCP server, which two features must be configured?",
+      "image": null,
+      "details": {
+        "choices": ["relay agent information", "address pool", "smart-relay", "database agent", "manual bindings"],
+        "correct": [1,4]
+      }
+    },
+    {
+      "id": 226,
+      "type": "multiple_choice",
+      "question": "How does the dynamically-learned MAC address feature function?",
+      "image": null,
+      "details": {
+        "choices": [
+          "The CAM table is empty until ingress traffic arrives at each port",
+          "Switches dynamically learn MAC addresses of each connecting CAM table",
+          "The ports are restricted and learn up to a maximum of 10 dynamically-learned addresses",
+          "It requires a minimum number of secure MAC addresses to be filled dynamically"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 227,
+      "type": "multiple_choice",
+      "question": "What facilitates a Telnet connection between devices by entering the device name?",
+      "image": null,
+      "details": {
+        "choices": ["SNMP", "DNS lookup", "syslog", "NTP"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 228,
+      "type": "multiple_choice",
+      "question": "Which technology can prevent client devices from arbitrarily connecting to the network without state remediation?",
+      "image": null,
+      "details": {
+        "choices": ["802.1x", "IP Source Guard", "MAC Authentication Bypass", "802.11n"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 229,
+      "type": "multiple_choice",
+      "question": "A port security violation has occurred on a switch port due to the maximum MAC address count being exceeded. Which command must be configured to increment the security-violation count and forward an SNMP trap?",
+      "image": null,
+      "details": {
+        "choices": [
+          "switchport port-security violation access",
+          "switchport port-security violation protect",
+          "switchport port-security violation restrict",
+          "switchport port-security violation shutdown"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 230,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which command configures a floating static route to provide a backup to the primary link?",
+      "image": "img/230.png",
+      "details": {
+        "choices": [
+          "ip route 209.165.201.0 255.255.255.224 209.165.202.130",
+          "ip route 0.0.0.0 0.0.0.0 209.165.200.224",
+          "ip route 209.165.200.224 255.255.255.224 209.165.202.129 254",
+          "ip route 0.0.0.0 0.0.0.0 209.165.202.131"
+        ],
+        "correct": [2]
       }
     }
   ]
