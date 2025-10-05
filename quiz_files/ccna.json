@@ -2094,6 +2094,162 @@
       }
     },
     {
+      "id": 159,
+      "type": "matching",
+      "question": "Drap and drop the functions from the left onto the correct network components on the right.",
+      "image": null,
+      "details": {
+        "groups": ["DHCP Server","DNS server"],
+        "items": [
+          { "text": "assigns a default gateway to a client", "group": "DHCP Server" },
+          { "text": "holds the TCP/IP settings to be distributed to the clients", "group": "DHCP Server" },
+          { "text": "assigns IP addresses to enabled clients", "group": "DHCP Server" },
+          { "text": "resolves web URLs to IP addresses", "group": "DNS server" },
+          { "text": "stores a list of IP addresses mapped to names", "group": "DNS server" }
+        ]
+      }
+    },
+    {
+      "id": 160,
+      "type": "matching",
+      "question": "A network engineer is configuring an OSPFv2 neighbor adjacency.Drag and drop the parameters from the left onto their required categories on the right.No all parameters are used.",
+      "image": null,
+      "details": {
+        "groups": ["must match","must be unique"],
+        "items": [
+          { "text": "area ID", "group": "must match" },
+          { "text": "netmask", "group": "must match" },
+          { "text": "timers", "group": "must match" },
+          { "text": "IP address", "group": "must be unique" },
+          { "text": "router ID", "group": "must be unique" }
+        ]
+      }
+    },
+    {
+      "id": 161,
+      "type": "matching",
+      "question": "Drag and drop the attack-mitigation techniques from the left onto the Types of attack that they mitigate on the right",
+      "image": null,
+      "details": {
+        "pairs": [
+          { "left": "802.1q double-tagging VLAN-hopping attack", "right": "configure the native VLAN with a nondefault VLAN ID" },
+          { "left": "MAC flooding attack", "right": "configure 802.1x authentication" },
+          { "left": "man-in-the-middle spoofing attack", "right": "configure DHCP snooping" },
+          { "left": "switch-spoofing VLAN-hopping attack", "right": "disable DTP" }
+        ]
+      }
+    },
+    {
+      "id": 162,
+      "type": "matching",
+      "question": "Drag and drop the WLAN components from the left onto the correct description on the right.",
+      "image": null,
+      "details": {
+        "pairs": [
+          { "left": "wireless LAN controller", "right": "device that manages access points" },
+          { "left": "access point", "right": "device that provides Wi-Fi devices with a connection to a wired network" },
+          { "left": "service port", "right": "used for out of band management of a WLC" },
+          { "left": "virtual interface", "right": "used to support mobility management of the WLC" },
+          { "left": "dynamic interface", "right": "applied to the WLAN for wireless client communication" }
+        ]
+      }
+    },
+    {
+      "id": 163,
+      "type": "matching",
+      "question": "Refer to the exhibit.Drag and drop the networking parameters from the left onto the correct values on the right",
+      "image": "img/163.png",
+      "details": {
+        "pairs": [
+          { "left": "NIC vendor OUI", "right": "00:0C:22" },
+          { "left": "NIC MAC address", "right": "00:0C:22:83:79:A3" },
+          { "left": "default gateway", "right": "192.168.1.193" },
+          { "left": "host IP address", "right": "192.168.1.200" },
+          { "left": "subnet mask", "right": "255.255.255.192" }
+        ]
+      }
+    },
+    {
+      "id": 164,
+      "type": "matching",
+      "question": " Drag and drop the descriptions from the left onto the correct configuration-management technologies on the right",
+      "image": null,
+      "details": {
+        "groups": ["Ansible","Chef","Puppet"],
+        "items": [
+          { "text": "uses SSH for remote device communication", "group": "Ansible" },
+          { "text": "uses YAML for fundamental configuration elements", "group": "Ansible" },
+          { "text": "uses TCP port 10002 for configuration push jobs", "group": "Chef" },
+          { "text": "uses Ruby for fundamental configuration elements", "group": "Chef" },
+          { "text": "fundamental configuration elements are stored in a manifest", "group": "Puppet" },
+          { "text": "uses TCP 8140 for communication", "group": "Puppet" }
+        ]
+      }
+    },
+    {
+      "id": 165,
+      "type": "matching",
+      "question": "Drag and drop the descriptions of file-tranfer protocols from the left on to the correct protocols on the right",
+      "image": null,
+      "details": {
+        "groups": ["FTP","TFTP"],
+        "items": [
+          { "text": "provides reliability when loading an IOS image upon boot up", "group": "FTP" },
+          { "text": "uses port 20 and 21", "group": "FTP" },
+          { "text": "uses TCP", "group": "FTP" },
+          { "text": "does not require user authentication", "group": "TFTP" },
+          { "text": "uses port 69", "group": "TFTP" },
+          { "text": "uses UDP", "group": "TFTP" }
+        ]
+      }
+    },
+    {
+      "id": 166,
+      "type": "matching",
+      "question": "Drag and drop the threat-mitigation techniques from the left onto the types of threat or attack they mitigate on the right",
+      "image": null,
+      "details": {
+        "pairs": [
+          { "left": "Configure VACL", "right": "802.1q double tagging" },
+          { "left": "Configure dynamic ARP inspection", "right": "ARP spoofing" },
+          { "left": "Configure root guard", "right": "unwanted superior BPDUs" },
+          { "left": "Configure BPDU guard", "right": "unwanted BPDUs on PortFast-enabled interfaces" }
+        ]
+      }
+    },
+    {
+      "id": 167,
+      "type": "matching",
+      "question": "Drag and drop the network protocols from the left onto the correct transport services on the right",
+      "image": null,
+      "details": {
+        "groups": ["Connection Oriented","Connectionless"],
+        "items": [
+          { "text": "FTP", "group": "Connection Oriented" },
+          { "text": "SMTP", "group": "Connection Oriented" },
+          { "text": "SSH", "group": "Connection Oriented" },
+          { "text": "SNMP", "group": "Connectionless" },
+          { "text": "TFTP", "group": "Connectionless" },
+          { "text": "VoIP", "group": "Connectionless" }
+        ]
+      }
+    },
+    {
+      "id": 168,
+      "type": "matching",
+      "question": "drag and drag the IPV4 network subnets from the left onto the correct usable host ranges on the right",
+      "image": null,
+      "details": {
+        "pairs": [
+          { "left": "172.28.228.144/23", "right": "172.28.228.1-172.28.229.254" },
+          { "left": "172.28.228.144/21", "right": "172.28.224.1-172.28.231.254" },
+          { "left": "172.28.228.144/25", "right": "172.28.228.129-172.28.228.254" },
+          { "left": "172.28.228.144/29", "right": "172.28.228.145-172.28.228.150" },
+          { "left": "172.28.228.144/18", "right": "172.28.192.1-172.28.255.254" }
+        ]
+      }
+    },
+    {
       "id": 169,
       "type": "multiple_choice",
       "question": "Refer to the exhibit.The loopback 1 interface of the Atlanta router must reach the loopback 3 interface of the Washington router.Which two static host routes must be configured on the New York router?(choose two)",
@@ -2897,6 +3053,583 @@
           "ip route 209.165.200.224 255.255.255.224 209.165.202.129 254",
           "ip route 0.0.0.0 0.0.0.0 209.165.202.131"
         ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 231,
+      "type": "multiple_choice",
+      "question": "What is the primary function of a Layer 3 device?",
+      "image": null,
+      "details": {
+        "choices": [
+          "to analyze traffic and drop unauthorized traffic from the Internet",
+          "to transmit wireless traffic between hosts",
+          "to pass traffic between different networks",
+          "to forward traffic within the same broadcast domain"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 232,
+      "type": "multiple_choice",
+      "question": "An engineer requires a switch interface to actively attempt to establish a trunk link with a neighbor switch. What command must be configured?",
+      "image": null,
+      "details": {
+        "choices": [
+          "switchport mode trunk",
+          "switchport mode dynamic desirable",
+          "switchport mode dynamic auto",
+          "switchport nonegotiate"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 233,
+      "type": "multiple_choice",
+      "question": "What is a function of TFTP in network operations?",
+      "image": null,
+      "details": {
+        "choices": [
+          "transfers a backup configuration file from a server to a switch using a username and password",
+          "transfers files between file systems on a router",
+          "transfers configuration files from a server to a router on a congested link",
+          "transfers IOS images from a server to a router for firmware upgrades"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 234,
+      "type": "multiple_choice",
+      "question": "What is a recommended approach to avoid co-channel congestion while installing access points that use the 2.4 GHz frequency?",
+      "image": null,
+      "details": {
+        "choices": [
+          "different nonoverlapping channels",
+          "different overlapping channels",
+          "one overlapping channel",
+          "one nonoverlapping channel"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 235,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An engineer configured the New York router with static routes that point to the Atlanta and Washington sites. What command must be configured on the Atlanta and Washington routers so that both sites are able to reach the loopback2 interface on the New York router?",
+      "image": "img/235.png",
+      "details": {
+        "choices": [
+          "ipv6 route ::/0 Serial 0/0/1",
+          "ipv6 route 0/0 Serial 0/0/0",
+          "ipv6 route ::/0 Serial 0/0/0",
+          "ip route 0.0.0.0.0.0.0.0 Serial 0/0/0",
+          "ipv6 route ::/0 2000::2"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 236,
+      "type": "multiple_choice",
+      "question": "Which CRUD operation modifies an existing table or view?",
+      "image": null,
+      "details": {
+        "choices": ["read", "create", "replace", "update"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 237,
+      "type": "multiple_choice",
+      "question": "What is a DHCP client?",
+      "image": null,
+      "details": {
+        "choices": [
+          "a workstation that requests a domain name associated with its IP address",
+          "a host that is configured to request an IP address automatically",
+          "a server that dynamically assigns IP addresses to hosts",
+          "a router that statically assigns IP addresses to hosts"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 238,
+      "type": "multiple_choice",
+      "question": "What is the same for both copper and fiber interfaces when using SFP modules?",
+      "image": null,
+      "details": {
+        "choices": [
+          "They support an inline optical attenuator to enhance signal strength",
+          "They provide minimal interruption to services by being hot-swappable",
+          "They offer reliable bandwidth up to 100 Mbps in half duplex mode",
+          "They accommodate single-mode and multi-mode in a single module"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 239,
+      "type": "multiple_choice",
+      "question": "An engineer must configure interswitch VLAN communication between a Cisco switch and a third-party switch. Which action should be taken?",
+      "image": null,
+      "details": {
+        "choices": ["configure IEEE 802.1p", "configure IEEE 802.1q", "configure ISL", "configure DSCP"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 240,
+      "type": "multiple_choice",
+      "question": "Which protocol prompts the Wireless LAN Controller to generate its own local web administration SSL certificate for GUI access?",
+      "image": null,
+      "details": {
+        "choices": ["HTTPS", "RADIUS", "TACACS+", "HTTP"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 241,
+      "type": "multiple_choice",
+      "question": "In software defined architectures, which plane is distributed and responsible for traffic forwarding?",
+      "image": null,
+      "details": {
+        "choices": ["management plane", "control plane", "policy plane", "data plane"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 242,
+      "type": "multiple_choice",
+      "question": "Which two QoS tools are used to guarantee minimum bandwidth to certain traffic?",
+      "image": null,
+      "details": {
+        "choices": ["FIFO", "LLC", "CBWFQ", "RSVP", "WFQ"],
+        "correct": [2,4]
+      }
+    },
+    {
+      "id": 243,
+      "type": "multiple_choice",
+      "question": "Which configuration management mechanism uses TCP port 22 by default when communicating with managed nodes?",
+      "image": null,
+      "details": {
+        "choices": ["Chef", "Python", "Puppet", "Ansible"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 244,
+      "type": "multiple_choice",
+      "question": "Where does a switch maintain DHCP snooping information?",
+      "image": null,
+      "details": {
+        "choices": ["in the MAC address table", "in the CAM table", "in the binding database", "in the frame forwarding database"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 245,
+      "type": "matching",
+      "question": "Drag and drop to match the items as indicated in the exhibit.",
+      "image": null,
+      "details": {
+          "pairs": [
+            { "left": "snooping binding database", "right": "list of hosts on the network that are unknown to the administrative domain" },
+            { "left": "DHCP server", "right": "network component that IP addresses to hosts on the network" },
+            { "left": "trusted", "right": "internal device under the control of the network administrator" },
+            { "left": "spurious DHCP server", "right": "unkown DHCP server within an administrative domain" },
+            { "left": "untrusted", "right": "default state of all interfaces" }
+          ]
+      }
+    },
+    {
+      "id": 246,
+      "type": "matching",
+      "question": "An engineer is configuring the router to provide static NAT for the webserver. Drag and drop the configuration commands from the left onto the letters that correspond to its position in the configuration on the right.",
+      "image": "img/246.png",
+      "details": {
+          "pairs": [
+            { "left": "position A", "right": "ip address 172.16.1.1 255.255.255.0" },
+            { "left": "position B", "right": "ip nat inside" },
+            { "left": "position C", "right": "ip address 45.83.2.214 255.255.255.240" },
+            { "left": "position D", "right": "ip nat outside" },
+            { "left": "position E", "right": "ip nat inside source list 1 interface s0 overload" },
+            { "left": "position F", "right": "ip nat inside source static tcp 172.16.1.2 80 45.83.2.214 80 extendable" }
+          ]
+      }
+    },
+    {
+      "id": 247,
+      "type": "matching",
+      "question": "Drag and drop the QoS congestion management terms from the left onto the description on the right.",
+      "image": null,
+      "details": {
+          "pairs": [
+            { "left": "PQ", "right": "places packets into one of four priority-based queue" },
+            { "left": "CBWGQ", "right": "provides guaranteed bandwidth to a specified class of traffic" },
+            { "left": "WFQ", "right": "provides minimum guaranteed bandwidth to one or more flows" },
+            { "left": "CQ", "right": "services a specified number of bytes in one queue before continuing to the next queue" },
+            { "left": "FIFO", "right": "use store-and-forward queuing" }
+          ]
+      }
+    },
+    {
+      "id": 248,
+      "type": "matching",
+      "question": "Drag and drop the SNMP manager and agent identifier commands from the left onto the functions on the right.",
+      "image": null,
+      "details": {
+          "pairs": [
+            { "left": "show snmp chassis", "right": "displays the SNMP server serial number" },
+            { "left": "show snmp community", "right": "displays the SNMP access string" },
+            { "left": "show snmp engineID", "right": "displays the IP address of the remote SNMP device" },
+            { "left": "show snmp group", "right": "displays the SNMP security model in use" },
+            { "left": "show snmp host", "right": "displays information about the SNMP recipient" }
+          ]
+      }
+    },
+    {
+      "id": 249,
+      "type": "multiple_choice",
+      "question": "Which type of security program is violated when a group of employees enters a building using the ID badge of only one person?",
+      "image": null,
+      "details": {
+        "choices": ["intrusion detection", "user awareness", "physical access control", "network authorization"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 250,
+      "type": "multiple_choice",
+      "question": "A network administrator needs to aggregate 4 ports into a single logical link which must negotiate Layer 2 connectivity to ports on another switch. What must be configured when using active mode on both sides of the connection?",
+      "image": null,
+      "details": {
+        "choices": ["802.1q trunks", "Cisco vPC", "LLDP", "LACP"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 251,
+      "type": "multiple_choice",
+      "question": "In which situation is private IPv4 addressing appropriate for a new subnet on the network of an organization?",
+      "image": null,
+      "details": {
+        "choices": [
+          "There is limited unique address space, and traffic on the new subnet will stay local within the organization.",
+          "The network has multiple endpoint listeners, and it is desired to limit the number of broadcasts.",
+          "Traffic on the subnet must traverse a site-to-site VPN to an outside organization.",
+          "The ISP requires the new subnet to be advertised to the internet for web services."
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 252,
+      "type": "multiple_choice",
+      "question": "Aside from discarding, which two states does the switch port transition through while using RSTP (802.1w)?",
+      "image": null,
+      "details": {
+        "choices": ["listening", "blocking", "forwarding", "learning", "speaking"],
+        "correct": [2,3]
+      }
+    },
+    {
+      "id": 253,
+      "type": "multiple_choice",
+      "question": "Which state does the switch port move to when PortFast is enabled?",
+      "image": null,
+      "details": {
+        "choices": ["forwarding", "listening", "blocking", "learning"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 254,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An access list is created to deny Telnet access from host PC-1 to RTR-1 and allow access from all other hosts. A Telnet attempt from PC-2 gives this message: '% Connection refused by remote host.' Without allowing Telnet access from PC-1, which action must be taken to permit the traffic?",
+      "image": "img/254.png",
+      "details": {
+        "choices": [
+          "Add the access-list 10 permit any command to the configuration",
+          "Remove the access-class 10 in command from line vty 0 4",
+          "Add the ip access-group 10 out command to interface g0/0",
+          "Remove the password command from line vty 0 4"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 255,
+      "type": "multiple_choice",
+      "question": "What is a role of wireless controllers in an enterprise network?",
+      "image": null,
+      "details": {
+        "choices": [
+          "centralize the management of access points in an enterprise network",
+          "support standalone or controller-based architectures",
+          "serve as the first line of defense in an enterprise network",
+          "provide secure user logins to devices on the network"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 256,
+      "type": "multiple_choice",
+      "question": "What is the effect when loopback interfaces and the configured router ID are absent during the OSPF Process configuration?",
+      "image": null,
+      "details": {
+        "choices": [
+          "No router ID is set, and the OSPF protocol does not run.",
+          "The highest up/up physical interface IP address is selected as the router ID.",
+          "The lowest IP address is incremented by 1 and selected as the router ID.",
+          "The router ID 0.0.0.0 is selected and placed in the OSPF process."
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 257,
+      "type": "multiple_choice",
+      "question": "What is recommended for the wireless infrastructure design of an organization?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Group access points together to increase throughput on a given channel",
+          "Configure the first three access points to use Channels 1, 6, and 11",
+          "Include at least two access points on nonoverlapping channels to support load balancing",
+          "Assign physically adjacent access points to the same Wi-Fi channel"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 258,
+      "type": "multiple_choice",
+      "question": "Which 802.11 frame type is indicated by a probe response after a client sends a probe request?",
+      "image": null,
+      "details": {
+        "choices": ["action", "management", "control", "data"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 259,
+      "type": "multiple_choice",
+      "question": "How do servers connect to the network in a virtual environment?",
+      "image": null,
+      "details": {
+        "choices": [
+          "wireless to an access point that is physically connected to the network",
+          "a cable connected to a physical switch on the network",
+          "a virtual switch that links to an access point that is physically connected to the network",
+          "a software switch on a hypervisor that is physically connected to the network"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 260,
+      "type": "multiple_choice",
+      "question": "Which CRUD operation corresponds to the HTTP GET method?",
+      "image": null,
+      "details": {
+        "choices": ["read", "update", "create", "delete"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 261,
+      "type": "multiple_choice",
+      "question": "With REST API, which standard HTTP header tells a server which media type is expected by the client?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Accept-Encoding: gzip, deflate",
+          "Accept-Patch: text/example; charset=utf-8",
+          "Content-Type: application/json; charset=utf-8",
+          "Accept: application/json"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 262,
+      "type": "multiple_choice",
+      "question": "Which device tracks the state of active connections in order to make a decision to forward a packet through?",
+      "image": null,
+      "details": {
+        "choices": ["wireless access point", "firewall", "wireless LAN controller", "router"],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 263,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. PC1 is trying to ping PC3 for the first time and sends out an ARP to S1. Which action is taken by S1?",
+      "image": "img/263.png",
+      "details": {
+        "choices": [
+          "It forwards it out G0/3 only",
+          "It is flooded out every port except G0/0",
+          "It drops the frame",
+          "It forwards it out interface G0/2 only"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 264,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A network administrator has been tasked with securing VTY access to a router. Which access-list entry accomplishes this task?",
+      "image": "img/264.png",
+      "details": {
+        "choices": [
+          "access-list 101 permit tcp 10.1.10 0.0.0.255 172.16.10 0.0.0.255 eq ssh",
+          "access-list 101 permit tcp 10.11.0 0.0.0.255 172.16.10 0.0.0.255 eq scp",
+          "access-list 101 permit tcp 10.11.0 0.0.0.255 172.16.10 0.0.0.255 eq telnet",
+          "access-list 101 permit tcp 10.1.10 0.0.0.255 172.16.10 0.0.0.255 eq https"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 265,
+      "type": "multiple_choice",
+      "question": "A network administrator must enable DHCP services between two sites. What must be configured for the router to pass DHCPDISCOVER messages on to the server?",
+      "image": null,
+      "details": {
+        "choices": ["a DHCP Relay Agent", "DHCP Binding", "a DHCP Pool", "DHCP Snooping"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 266,
+      "type": "multiple_choice",
+      "question": "Which device controls the forwarding of authentication requests for users when connecting to the network using a lightweight access point?",
+      "image": null,
+      "details": {
+        "choices": ["TACACS server", "wireless access point", "RADIUS server", "wireless LAN controller"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 267,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What is the result if Gig1/11 receives an STP BPDU?",
+      "image": "img/267.png",
+      "details": {
+        "choices": [
+          "The port transitions to STP blocking",
+          "The port transitions to the root port",
+          "The port immediately transitions to STP forwarding",
+          "The port goes into error-disable state"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 268,
+      "type": "multiple_choice",
+      "question": "Which configuration is needed to generate an RSA key for SSH on a router?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Configure the version of SSH",
+          "Configure VTY access",
+          "Create a user with a password",
+          "Assign a DNS domain name"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 269,
+      "type": "multiple_choice",
+      "question": "What is the maximum bandwidth of a T1 point-to-point connection?",
+      "image": null,
+      "details": {
+        "choices": ["1.544 Mbps", "2.048 Mbps", "34.368 Mbps", "43.7 Mbps"],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 270,
+      "type": "multiple_choice",
+      "question": "An engineer must configure traffic for a VLAN that is untagged by the switch as it crosses a trunk link. Which command should be used?",
+      "image": null,
+      "details": {
+        "choices": [
+          "switchport trunk allowed vlan 10",
+          "switchport trunk native vlan 10",
+          "switchport mode trunk",
+          "switchport trunk encapsulation dot1q"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 271,
+      "type": "multiple_choice",
+      "question": "How does a Cisco Unified Wireless network respond to Wi-Fi channel overlap?",
+      "image": null,
+      "details": {
+        "choices": [
+          "It alternates automatically between 2.4 GHz and 5 GHz on adjacent access points",
+          "It allows the administrator to assign channels on a per-device or per-interface basis",
+          "It segregates devices from different manufacturers onto different channels",
+          "It analyzes client load and background noise and dynamically assigns a channel"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 272,
+      "type": "multiple_choice",
+      "question": "What does a switch use to build its MAC address table?",
+      "image": null,
+      "details": {
+        "choices": ["VTP", "DTP", "egress traffic", "ingress traffic"],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 273,
+      "type": "multiple_choice",
+      "question": "Which network plane is centralized and manages routing decisions?",
+      "image": null,
+      "details": {
+        "choices": ["policy plane", "management plane", "control plane", "data plane"],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 274,
+      "type": "multiple_choice",
+      "question": "What does a router do when configured with the default DNS lookup settings, and a URL is entered on the CLI?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Initiates a ping request to the URL",
+          "Prompts the user to specify the desired IP address",
+          "Continuously attempts to resolve the URL until the command is cancelled",
+          "Sends a broadcast message in an attempt to resolve the URL"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 275,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which switch becomes the root of the spanning tree for VLAN 110?\nSwitch 1\nVLAN 110 - 32778.0018.184e.3c00\nSwitch 2\nVLAN 110 - 24586.001a.e3ff.a680\nSwitch 3\nVLAN 110 - 28682.0022.55cf.cc00\nSwitch 4\nVLAN 110 - 64000.0e38.8320.450f",
+      "image": "img/275.png",
+      "details": {
+        "choices": ["Switch 1", "Switch 2", "Switch 3", "Switch 4"],
         "correct": [2]
       }
     }

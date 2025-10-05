@@ -1,398 +1,256 @@
 [
   {
-    "id": 201,
+    "id": 256,
     "type": "multiple_choice",
-    "question": "Which WAN access technology is preferred for a small office / home office architecture?",
+    "question": "What is the effect when loopback interfaces and the configured router ID are absent during the OSPF Process configuration?",
     "image": null,
     "details": {
-      "choices": ["broadband cable access", "frame-relay packet switching", "dedicated point-to-point leased line", "Integrated Services Digital Network switching"],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 202,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which route type does the routing protocol Code D represent in the output?",
-    "image": "img/202.png",
-    "details": {
-      "choices": ["internal BGP route", "/24 route of a locally configured IP", "statically assigned route", "route learned through EIGRP"],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 203,
-    "type": "multiple_choice",
-    "question": "Which two WAN architecture options help a business scalability and reliability for the network?",
-    "image": null,
-    "details": {
-      "choices": ["asynchronous routing", "single-homed branches", "dual-homed branches", "static routing", "dynamic routing"],
-      "correct": [2,4]
-    }
-  },
-  {
-    "id": 204,
-    "type": "multiple_choice",
-    "question": "A wireless administrator has configured a WLAN; however, the clients need access to a less congested 5-GHz network for their voice quality. What action must be taken to meet the requirement?",
-    "image": null,
-    "details": {
-      "choices": ["enable AAA override", "enable RX-SOP", "enable DTIM", "enable Band Select"],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 205,
-    "type": "multiple_choice",
-    "question": "What mechanism carries multicast traffic between remote sites and supports encryption?",
-    "image": null,
-    "details": {
-      "choices": ["ISATAP", "GRE over IPsec", "IPsec over ISATAP", "GRE"],
+      "choices": [
+        "No router ID is set, and the OSPF protocol does not run.",
+        "The highest up/up physical interface IP address is selected as the router ID.",
+        "The lowest IP address is incremented by 1 and selected as the router ID.",
+        "The router ID 0.0.0.0 is selected and placed in the OSPF process."
+      ],
       "correct": [1]
     }
   },
   {
-    "id": 206,
-    "type": "matching",
-    "question": "Match the functions to the corresponding layers. (Not all options are used.)",
-    "image": null,
-    "details": {
-        "groups": ["Acess Layer", "Distribution Layer", "Core Layer"],
-        "items": [
-          { "text": "provides network access to the user", "group": "Acess Layer" },
-          { "text": "Represents the network edge", "group": "Acess Layer" },
-          { "text": "Implements Network Access policy", "group": "Distribution Layer" },
-          { "text": "establishes layer 3 routing boundaries", "group": "Distribution Layer" },
-          { "text": "provides high-speed backbone connectivity", "group": "Core Layer" },
-          { "text": "functions as an aggregator for al campus blocks", "group": "Core Layer" },
-          { "text": "implements personal firewalls on the client computers", "group": "" }
-        ]
-    }
-  },
-  {
-    "id": 207,
-    "type": "matching",
-    "question": "Drag the descriptions of device management from the left onto the types of device management on the right.",
-    "image": null,
-    "details": {
-        "groups": ["Cisco DNA Center Device Management", "Traditional device management"],
-        "items": [
-          { "text": "monitor the cloud for software update", "group": "Cisco DNA Center Device Management" },
-          { "text": "uses CLI templates to apply consistent configuration to multiple devices at an individual location", "group": "Cisco DNA Center Device Management" },
-          { "text": "Uses NetFlow to analyze potential security threats throughout the network and take appropriate action on that traffic", "group": "Cisco DNA Center Device Management" },
-          { "text": "Implements changes via an SSH terminal", "group": "Traditional device management" },
-          { "text": "manages device configuration on a per-device basis", "group": "Traditional device management" },
-          { "text": "Security is manages near the perimeter od the network with firewalls, VPNs, and IPS", "group": "Traditional device management" }
-        ]
-    }
-  },
-  {
-    "id": 208,
-    "type": "matching",
-    "question": "Drag the descriptions of IP protocol transmissions from the left onto the IP traffic types on the right.",
-    "image": null,
-    "details": {
-        "groups": ["TCP", "UDP"],
-        "items": [
-          { "text": "sends transmissions in sequence", "group": "TCP" },
-          { "text": "transmits packets as a stream", "group": "TCP" },
-          { "text": "uses a lower transmission rate to ensure relability", "group": "TCP" },
-          { "text": "transmissions include an 8-byte header", "group": "UDP" },
-          { "text": "transmits packets individually", "group": "UDP" },
-          { "text": "uses a higher transmission rate to support latency-sensitive application", "group": "UDP" }
-        ]
-    }
-  },
-  {
-    "id": 209,
-    "type": "matching",
-    "question": "Drag the characteristics of networking from the left onto the correct networking types on the right.",
-    "image": null,
-    "details": {
-        "groups": ["controller-cased networking", "traditional networking"],
-        "items": [
-          { "text": "focused on network", "group": "controller-cased networking" },
-          { "text": "user input is a policy", "group": "controller-cased networking" },
-          { "text": "user white list security model", "group": "controller-cased networking" },
-          { "text": "focused on deivces", "group": "traditional networking" },
-          { "text": "user input is a configuration", "group": "traditional networking" },
-          { "text": "user black list security model", "group": "traditional networking" }
-        ]
-    }
-  },
-  {
-    "id": 210,
-    "type": "matching",
-    "question": "An engineer is tasked with verifying network configuration parameters on a client workstation to report back to the team lead. Drag and drop the node identifiers from the left onto the network parameters on the right.",
-    "image": "img/210.png",
-    "details": {
-        "pairs": [
-          { "left": "192.168.1.255", "right": "broadcast address" },
-          { "left": "192.168.1.1", "right": "default gateway" },
-          { "left": "192.168.1.20", "right": "host IP address" },
-          { "left": "192.168.1.254", "right": "last assignable IP address in the subnet" },
-          { "left": "B8-76-3F-7C-57-DF", "right": "MAC address" },
-          { "left": "192.168.1.0", "right": "network address" },
-          { "left": "1A-76-3F-7C-57-DF", "right": "" }
-        ]
-      }
-  },
-  {
-    "id": 211,
+    "id": 257,
     "type": "multiple_choice",
-    "question": "A network analyst is tasked with configuring the date and time on a router using EXEC mode. The date must be set to January 1, 2020 and the time must be set to 12:00 am. What command should be used?",
+    "question": "What is recommended for the wireless infrastructure design of an organization?",
     "image": null,
     "details": {
-      "choices": ["clock timezone", "clock summer-time date", "clock set", "clock summer-time recurring"],
+      "choices": [
+        "Group access points together to increase throughput on a given channel",
+        "Configure the first three access points to use Channels 1, 6, and 11",
+        "Include at least two access points on nonoverlapping channels to support load balancing",
+        "Assign physically adjacent access points to the same Wi-Fi channel"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 258,
+    "type": "multiple_choice",
+    "question": "Which 802.11 frame type is indicated by a probe response after a client sends a probe request?",
+    "image": null,
+    "details": {
+      "choices": ["action", "management", "control", "data"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 259,
+    "type": "multiple_choice",
+    "question": "How do servers connect to the network in a virtual environment?",
+    "image": null,
+    "details": {
+      "choices": [
+        "wireless to an access point that is physically connected to the network",
+        "a cable connected to a physical switch on the network",
+        "a virtual switch that links to an access point that is physically connected to the network",
+        "a software switch on a hypervisor that is physically connected to the network"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 260,
+    "type": "multiple_choice",
+    "question": "Which CRUD operation corresponds to the HTTP GET method?",
+    "image": null,
+    "details": {
+      "choices": ["read", "update", "create", "delete"],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 261,
+    "type": "multiple_choice",
+    "question": "With REST API, which standard HTTP header tells a server which media type is expected by the client?",
+    "image": null,
+    "details": {
+      "choices": [
+        "Accept-Encoding: gzip, deflate",
+        "Accept-Patch: text/example; charset=utf-8",
+        "Content-Type: application/json; charset=utf-8",
+        "Accept: application/json"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 262,
+    "type": "multiple_choice",
+    "question": "Which device tracks the state of active connections in order to make a decision to forward a packet through?",
+    "image": null,
+    "details": {
+      "choices": ["wireless access point", "firewall", "wireless LAN controller", "router"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 263,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. PC1 is trying to ping PC3 for the first time and sends out an ARP to S1. Which action is taken by S1?",
+    "image": "img/263.png",
+    "details": {
+      "choices": [
+        "It forwards it out G0/3 only",
+        "It is flooded out every port except G0/0",
+        "It drops the frame",
+        "It forwards it out interface G0/2 only"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 264,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. A network administrator has been tasked with securing VTY access to a router. Which access-list entry accomplishes this task?",
+    "image": "img/264.png",
+    "details": {
+      "choices": [
+        "access-list 101 permit tcp 10.1.10 0.0.0.255 172.16.10 0.0.0.255 eq ssh",
+        "access-list 101 permit tcp 10.11.0 0.0.0.255 172.16.10 0.0.0.255 eq scp",
+        "access-list 101 permit tcp 10.11.0 0.0.0.255 172.16.10 0.0.0.255 eq telnet",
+        "access-list 101 permit tcp 10.1.10 0.0.0.255 172.16.10 0.0.0.255 eq https"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 265,
+    "type": "multiple_choice",
+    "question": "A network administrator must enable DHCP services between two sites. What must be configured for the router to pass DHCPDISCOVER messages on to the server?",
+    "image": null,
+    "details": {
+      "choices": ["a DHCP Relay Agent", "DHCP Binding", "a DHCP Pool", "DHCP Snooping"],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 266,
+    "type": "multiple_choice",
+    "question": "Which device controls the forwarding of authentication requests for users when connecting to the network using a lightweight access point?",
+    "image": null,
+    "details": {
+      "choices": ["TACACS server", "wireless access point", "RADIUS server", "wireless LAN controller"],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 267,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. What is the result if Gig1/11 receives an STP BPDU?",
+    "image": "img/267.png",
+    "details": {
+      "choices": [
+        "The port transitions to STP blocking",
+        "The port transitions to the root port",
+        "The port immediately transitions to STP forwarding",
+        "The port goes into error-disable state"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 268,
+    "type": "multiple_choice",
+    "question": "Which configuration is needed to generate an RSA key for SSH on a router?",
+    "image": null,
+    "details": {
+      "choices": [
+        "Configure the version of SSH",
+        "Configure VTY access",
+        "Create a user with a password",
+        "Assign a DNS domain name"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 269,
+    "type": "multiple_choice",
+    "question": "What is the maximum bandwidth of a T1 point-to-point connection?",
+    "image": null,
+    "details": {
+      "choices": ["1.544 Mbps", "2.048 Mbps", "34.368 Mbps", "43.7 Mbps"],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 270,
+    "type": "multiple_choice",
+    "question": "An engineer must configure traffic for a VLAN that is untagged by the switch as it crosses a trunk link. Which command should be used?",
+    "image": null,
+    "details": {
+      "choices": [
+        "switchport trunk allowed vlan 10",
+        "switchport trunk native vlan 10",
+        "switchport mode trunk",
+        "switchport trunk encapsulation dot1q"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 271,
+    "type": "multiple_choice",
+    "question": "How does a Cisco Unified Wireless network respond to Wi-Fi channel overlap?",
+    "image": null,
+    "details": {
+      "choices": [
+        "It alternates automatically between 2.4 GHz and 5 GHz on adjacent access points",
+        "It allows the administrator to assign channels on a per-device or per-interface basis",
+        "It segregates devices from different manufacturers onto different channels",
+        "It analyzes client load and background noise and dynamically assigns a channel"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 272,
+    "type": "multiple_choice",
+    "question": "What does a switch use to build its MAC address table?",
+    "image": null,
+    "details": {
+      "choices": ["VTP", "DTP", "egress traffic", "ingress traffic"],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 273,
+    "type": "multiple_choice",
+    "question": "Which network plane is centralized and manages routing decisions?",
+    "image": null,
+    "details": {
+      "choices": ["policy plane", "management plane", "control plane", "data plane"],
       "correct": [2]
     }
   },
   {
-    "id": 212,
+    "id": 274,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. After the election process, what is the root bridge in the HQ LAN?\nSwitch 1: 0C:E0:38:57:24:59\nSwitch 2: 0C:0E:15:22:1A:61\nSwitch 3: 0C:0E:15:1D:3C:9A\nSwitch 4: 0C:E0:19:A1:4D:16",
-    "image": "img/212.png",
+    "question": "What does a router do when configured with the default DNS lookup settings, and a URL is entered on the CLI?",
+    "image": null,
+    "details": {
+      "choices": [
+        "Initiates a ping request to the URL",
+        "Prompts the user to specify the desired IP address",
+        "Continuously attempts to resolve the URL until the command is cancelled",
+        "Sends a broadcast message in an attempt to resolve the URL"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 275,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which switch becomes the root of the spanning tree for VLAN 110?\nSwitch 1\nVLAN 110 - 32778.0018.184e.3c00\nSwitch 2\nVLAN 110 - 24586.001a.e3ff.a680\nSwitch 3\nVLAN 110 - 28682.0022.55cf.cc00\nSwitch 4\nVLAN 110 - 64000.0e38.8320.450f",
+    "image": "img/275.png",
     "details": {
       "choices": ["Switch 1", "Switch 2", "Switch 3", "Switch 4"],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 213,
-    "type": "multiple_choice",
-    "question": "Which function is performed by the collapsed core layer in a two-tier architecture?",
-    "image": null,
-    "details": {
-      "choices": ["applying security policies", "attaching users to the edge of the network", "enforcing routing policies", "marking interesting traffic for data policies"],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 214,
-    "type": "multiple_choice",
-    "question": "What are two functions of a server on a network?",
-    "image": null,
-    "details": {
-      "choices": [
-        "runs applications that send and retrieve data for workstations that make requests",
-        "handles requests from multiple workstations at the same time",
-        "housed solely in a data center that is dedicated to a single client",
-        "achieves redundancy by exclusively using virtual server clustering",
-        "runs the same operating system in order to communicate with other servers"
-      ],
-      "correct": [0,1]
-    }
-  },
-  {
-    "id": 215,
-    "type": "multiple_choice",
-    "question": "What is a function of a remote access VPN?",
-    "image": null,
-    "details": {
-      "choices": [
-        "used exclusively when a user is connected to a company's internal network",
-        "allows the users to access company internal network resources through a secure tunnel",
-        "uses cryptographic tunneling to protect the privacy of data for multiple users simultaneously",
-        "establishes a secure tunnel between two branch sites"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 216,
-    "type": "multiple_choice",
-    "question": "What are two recommendations for protecting network ports from being exploited when located in an office space outside of an IT closet?",
-    "image": null,
-    "details": {
-      "choices": ["shut down unused ports", "configure static ARP entries", "enable the PortFast feature on ports", "implement port-based authentication", "configure ports to a fixed speed"],
-      "correct": [0,3]
-    }
-  },
-  {
-    "id": 217,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. A network administrator must permit SSH access to remotely manage routers in a network. The operations team resides on the 10.20.1.0/25 network. Which command will accomplish this task?",
-    "image": "img/217.png",
-    "details": {
-      "choices": [
-        "access-list 2699 permit udp 10.20.1.0 0.0.0.255",
-        "no access-list 2699 deny tcp any 10.20.1.0 0.0.0.127 eq 22",
-        "access-list 2699 permit tcp any 10.20.1.0 0.0.0.255 eq 22",
-        "no access-list 2699 deny ip any 10.20.1.0 0.0.0.255"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 218,
-    "type": "matching",
-    "question": "Drag the characteristics of network architectures from the left onto the type of architecture on the right.",
-    "image": null,
-    "details": {
-        "groups": ["Collapsed Core", "Three-tier"],
-        "items": [
-          { "text": "single device handles the core and the distribution layer", "group": "Collapsed Core" },
-          { "text": "more cost-effective than other options", "group": "Collapsed Core" },
-          { "text": "most appropriate for small network designs", "group": "Collapsed Core" },
-          { "text": "enhances network availability", "group": "Three-tier" },
-          { "text": "separate devices handle the core and the distribution layer", "group": "Three-tier" }
-        ]
-    }
-  },
-  {
-    "id": 219,
-    "type": "matching",
-    "question": "Drag and drop the SNMP components from the left onto the descriptions on the right.",
-    "image": null,
-    "details": {
-        "pairs": [
-            { "left": "MIB", "right": "collection of variables that can be monitored" },
-            { "left": "SNMP trap", "right": "unsolicited message" },
-            { "left": "SNMP agent", "right": "responds to status requests and requests for information about a device" },
-            { "left": "SNMP manager", "right": "resides on an NMS" }
-        ]
-    }
-  },
-  {
-    "id": 220,
-    "type": "matching",
-    "question": "An engineer is tasked to configure a switch with port security to ensure devices that forward unicasts, multicasts, and broadcasts are unable to flood the port. The port must be configured to permit only two random MAC addresses at a time. Drag and drop the required configuration commands from the left onto the sequence on the right.",
-    "image": null,
-    "details": {
-        "pairs": [
-            { "left": "1", "right": "switchport mode access" },
-            { "left": "2", "right": "switchport port-security"},
-            { "left": "3", "right": "switchport port-security mac-address sticky"},
-            { "left": "4", "right": "switchport port-security maximum 2" }
-        ]
-    }
-  },
-  {
-    "id": 221,
-    "type": "multiple_choice",
-    "question": "Which two functions are performed by the core layer in a three-tier architecture?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Ensure timely data transfer between layers",
-        "Provide uninterrupted forwarding service",
-        "Inspect packets for malicious activity",
-        "Police traffic that is sent to the edge of the network",
-        "Provide direct connectivity for end user devices"
-      ],
-      "correct": [0,1]
-    }
-  },
-  {
-    "id": 222,
-    "type": "multiple_choice",
-    "question": "What is the purpose of traffic shaping?",
-    "image": null,
-    "details": {
-      "choices": [
-        "to provide fair queuing for buffered flows",
-        "to mitigate delays over slow links",
-        "to limit the bandwidth that a flow can use",
-        "to be a marking mechanism that identifies different flows"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 223,
-    "type": "multiple_choice",
-    "question": "When using Rapid PVST+, which command guarantees the switch is always the root bridge for VLAN 200?",
-    "image": null,
-    "details": {
-      "choices": [
-        "spanning-tree vlan 200 priority 614440",
-        "spanning-tree vlan 200 priority 0",
-        "spanning-tree vlan 200 priority 38572422",
-        "spanning-tree vlan 200 root primary"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 224,
-    "type": "multiple_choice",
-    "question": "Which command must be entered to configure a DHCP relay?",
-    "image": null,
-    "details": {
-      "choices": ["ip helper-address", "ip address dhcp", "ip dhcp pool", "ip dhcp relay"],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 225,
-    "type": "multiple_choice",
-    "question": "When implementing a router as a DHCP server, which two features must be configured?",
-    "image": null,
-    "details": {
-      "choices": ["relay agent information", "address pool", "smart-relay", "database agent", "manual bindings"],
-      "correct": [1,4]
-    }
-  },
-  {
-    "id": 226,
-    "type": "multiple_choice",
-    "question": "How does the dynamically-learned MAC address feature function?",
-    "image": null,
-    "details": {
-      "choices": [
-        "The CAM table is empty until ingress traffic arrives at each port",
-        "Switches dynamically learn MAC addresses of each connecting CAM table",
-        "The ports are restricted and learn up to a maximum of 10 dynamically-learned addresses",
-        "It requires a minimum number of secure MAC addresses to be filled dynamically"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 227,
-    "type": "multiple_choice",
-    "question": "What facilitates a Telnet connection between devices by entering the device name?",
-    "image": null,
-    "details": {
-      "choices": ["SNMP", "DNS lookup", "syslog", "NTP"],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 228,
-    "type": "multiple_choice",
-    "question": "Which technology can prevent client devices from arbitrarily connecting to the network without state remediation?",
-    "image": null,
-    "details": {
-      "choices": ["802.1x", "IP Source Guard", "MAC Authentication Bypass", "802.11n"],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 229,
-    "type": "multiple_choice",
-    "question": "A port security violation has occurred on a switch port due to the maximum MAC address count being exceeded. Which command must be configured to increment the security-violation count and forward an SNMP trap?",
-    "image": null,
-    "details": {
-      "choices": [
-        "switchport port-security violation access",
-        "switchport port-security violation protect",
-        "switchport port-security violation restrict",
-        "switchport port-security violation shutdown"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 230,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which command configures a floating static route to provide a backup to the primary link?",
-    "image": "img/230.png",
-    "details": {
-      "choices": [
-        "ip route 209.165.201.0 255.255.255.224 209.165.202.130",
-        "ip route 0.0.0.0 0.0.0.0 209.165.200.224",
-        "ip route 209.165.200.224 255.255.255.224 209.165.202.129 254",
-        "ip route 0.0.0.0 0.0.0.0 209.165.202.131"
-      ],
       "correct": [2]
     }
   }
