@@ -1,459 +1,402 @@
 [
   {
-    "id": 324,
+    "id": 421,
     "type": "multiple_choice",
-    "question": "Which network action occurs within the data plane?",
+    "question": "Which type of traffic is sent with pure IPsec?",
     "image": null,
     "details": {
       "choices": [
-        "compare the destination IP address to the IP routing table",
-        "run routing protocols (OSPF, EIGRP, RIP, BGP)",
-        "make a configuration change from an incoming NETCONF RPC",
-        "reply to an incoming ICMP echo request"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 325,
-    "type": "multiple_choice",
-    "question": "Which networking function occurs on the data plane?",
-    "image": null,
-    "details": {
-      "choices": [
-        "forwarding remote client/server traffic",
-        "facilitates spanning-tree elections",
-        "processing inbound SSH management traffic",
-        "sending and receiving OSPF Hello packets"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 326,
-    "type": "multiple_choice",
-    "question": "A network administrator must configure SSH for remote access to router R1. The requirement is to use a public and private key pair to encrypt management traffic to and from the connecting client. Which configuration, when applied, meets the requirements?",
-    "image": null,
-    "details": {
-      "choices": [
-        "R1#enable\nR1#configure terminal\nR1(config)#ip domain-name cisco.com\nR1(config)#crypto key generate ec keysize 2048",
-        "R1#enable\nR1#configure terminal\nR1(config)#ip domain-name cisco.com\nR1(config)#crypto key generate rsa modulus 1024",
-        "R1#enable\nR1#configure terminal\nR1(config)#ip domain-name cisco.com\nR1(config)#crypto key generate ec keysize 1024",
-        "R1#enable\nR1#configure terminal\nR1(config)#ip domain-name cisco.com\nR1(config)#crypto key encrypt rsa name myKey"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 327,
-    "type": "multiple_choice",
-    "question": "Which protocol does an access point use to draw power from a connected switch?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Internet Group Management Protocol",
-        "Adaptive Wireless Path Protocol",
-        "Cisco Discovery Protocol",
-        "Neighbor Discovery Protocol"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 328,
-    "type": "multiple_choice",
-    "question": "What is the benefit of using FHRP?",
-    "image": null,
-    "details": {
-      "choices": [
-        "reduced management overhead on network routers",
-        "balancing traffic across multiple gateways in proportion to their loads",
-        "higher degree of availability",
-        "reduced ARP traffic on the network"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 329,
-    "type": "multiple_choice",
-    "question": "An administrator must secure the WLC from receiving spoofed association requests. Which steps must be taken to configure the WLC to restrict the requests and force the user to wait 10 ms to retry an association request?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Enable Security Association Teardown Protection and set the SA Query timeout to 10",
-        "Enable MAC filtering and set the SA Query timeout to 10",
-        "Enable 802.1x Layer 2 security and set the Comeback timer to 10",
-        "Enable the Protected Management Frame service and set the Comeback timer to 10"
+        "broadcast packets from a switch that is attempting to locate a MAC address at one of several remote sites",
+        "multicast traffic from a server at one site to hosts at another location",
+        "spanning-tree updates between switches that are at two different sites",
+        "unicast messages from a host at a remote site to a server at headquarters"
       ],
       "correct": [3]
     }
   },
   {
-    "id": 330,
+    "id": 422,
     "type": "multiple_choice",
-    "question": "A network engineer must configure the router R1 GigabitEthernet1/1 interface to connect to the router R2 GigabitEthernet1/1 interface. For the configuration to be applied the engineer must compress the address 2001:0db8:0000:0000:0500:000a:400F:583B. Which command must be issued on the interface?",
+    "question": "What is the purpose of an SSID?",
     "image": null,
     "details": {
       "choices": [
-        "ipv6 address 2001:0db8::5:a:4F:583B",
-        "ipv6 address 2001:db8::500:a:400F:583B",
-        "ipv6 address 2001 db8:0::500:a:4F:583B",
-        "ipv6 address 2001::db8:0000::500:a:400F:583B"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 331,
-    "type": "matching",
-    "question": "Drag and drop the functions of DHCP from the left onto any of the positions on the right (Not all functions are used).",
-    "image": null,
-    "details": {
-        "pairs": [
-          { "left": "maintains an address pool", "right": "1" },
-          { "left": "provides local control for network segments using a client-server scheme", "right": "2" },
-          { "left": "reduces the administrative burden for onboarding end users", "right": "3" },
-          { "left": "assigns IP addresses to local hosts for a configurable lease time", "right": "4" },
-          { "left": "associates hostnames to IP addresses", "right": "" },
-          { "left": "offers domain server configuration", "right": "" },
-          { "left": "uses authorative servers for record keeping", "right": "" }
-        ]
-    }
-  },
-  {
-    "id": 332,
-    "type": "matching",
-    "question": "Drag and drop the IPv6 address type characteristics from the left to the right.",
-    "image": null,
-    "details": {
-        "groups": ["Link-Local Address", "Unique Local Address"],
-        "items": [
-          { "text": "attached to a single subnet", "group": "Link-Local Address" },
-          { "text": "configured only once per interface", "group": "Link-Local Address" },
-          { "text": "addresses with prefix FC00::/7", "group": "Unique Local Address" },
-          { "text": "addressing for exclusive use internally without Internet routing", "group": "Unique Local Address" }
-        ]
-    }
-  },
-  {
-    "id": 333,
-    "type": "matching",
-    "question": "An engineer is configuring an encrypted password for the enable command on a router where the local user database has already been configured. Drag and drop the configuration commands from the left into the correct sequence on the right (Not all commands are used).",
-    "image": null,
-    "details": {
-        "pairs": [
-          { "left": "enable", "right": "first" },
-          { "left": "configure terminal", "right": "second" },
-          { "left": "enable secret $hfl@4fs", "right": "third" },
-          { "left": "line vty 0 4", "right": "fourth" },
-          { "left": "exit", "right": "" },
-          { "left": "service password-encryption", "right": "" }
-        ]
-    }
-  },
-  {
-    "id": 334,
-    "type": "matching",
-    "question": "Drag and drop the statement about networking from the left into the corresponding networking types on the right (Not all statements are used).",
-    "image": null,
-    "details": {
-        "groups": ["Controller-based networking", "Traditional networking"],
-        "items": [
-          { "text": "the type deploys a consistent configuration across multiple device", "group": "Controller-based networking" },
-          { "text": "southbound APIs are used to apply configurations", "group": "Controller-based networking" },
-          { "text": "A distributed control plane is needed", "group": "Traditional networking" },
-          { "text": "This type requires a distributed management plane", "group": "Traditional networking" },
-          { "text": "Northbound APIs interact with end devices", "group": "" }
-        ]
-    }
-  },
-  {
-    "id": 335,
-    "type": "matching",
-    "question": "Drag and drop the DNS lookup components from the left onto the functions on the right.",
-    "image": null,
-    "details": {
-        "pairs": [
-          { "left": "Local database of address mappings that improves name resolution performance", "right": "Cache" },
-          { "left": "service that maps hostnames to IP addresses", "right": "DNS" },
-          { "left": "disables DNS services on a Cisco device", "right": "no ip domain-lookup" },
-          { "left": "in response to client requests, queries a name server for IP addresses information", "right": "name resolver" },
-          { "left": "component of a URL that indicates the location type", "right": "Domain" }
-        ]
-    }
-  },
-  {
-    "id": 336,
-    "type": "matching",
-    "question": "Drag and drop the AAA terms from the left onto the description on the right.",
-    "image": null,
-    "details": {
-        "pairs": [
-          { "left": "Tracks activity", "right": "Accounting" },
-          { "left": "updates section attributes", "right": "CoA" },
-          { "left": "verifies access rights", "right": "Authorization" },
-          { "left": "verifies identity", "right": "Authentication" }
-        ]
-    }
-  },
-  {
-    "id": 337,
-    "type": "multiple_choice",
-    "question": "What are two characteristics of the distribution layer in a three-tier network architecture? (Choose two)",
-    "image": null,
-    "details": {
-      "choices": [
-        "serves as the network aggregation point",
-        "provides a boundary between Layer 2 and Layer 3 communications",
-        "designed to meet continuous, redundant uptime requirements",
-        "is the backbone for the network topology",
-        "physical connection point for a LAN printer"
-      ],
-      "correct": [0, 1]
-    }
-  },
-  {
-    "id": 338,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. What is the metric of the route to the 192.168.10.33/28 subnet?",
-    "image": "img/338.png",
-    "details": {
-      "choices": ["84", "110", "128", "192", "193"],
-      "correct": [4]
-    }
-  },
-  {
-    "id": 339,
-    "type": "multiple_choice",
-    "question": "What are two similarities between UTP Cat 5e and Cat 6a cabling? (Choose two)",
-    "image": null,
-    "details": {
-      "choices": [
-        "Both operate at a frequency of 500 MHz.",
-        "Both support runs of up to 55 meters.",
-        "Both support runs of up to 100 meters",
-        "Both support speeds of at least 1 Gigabit",
-        "Both support speeds up to 10 Gigabit"
-      ],
-      "correct": [2, 3]
-    }
-  },
-  {
-    "id": 340,
-    "type": "multiple_choice",
-    "question": "Which access layer threat-mitigation technique provides security based on identity?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Dynamic ARP Inspection",
-        "using a non-default native VLAN",
-        "802.1x",
-        "DHCP snooping"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 341,
-    "type": "multiple_choice",
-    "question": "Which plane is centralized by an SDN controller?",
-    "image": null,
-    "details": {
-      "choices": ["management-plane", "control-plane", "data-plane", "services-plane"],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 342,
-    "type": "multiple_choice",
-    "question": "Which function is performed by DHCP snooping?",
-    "image": null,
-    "details": {
-      "choices": [
-        "propagates VLAN information between switches",
-        "listens to multicast traffic for packet forwarding",
-        "provides DDoS mitigation",
-        "rate-limits certain traffic"
+        "It provides network security",
+        "It differentiates traffic entering access points",
+        "It identifies an individual access point on a WLAN",
+        "It identifies a WLAN"
       ],
       "correct": [3]
     }
   },
   {
-    "id": 343,
+    "id": 423,
     "type": "multiple_choice",
-    "question": "A network administrator is asked to configure VLANS 2, 3 and 4 for a new implementation. Some ports must be assigned to the new VLANS with unused remaining. Which action should be taken for the unused ports?",
+    "question": "What is a similarity between 1000BASE-LX and 1000BASE-T standards?",
     "image": null,
     "details": {
       "choices": [
-        "configure port in the native VLAN",
-        "configure ports in a black hole VLAN",
-        "configure in a nondefault native VLAN",
-        "configure ports as access ports"
+        "Both use the same data-link header and trailer formats",
+        "Both cable types support LP connectors",
+        "Both cable types support RJ-45 connectors",
+        "Both support up to 550 meters between nodes"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 424,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which configuration establishes a Layer 2 LACP EtherChannel when applied to both switches?",
+    "image": "img/424.png",
+    "details": {
+      "choices": [
+        "interface range G1/1 - 1/3\nswitchport mode trunk\nchannel-group 1 mode active\nno shutdown",
+        "interface range G1/1 - 1/3\nswitchport mode access\nchannel-group 1 mode on\nno shutdown",
+        "interface range G1/1 - 1/3\nswitchport mode trunk\nchannel-group 1 mode desirable\nno shutdown",
+        "interface range G1/1 - 1/3\nswitchport mode access\nchannel-group 1 mode passive\nno shutdown"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 425,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. An engineer is configuring the HO router. Which IPv6 address configuration must be applied to the router fa0/1 interface for the router to assign a unique 64-bit IPv6 address to itself?",
+    "image": "img/425.png",
+    "details": {
+      "choices": [
+        "ipv6 address 2001:DB8:0:1:C601:42FE:800F:7/64",
+        "ipv6 address 2001:DB8:0:1:FE80:C601:420F:7/64",
+        "ipv6 address 2001:DB8:0:1:FFFF:C601:420F:7/64",
+        "ipv6 address 2001:DB8:0:1:C601:42FF:FE0F:7/64"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 426,
+    "type": "multiple_choice",
+    "question": "In software-defined architecture, which plane handles switching for traffic through a Cisco router?",
+    "image": null,
+    "details": {
+      "choices": ["application", "data", "control", "management"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 427,
+    "type": "multiple_choice",
+    "question": "An engineer must establish a trunk link between two switches. The neighboring switch is set to trunk or desirable mode. What action should be taken?",
+    "image": null,
+    "details": {
+      "choices": [
+        "configure switchport nonegotiate",
+        "configure switchport mode dynamic desirable",
+        "configure switchport mode dynamic auto",
+        "configure switchport trunk dynamic desirable"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 428,
+    "type": "multiple_choice",
+    "question": "Which role does a hypervisor provide for each virtual machine in server virtualization?",
+    "image": null,
+    "details": {
+      "choices": [
+        "infrastructure-as-a-service",
+        "software-as-a-service",
+        "control and distribution of physical resources",
+        "serves as a hardware controller"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 429,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. If R1 receives a packet destined to 172.16.1.1, to which IP address does it send the packet?",
+    "image": "img/429.png",
+    "details": {
+      "choices": ["192.168.14.4", "192.168.12.2", "192.168.13.3", "192.168.15.5"],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 430,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. An engineer is configuring an EtherChannel using LACP between switches 1 and 2. Which configuration must be applied so that only switch 1 sends LACP initiation packets?",
+    "image": "img/430.png",
+    "details": {
+      "choices": [
+        "Switch1(config-if)#channel-group 1 mode on\nSwitch2(config-if)#channel-group 1 mode passive",
+        "Switch1(config-if)#channel-group 1 mode passive\nSwitch2(config-if)#channel-group 1 mode active",
+        "Switch1(config-if)#channel-group 1 mode on\nSwitch2(config-if)#channel-group 1 mode active",
+        "Switch1(config-if)#channel-group 1 mode active\nSwitch2(config-if)#channel-group 1 mode passive"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 431,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Packets received by the router from BGP enter via a serial interface at 209.165.201.1. Each route is present within the routing table. Which interface is used to forward traffic with a destination IP of 10.1.1.19?",
+    "image": "img/431.png",
+    "details": {
+      "choices": ["F0/3", "F0/4", "F0/0", "F0/1"],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 432,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. R1 has taken the DROTHER role in the OSPF DR/BDR election process. Which configuration must an engineer implement so that R1 is elected as the DR?",
+    "image": "img/432.png",
+    "details": {
+      "choices": [
+        "R2(config)#interface FastEthernet0/2\nR2(config-if)#ip ospf priority 1\nR2#clear ip ospf process",
+        "R1(config)#interface FastEthernet0/0\nR1(config-if)#ip ospf priority 200\nR1#clear ip ospf process",
+        "R3(config)#interface FastEthernet0/1\nR3(config-if)#ip ospf priority 200\nR3#clear ip ospf process",
+        "R1(config)#interface FastEthernet0/0\nR1(config-if)#ip ospf priority 1\nR1#clear ip ospf process"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 344,
+    "id": 433,
     "type": "multiple_choice",
-    "question": "What are two benefits of using the PortFast feature? (Choose two)",
+    "question": "Which technology must be implemented to configure network device monitoring with the highest security?",
     "image": null,
     "details": {
-      "choices": [
-        "Enabled interfaces are automatically placed in listening state",
-        "Enabled interfaces come up and move to the forwarding state immediately",
-        "Enabled interfaces never generate topology change notifications.",
-        "Enabled interfaces that move to the learning state generate switch topology change notifications",
-        "Enabled interfaces wait 50 seconds before they move to the forwarding state"
-      ],
-      "correct": [1, 2]
+      "choices": ["syslog", "NetFlow", "IP SLA", "SNMPv3"],
+      "correct": [3]
     }
   },
   {
-    "id": 345,
+    "id": 434,
     "type": "multiple_choice",
-    "question": "Which two events occur automatically when a device is added to Cisco DNA Center? (Choose two)",
+    "question": "Refer to the exhibit. A network engineer must configure R1 so that it sends all packets destined to the 10.0.0.0/24 network to R3, and all packets destined to PC1 to R2. Which configuration must the engineer implement?",
+    "image": "img/434.png",
+    "details": {
+      "choices": [
+        "R1(config)#ip route 10.0.0.0 255.255.255.0 192.168.0.2\nR1(config)#ip route 10.0.0.5 255.255.255.255 172.16.0.2",
+        "R1(config)#ip route 10.0.0.0 255.255.0.0 172.16.0.2\nR1(config)#ip route 10.0.0.5 255.255.255.255 192.168.0.2",
+        "R1(config)#ip route 10.0.0.0 255.255.0.0 192.168.0.2\nR1(config)#ip route 10.0.0.0 255.255.255.0 172.16.0.2",
+        "R1(config)#ip route 10.0.0.0 255.255.255.0 172.16.0.2\nR1(config)#ip route 10.0.0.5 255.255.255.255 192.168.0.2"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 435,
+    "type": "multiple_choice",
+    "question": "What is the function of a server?",
     "image": null,
     "details": {
       "choices": [
-        "The device is assigned to the Global site.",
-        "The device is placed into the Unmanaged state.",
-        "The device is placed into the Provisioned state.",
-        "The device is placed into the Managed state.",
-        "The device is assigned to the Local site."
+        "It transmits packets between hosts in the same broadcast domain.",
+        "It provides shared applications to end users.",
+        "It routes traffic between Layer 3 devices.",
+        "It creates security zones between trusted and untrusted networks."
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 436,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. A network engineer is in the process of establishing IP connectivity between two sites. Routers R1 and R2 are partially configured with IP addressing. Both routers have access to their respective LANs. Which command set configures IP connectivity between devices located on both LANs in each site?",
+    "image": "img/436.png",
+    "details": {
+      "choices": [
+        "R1\nip route 192.168.1.0 255.255.255.0 Gigabitethernet0/0\nR2\nip route 10.1.1.1 255.255.255.0 Gigabitethernet0/0",
+        "R1\nip route 0.0.0.0 0.0.0.0 209.165.200.225\nR2\nip route 0.0.0.0 0.0.0.0 209.165.200.226",
+        "R1\nip route 192.168.1.1 255.255.255.0 Gigabitethernet0/1\nR2\nip route 10.1.1.1 255.255.255.0 Gigabitethernet0/1",
+        "R1\nip route 0.0.0.0 0.0.0.0 209.165.200.226\nR2\nip route 0.0.0.0 0.0.0.0 209.165.200.225"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 437,
+    "type": "multiple_choice",
+    "question": "Which type of organization should use a collapsed-core architecture?",
+    "image": null,
+    "details": {
+      "choices": [
+        "large and requires a flexible, scalable network design",
+        "large and must minimize downtime when hardware fails",
+        "small and needs to reduce networking costs",
+        "currently small but expected to grow dramatically in the near future"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 438,
+    "type": "multiple_choice",
+    "question": "In software-defined architecture, which plane handles switching for traffic through a Cisco router?",
+    "image": null,
+    "details": {
+      "choices": ["control", "management", "data", "application"],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 439,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which IPv6 configuration is required for R17 to successfully ping the WAN interface on R18?",
+    "image": "img/439.png",
+    "details": {
+      "choices": [
+        "Configuration A",
+        "Configuration B",
+        "Configuration C",
+        "Configuration D"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 440,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Between which zones do wireless users expect to experience intermittent connectivity?",
+    "image": "img/440.png",
+    "details": {
+      "choices": [
+        "between zones 1 and 2",
+        "between zones 2 and 5",
+        "between zones 3 and 4",
+        "between zones 3 and 6"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 441,
+    "type": "matching",
+    "question": "Drag and drop the lightweight access point operation modes from the left onto the descriptions on the right.",
+    "image": null,
+    "details": {
+      "pairs": []
+    }
+  },
+  {
+    "id": 442,
+    "type": "multiple_choice",
+    "question": "What is a capability of FTP in network management operations?",
+    "image": null,
+    "details": {
+      "choices": [
+        "encrypts data before sending between data resources",
+        "devices are directly connected and use UDP to pass file information",
+        "uses separate control and data connections to move files between server and client",
+        "offers proprietary support at the session layer when transferring data"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 443,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. The entire Marketing-SW1 MAC address table is shown. What does the switch do when PC-4 sends a frame to PC-1?",
+    "image": "img/443.png",
+    "details": {
+      "choices": [
+        "It floods the frame out of all ports except the one where PC-1 is connected",
+        "It inserts the source MAC address and port into the table and forwards the frame to PC-1",
+        "It performs a lookup in the MAC address table and discards the frame due to a missing entry",
+        "It maps the Layer 2 MAC address to the Layer 3 IP address and forwards the frame"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 444,
+    "type": "multiple_choice",
+    "question": "What is a function of a Layer 3 switch?",
+    "image": null,
+    "details": {
+      "choices": [
+        "move frames between endpoints limited to IP addresses",
+        "transmit broadcast traffic when operating in Layer 3 mode exclusively",
+        "forward Ethernet frames between VLANs using only MAC addresses",
+        "flood broadcast traffic within a VLAN"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 445,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. For security reasons, automatic neighbor discovery must be disabled on the R5 Gi0/1 interface. Which configuration must be used to meet the requirements?",
+    "image": "img/445.png",
+    "details": {
+      "choices": [
+        "Configuration A",
+        "Configuration B",
+        "Configuration C",
+        "Configuration D"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 446,
+    "type": "multiple_choice",
+    "question": "Which type of API allows SDN controllers to dynamically make changes to the network?",
+    "image": null,
+    "details": {
+      "choices": ["northbound API", "REST API", "SOAP API", "southbound API"],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 447,
+    "type": "multiple_choice",
+    "question": "Which two network actions occur within the data plane? (Choose two.)",
+    "image": null,
+    "details": {
+      "choices": [
+        "Match the destination MAC address to the MAC address table",
+        "Reply to an incoming ICMP echo request",
+        "Make a configuration change from an incoming NETCONF RPC",
+        "Add or remove an 802.1Q trunking header",
+        "Run routing protocols"
       ],
       "correct": [0, 3]
     }
   },
   {
-    "id": 346,
+    "id": 448,
     "type": "multiple_choice",
-    "question": "An engineer configures interface Gi1/0 on the company PE router to connect to an ISP. Neighbor discovery is disabled. Which action is necessary to complete the configuration if the ISP uses third-party network devices?",
-    "image": "img/346.png",
-    "details": {
-      "choices": [
-        "Enable LLDP globally",
-        "Disable autonegotiation",
-        "Disable Cisco Discovery Protocol on the interface",
-        "Enable LLDP-MED on the ISP device"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 347,
-    "type": "multiple_choice",
-    "question": "What must be considered when using 802.11a?",
+    "question": "Which action implements physical access control as part of the security program of an organization?",
     "image": null,
     "details": {
       "choices": [
-        "It is compatible with 802.11b and 802.11g wireless devices",
-        "It is used in place of 802.11b/g when many nonoverlapping channels are required",
-        "It is susceptible to interference from 2.4 GHz devices such as microwave ovens.",
-        "It is chosen over 802.11b/g when a lower-cost solution is necessary"
+        "backing up syslogs at a remote location",
+        "setting up IP cameras to monitor key infrastructure",
+        "configuring a password for the console port",
+        "configuring enable passwords on network devices"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 348,
+    "id": 449,
     "type": "multiple_choice",
-    "question": "What does physical access control regulate?",
+    "question": "What is a function of Opportunistic Wireless Encryption in an environment?",
     "image": null,
     "details": {
       "choices": [
-        "access to specific networks based on business function",
-        "access to servers to prevent malicious activity",
-        "access to computer networks and file systems",
-        "access to networking equipment and facilities"
+        "offer compression",
+        "increase security by using a WEP connection",
+        "provide authentication",
+        "protect traffic on open networks"
       ],
       "correct": [3]
-    }
-  },
-  {
-    "id": 349,
-    "type": "multiple_choice",
-    "question": "What are network endpoints?",
-    "image": null,
-    "details": {
-      "choices": [
-        "act as routers to connect a user to the service provider network",
-        "a threat to the network if they are compromised",
-        "support inter-VLAN connectivity",
-        "enforce policies for campus-wide traffic going to the internet"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 350,
-    "type": "multiple_choice",
-    "question": "How does QoS optimize voice traffic?",
-    "image": null,
-    "details": {
-      "choices": [
-        "reducing bandwidth usage",
-        "by reducing packet loss",
-        "by differentiating voice and video traffic",
-        "by increasing jitter"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 351,
-    "type": "multiple_choice",
-    "question": "What is the difference in data transmission delivery and reliability between TCP and UDP?",
-    "image": null,
-    "details": {
-      "choices": [
-        "TCP transmits data at a higher rate and ensures packet delivery. UDP retransmits lost data to ensure applications receive the data on the remote end.",
-        "UDP sets up a connection between both devices before transmitting data. TCP uses the three-way handshake to transmit data with a reliable connection.",
-        "UDP is used for multicast and broadcast communication. TCP is used for unicast communication and transmits data at a higher rate with error checking.",
-        "TCP requires the connection to be established before transmitting data. UDP transmits data at a higher rate without ensuring packet delivery."
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 352,
-    "type": "multiple_choice",
-    "question": "What does an SDN controller use as a communication protocol to relay forwarding changes to a southbound API?",
-    "image": null,
-    "details": {
-      "choices": ["OpenFlow", "Java", "REST", "XML"],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 353,
-    "type": "multiple_choice",
-    "question": "What uses HTTP messages to transfer data to applications residing on different hosts?",
-    "image": null,
-    "details": {
-      "choices": ["OpenFlow", "OpenStack", "OpFlex", "REST"],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 354,
-    "type": "multiple_choice",
-    "question": "When a WLAN with WPA2 PSK is configured in the Wireless LAN Controller GUI, which format is supported?",
-    "image": null,
-    "details": {
-      "choices": ["Unicode", "base64", "decimal", "ASCII"],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 355,
-    "type": "multiple_choice",
-    "question": "Which 802.11 management frame type is sent when a client roams between access points on the same SSID?",
-    "image": null,
-    "details": {
-      "choices": ["Reassociation Request", "Probe Request", "Authentication Request", "Association Request"],
-      "correct": [0]
     }
   }
 ]

@@ -3,60 +3,60 @@
   "description": "CCNA Networking Exam",
   "questions": [
     {
-      "id": 1,
+      "id": 312,
       "type": "multiple_choice",
-      "question": "A network engineer must create a diagram of a multivendor network.which command must be configured on the Cisco devices so that the topology of the network can be mapped?",
+      "question": "Which two QoS tools provides congestion management?",
       "image": null,
       "details": {
-        "choices": ["Device(config)#lldp run", "Device(config)#cdp run", "Device(config)# cdp enable", "Device(config)# flow-sampler-map topology"],
+        "choices": ["CAR", "CBWFQ", "PQ", "PBR", "FRTS"],
+        "correct": [1, 2]
+      }
+    },
+    {
+      "id": 321,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. An engineer must configure GigabitEthernet1/1 to accommodate voice and data traffic. Which configuration accomplishes this task?",
+      "image": "img/321.png",
+      "details": {
+        "choices": [
+          "Interface gigabitethernet 1/1\nSwitchport mode access\nSwitchport access vlan 300\nSwitchport voice vlan 400",
+          "Interface gigabitethernet 1/1\nSwitchport mode trunk\nSwitchport trunk vlan 300\nSwitchport voice vlan 400",
+          "Interface gigabitethernet 1/1\nSwitchport mode trunk\nSwitchport trunk vlan 300\nSwitchport trunk vlan 400",
+          "Interface gigabitethernet 1/1\nSwitchport mode access\nSwitchport voice vlan 300\nSwitchport access vlan 400"
+        ],
         "correct": [0]
       }
     },
     {
-      "id": 2,
-      "type": "multiple_choice",
-      "question": "Which feature on the Cisco Wireless LAN Controller when enabled restricts management access from specific networks?",
-      "image": null,
-      "details": {
-        "choices": ["CPU ACL", "TACACS", "Flex ACL", "RADIUS"],
-        "correct": [0]
-      }
-    },
-    {
-      "id": 3,
-      "type": "multiple_choice",
-      "question": "When a site-to-site VPN is used, which protocol is responsible for the transport of user data?",
-      "image": null,
-      "details": {
-        "choices": ["IKEv2", "IKEv1", "IPsec", "MD5"],
-        "correct": [2]
-      }
-    },
-    {
-      "id": 3,
+      "id": 305,
       "type": "matching",
-      "question": "Classify the animals into the correct group.",
+      "question": "Drag and drop the TCP/IP protocols from the left onto the transmission protocols on the right.",
       "image": null,
       "details": {
-        "groups": ["Carnivore", "Herbivore", "Omnivore"],
-        "items": [
-          { "text": "Lion", "group": "Carnivore" },
-          { "text": "Horse", "group": "Herbivore" },
-          { "text": "Pig", "group": "Omnivore" }
-        ]
+          "groups": ["TCP", "UDP"],
+          "items": [
+            { "text": "SMTP", "group": "TCP" },
+            { "text": "HTTP", "group": "TCP" },
+            { "text": "Telnet", "group": "TCP" },
+            { "text": "DNS", "group": "UDP" },
+            { "text": "SNMP", "group": "UDP" },
+            { "text": "RTP", "group": "UDP" }
+          ]
       }
     },
     {
-      "id": 4,
+      "id": 307,
       "type": "matching",
-      "question": "Match the fruit or vegetable to its color.",
+      "question": "Drag and drop the 802.11 wireless standards from the left onto the matching statements on the right.",
       "image": null,
       "details": {
-        "pairs": [
-          { "left": "Banana", "right": "Yellow" },
-          { "left": "Carrot", "right": "Orange" },
-          { "left": "Lettuce", "right": "Green" }
-        ]
+          "pairs": [
+            { "left": "802.11n", "right": "Operates in the 2.4GHz and 5GHz bands" },
+            { "left": "802.11g", "right": "Operates in the 2.4GHz band only and supports a maximum data rate of 54 Mbps" },
+            { "left": "802.11ac", "right": "Operates in the 5GHz band only and supports a maximum data rate that can exceed 100 Mbps" },
+            { "left": "802.11b", "right": "supports a maximum data rate of 11 Mbps" },
+            { "left": "802.11a", "right": "Operates in the 5GHz band only and supports a maximum data rate of 54 Mbps" }
+          ]
       }
     }
   ]
