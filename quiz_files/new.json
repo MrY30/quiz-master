@@ -1,257 +1,295 @@
 [
   {
-    "id": 450,
+    "id": 501,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which two configurations must the engineer apply on this network so that R1 becomes the DR? (Choose two)",
-    "image": "img/450.png",
-    "details": {
-      "choices": [
-        "R1(config)#router ospf 1\nR1(config-router)#router-id 192.168.100.1",
-        "R1(config)#interface fastethernet 0/0\nR1(config-if)#ip ospf priority 0",
-        "R3(config)#interface fastethernet 0/0\nR3(config-if)#ip ospf priority 0",
-        "R1(config)#interface fastethernet 0/0\nR1(config-if)#ip ospf priority 200"
-      ],
-      "correct": [2, 3]
-    }
-  },
-  {
-    "id": 451,
-    "type": "multiple_choice",
-    "question": "What is the purpose of the ip address dhcp command?",
+    "question": "What is a reason to implement LAG on a Cisco WLC?",
     "image": null,
     "details": {
       "choices": [
-        "to configure an interface as a DHCP server",
-        "to configure an interface as a DHCP helper",
-        "to configure an interface as a DHCP relay",
-        "to configure an interface as a DHCP client"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 452,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which configuration enables DHCP addressing for hosts connected to interface FastEthernet0/1 on router R4?",
-    "image": "img/452.png",
-    "details": {
-      "choices": [
-        "interface FastEthernet0/0\nip helper-address 10.0.1.1\naccess-list 100 permit udp host 10.0.1.1 eq bootps host 10.148.2.1",
-        "interface FastEthernet0/1\nip helper-address 10.0.1.1\naccess-list 100 permit tcp host 10.0.1.1 eq 67 host 10.148.2.1",
-        "interface FastEthernet0/0\nip helper-address 10.0.1.1\naccess-list 100 permit host 10.0.1.1 host 10.148.2.1 eq bootps",
-        "interface FastEthernet0/1\nip helper-address 10.0.1.1\naccess-list 100 permit udp host 10.0.1.1 eq bootps host 10.148.2.1"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 453,
-    "type": "multiple_choice",
-    "question": "Which type of IPv6 address is similar to a unicast address but is assigned to multiple devices on the same network at the same time?",
-    "image": null,
-    "details": {
-      "choices": [
-        "global unicast address",
-        "anycast address",
-        "multicast address",
-        "link-local address"
+        "Increase security and encrypt management frames",
+        "Provide link redundancy and load balancing",
+        "Allow for stateful and link-state failover",
+        "Enable connected switch ports to failover and use different VLANs"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 454,
+    "id": 502,
     "type": "multiple_choice",
-    "question": "OSPF must be configured between routers R1 and R2. Which OSPF configuration must be applied to router R1 to avoid a DR/BDR election?",
-    "image": null,
+    "question": "Refer to the exhibit. Web traffic is coming in from the WAN interface. Which route takes precedence when the router is processing traffic destined for the LAN network at 10.0.10.0/24?",
+    "image": "img/502.png",
     "details": {
       "choices": [
-        "router ospf 1\nnetwork 192.168.1.1 0.0.0.0 area 0\ninterface e1/1\nip address 192.168.1.1 255.255.255.252\nip ospf network broadcast",
-        "router ospf 1\nnetwork 192.168.1.1 0.0.0.0 area 0\ninterface e1/1\nip address 192.168.1.1 255.255.255.252\nip ospf network point-to-point",
-        "router ospf 1\nnetwork 192.168.1.1 0.0.0.0 area 0\ninterface e1/1\nip address 192.168.1.1 255.255.255.252\nip ospf cost 0",
-        "router ospf 1\nnetwork 192.168.1.1 0.0.0.0 area 0\nhello interval 15\ninterface e1/1\nip address 192.168.1.1 255.255.255.252"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 455,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. A network engineer must update the configuration on Switch2 so that it sends LLDP packets every minute and the information sent via LLDP is refreshed every 3 minutes. Which configuration must the engineer apply?",
-    "image": "img/455.png",
-    "details": {
-      "choices": [
-        "Switch2(config)#lldp timer 60\nSwitch2(config)#lldp holdtime 180",
-        "Switch2(config)#lldp timer 60\nSwitch2(config)#lldp tlv-select 180",
-        "Switch2(config)#lldp timer 1\nSwitch2(config)#lldp holdtime 3",
-        "Switch2(config)#lldp timer 1\nSwitch2(config)#lldp tlv-select 3"
+        "via next-hop 10.0.1.5",
+        "via next-hop 10.0.1.4",
+        "via next-hop 10.0.1.50",
+        "via next-hop 10.0.1.100"
       ],
       "correct": [0]
     }
   },
   {
-    "id": 456,
+    "id": 503,
     "type": "multiple_choice",
-    "question": "What is a requirement for nonoverlapping Wi-Fi channels?",
-    "image": null,
+    "question": "Refer to the exhibit. All VLANs are present in the VLAN database. Which command sequence must be applied to complete the configuration?",
+    "image": "img/503.png",
     "details": {
       "choices": [
-        "different security settings",
-        "discontinuous frequency ranges",
-        "different transmission speeds",
-        "unique SSIDs"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 457,
-    "type": "multiple_choice",
-    "question": "Which protocol is used for secure remote CLI access?",
-    "image": null,
-    "details": {
-      "choices": ["HTTPS", "HTTP", "Telnet", "SSH"],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 458,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which two commands must be configured on router R1 to enable the router to accept secure remote-access connections? (Choose two)",
-    "image": "img/458.png",
-    "details": {
-      "choices": [
-        "transport input telnet",
-        "crypto key generate rsa",
-        "ip ssh pubkey-chain",
-        "login console",
-        "username cisco password 0 Cisco"
-      ],
-      "correct": [1,2]
-    }
-  },
-  {
-    "id": 459,
-    "type": "multiple_choice",
-    "question": "An engineer must configure R1 for a new user account. The account must meet these requirements:\nIt must be configured in the local database.\nThe username is engineer2.\nIt must use the strongest password configurable.\nWhich command must the engineer configure on the router?",
-    "image": null,
-    "details": {
-      "choices": [
-        "R1(config)#username engineer2 algorithm-type scrypt secret test2021",
-        "R1(config)#username engineer2 secret 5 .password S1$b1Ju$kZbBS1Pyh4QzwXyZ",
-        "R1(config)#username engineer2 privilege 1 password 7 test2021",
-        "R1(config)#username engineer2 secret 4 S1Sb1Ju$kZbBS1Pyh4QzwXyZ"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 460,
-    "type": "multiple_choice",
-    "question": "Which field within the access-request packet is encrypted by RADIUS?",
-    "image": null,
-    "details": {
-      "choices": ["authorized services", "authenticator", "username", "password"],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 461,
-    "type": "multiple_choice",
-    "question": "What is a requirement when configuring or removing LAG on a WLC?",
-    "image": null,
-    "details": {
-      "choices": [
-        "The incoming and outgoing ports for traffic flow must be specified if LAG is enabled.",
-        "The controller must be rebooted after enabling or reconfiguring LAG.",
-        "The management interface must be reassigned if LAG is disabled.",
-        "Multiple untagged interfaces on the same port must be supported."
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 462,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which network prefix was learned via EIGRP?",
-    "image": "img/462.png",
-    "details": {
-      "choices": ["172.16.0.0/16", "192.168.2.0/24", "207.165.200.0/24", "192.168.1.0/24"],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 463,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. The router has been configured with a supernet to accommodate the requirement for 380 users on a subnet. The requirement already considers 30% future growth. Which configuration verifies the IP subnet on router R4?",
-    "image": "img/463.png",
-    "details": {
-      "choices": [
-        "Subnet: 10.7.54.0\nSubnet mask: 255.255.254.0\nBroadcast address: 10.7.54.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
-        "Subnet: 10.7.54.0\nSubnet mask: 255.255.254.0\nBroadcast address: 10.7.55.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
-        "Subnet: 10.7.54.0\nSubnet mask: 255.255.128.0\nBroadcast address: 10.7.55.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254",
-        "Subnet: 10.7.54.0\nSubnet mask: 255.255.255.0\nBroadcast address: 10.7.54.255\nUsable IP address range: 10.7.54.1 – 10.7.55.254"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 464,
-    "type": "multiple_choice",
-    "question": "What is the difference between IPv6 unicast and anycast addressing?",
-    "image": null,
-    "details": {
-      "choices": [
-        "IPv6 anycast nodes must be explicitly configured to recognize the anycast address, but IPv6 unicast nodes require no special configuration",
-        "IPv6 unicast nodes must be explicitly configured to recognize the unicast address, but IPv6 anycast nodes require no special configuration",
-        "An individual IPv6 unicast address is supported on a single interface on one node, but an IPv6 anycast address is assigned to a group of interfaces on multiple nodes",
-        "Unlike an IPv6 anycast address, an IPv6 unicast address is assigned to a group of interfaces on multiple nodes"
+        "interface FastEthernet0/1\nswitchport trunk native vlan 10\nswitchport trunk allowed vlan 10,15",
+        "interface FastEthernet0/1\nswitchport mode trunk\nswitchport trunk allowed vlan 10,15",
+        "interface FastEthernet0/1\nswitchport mode access\nswitchport voice vlan 10",
+        "interface FastEthernet0/1\nswitchport trunk allowed vlan add 10\nvlan 10 private-vlan isolated"
       ],
       "correct": [2]
     }
   },
   {
-    "id": 465,
+    "id": 504,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which two commands must be added to update the configuration of router R1 so that it accepts only encrypted connections? (Choose two)",
-    "image": "img/465.png",
+    "question": "Refer to the exhibit. An engineer is updating the R1 configuration to connect a new server to the management network. The PCs on the management network must be blocked from pinging the default gateway of the new server. Which command must be configured on R1 to complete the task?",
+    "image": "img/504.png",
     "details": {
       "choices": [
-        "username CNAC secret R!41!4319115@",
-        "ip ssh version 2",
-        "line vty 0 4",
-        "crypto key generate rsa 1024",
-        "transport input ssh"
+        "ip route 172.16.2.2 255.255.255.248 gi0/1",
+        "ip route 172.16.2.2 255.255.255.255 gi0/0",
+        "ip route 172.16.2.0 255.255.255.0 192.168.1.15",
+        "ip route 172.16.2.0 255.255.255.0 192.168.1.5"
       ],
-      "correct": [3,4]
+      "correct": [1]
     }
   },
   {
-    "id": 466,
+    "id": 505,
     "type": "multiple_choice",
-    "question": "Which action is taken by the data plane within a network device?",
+    "question": "Refer to the exhibit. The DHCP server and clients are connected to the same switch. What is the next step to complete the DHCP configuration to allow clients on VLAN 1 to receive addresses from the DHCP server?",
+    "image": "img/505.png",
+    "details": {
+      "choices": [
+        "Configure the ip dhcp snooping trust command on the interface connected to the DHCP client",
+        "Configure the ip dhcp relay information option command on the interface connected to the DHCP client",
+        "Configure the ip dhcp snooping trust command on the interface connected to the DHCP server",
+        "Configure the ip dhcp relay information option command on the interface connected to the DHCP server"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 506,
+    "type": "multiple_choice",
+    "question": "An engineer is configuring remote access to a router from IP subnet 10.139.58.0/28. The domain name, crypto keys, and SSH have been configured. Which configuration enables the traffic on the destination router?",
     "image": null,
     "details": {
       "choices": [
-        "forwards traffic to the next hop",
-        "constructs a routing table based on a routing protocol",
-        "provides CLI access to the network device",
-        "looks up an egress interface in the forwarding information base"
+        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.240\naccess-group 120 in\nip access-list extended 120\npermit tcp 10.139.58.0 255.255.255.248 any eq 22",
+        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.252\nip access-group 110 in\nip access-list extended 110\npermit tcp 10.139.58.0 0.0.0.15 host 10.122.49.1 eq 22",
+        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.248\nip access-group 10 in\nip access-list standard 10\npermit udp 10.139.58.0 0.0.0.7 host 10.122.49.1 eq 22",
+        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.252\nip access-group 105 in\nip access-list standard 105\npermit tcp 10.139.58.0 0.0.0.7 eq 22 host 10.122.49.1"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 507,
+    "type": "multiple_choice",
+    "question": "Which PoE mode enables powered-device detection and guarantees power when the device is detected?",
+    "image": null,
+    "details": {
+      "choices": ["Dynamic", "Static", "Active", "Auto"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 508,
+    "type": "multiple_choice",
+    "question": "A Cisco engineer must configure a single switch interface to meet these requirements\naccept untagged frames and place them in VLAN 20\naccept tagged frames in VLAN 30 when CDP detects a Cisco IP phone\nWhich command set must the engineer apply?",
+    "image": null,
+    "details": {
+      "choices": [
+        "switchport mode dynamic desirable\nswitchport access vlan 20\nswitchport trunk allowed vlan 30\nswitchport voice vlan 30",
+        "switchport mode dynamic auto\nswitchport trunk native vlan 20\nswitchport trunk allowed vlan 30\nswitchport voice vlan 30",
+        "switchport mode access\nswitchport access vlan 20\nswitchport voice vlan 30",
+        "switchport mode trunk\nswitchport access vlan 20\nswitchport voice vlan 30"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 509,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which minimum configuration items are needed to enable Secure Shell version 2 access to R15?",
+    "image": "img/509.png",
+    "details": {
+      "choices": [
+        "hostname R15\ncrypto key generate rsa general-keys modulus 1024\nline vty 0 15\ntransport input ssh\nip ssh source-interface Fa0/0\nip ssh stricthostkeycheck",
+        "crypto key generate rsa general-keys modulus 1024\nip ssh version 2\nline vty 0 15\ntransport input ssh\nip ssh logging events\nip ssh stricthostkeycheck",
+        "ip domain-name cisco.com\ncrypto key generate rsa general-keys modulus 1024\nip ssh version 2\nline vty 0 15\ntransport input all\nip ssh logging events",
+        "hostname R15\nip domain-name cisco.com\ncrypto key generate rsa general-keys modulus 1024\nip ssh version 2\nline vty 0 15\ntransport input ssh"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 510,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Users need to connect to the wireless network with IEEE 802.11r-compatible devices. The connection must be maintained as users travel between floors or to other areas in the building. What must be the configuration of the connection?",
+    "image": "img/510.png",
+    "details": {
+      "choices": [
+        "Select the WPA Policy option with the CCKM option",
+        "Disable AES encryption",
+        "Enable Fast Transition and select the FT 802.1x option",
+        "Enable Fast Transition and select the FT PSK option"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 511,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. How should the configuration be updated to allow PC1 and PC2 access to the Internet?",
+    "image": "img/511.png",
+    "details": {
+      "choices": [
+        "Modify the configured number of the second access list",
+        "Add either the ip nat {inside|outside} command under both interfaces",
+        "Remove the overload keyword from the ip nat inside source command",
+        "Change the ip nat inside source command to use interface GigabitEthernet0/0"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 512,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. An engineer is configuring an EtherChannel using LACP between Switches 1 and 2. Which configuration must be applied so that only Switch 1 sends LACP initiation packets?",
+    "image": "img/512.png",
+    "details": {
+      "choices": [
+        "Switch 1 (config-if)#channel-group 1 mode on\nSwrtch2(config-if)#channel-group 1 mode passive",
+        "Switch1(config-if)#channel-group 1 mode passive\nSwitch2(config-if)#channel-group 1 mode active",
+        "Switch1(config-if)#channel-group 1 mode active\nSwitch2(config-if)#channel-group 1 mode passive",
+        "Switch1(config-if)#channel-group 1 mode on\nSwitch2(config-if)#channel-group 1 mode active"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 513,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which switch becomes the root of a spanning tree for VLAN 20 if all links are of equal speed?",
+    "image": "img/513.png",
+    "details": {
+      "choices": [
+        "SW1 = 24596 0018.184e.3c00",
+        "SW2 = 28692 004a.14e5.4077",
+        "SW3 = 32788 0022.55cf.dd00",
+        "SW4 = 64000 0041.454d.407f"
       ],
       "correct": [0]
     }
   },
   {
-    "id": 467,
+    "id": 514,
     "type": "multiple_choice",
-    "question": "What is a function of an endpoint on a network?",
+    "question": "Refer to the exhibit. Packets received by the router from BGP enter via a serial interface at 209.165.201.1. Each route is present within the routing table. Which interface is used to forward traffic with a destination IP of 10.1.1.19?",
+    "image": "img/514.png",
+    "details": {
+      "choices": ["F0/4", "F0/0", "F0/1", "F0/3"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 515,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Users on existing VLAN 100 can reach sites on the Internet. Which action must the administrator take to establish connectivity for VLAN 200?",
+    "image": "img/515.png",
+    "details": {
+      "choices": [
+        "Define a NAT pool on the router",
+        "Configure static NAT translations for VLAN 200",
+        "Configure the ip nat outside command on another interface for VLAN 200",
+        "Update the NAT_INSIDE_RANGES ACL"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 516,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Host A sent a data frame destined for host D. What does the switch do when it receives the frame from host A?",
+    "image": "img/516.png",
+    "details": {
+      "choices": [
+        "It drops the frame from the switch CAM table",
+        "It floods the frame out of all ports except port Fa0/1",
+        "It shuts down port Fa0/1 and places it in err-disable mode",
+        "It experiences a broadcast storm"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 517,
+    "type": "multiple_choice",
+    "question": "Which protocol uses SSL?",
+    "image": null,
+    "details": {
+      "choices": ["HTTP", "SSH", "HTTPS", "Telnet"],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 518,
+    "type": "multiple_choice",
+    "question": "Which value is the unique identifier that an access point uses to establish and maintain wireless connectivity to network devices?",
+    "image": null,
+    "details": {
+      "choices": ["VLAN ID", "SSID", "RFID", "WLAN ID"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 519,
+    "type": "multiple_choice",
+    "question": "A network engineer is configuring a switch so that it is remotely reachable via SSH. The engineer has already configured the host name on the router. Which additional command must the engineer configure before entering the command to generate the RSA key?",
     "image": null,
     "details": {
       "choices": [
-        "forwards traffic between VLANs on a network",
-        "connects server and client devices to a network",
-        "allows users to record data and transmit to a file server",
-        "provides wireless services to users in a building"
+        "password password",
+        "crypto key generate rsa modulus 1024",
+        "ip domain-name domain",
+        "ip ssh authentication-retries 2"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 520,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Switch A is newly configured. All VLANs are present in the VLAN database. The IP phone and PC A on Gi0/1 must be configured for the appropriate VLANs to establish connectivity between the PCs. Which command set fulfills the requirement?",
+    "image": "img/520.png",
+    "details": {
+      "choices": [
+        "SwitchA(config-if)#switchport mode access\nSwitchA(config-if)#switchport access vian 50\nSwitchA(config-if)#switchport voice vlan 51",
+        "SwitchA(config-if)#switchport mode access\nSwitchA(config-if)#switchport access vlan 50\nSwitchA(config-if)#switchport voice vlan untagged",
+        "SwitchA(config-if)#switchport mode trunk\nSwitchA(config-if)#switchport trunk allowed vlan add 50, 51\nSwitchA(config-if)#switchport voice vlan dot1p",
+        "SwitchA(config-if)#switchport mode trunk\nSwitchA(config-if)#switchport trunk allowed vlan 50, 51\nSwitchA(config-if)#mls qos trust cos"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 521,
+    "type": "multiple_choice",
+    "question": "Which QoS traffic handling technique retains excess packets in a queue and reschedules them for later transmission when the configured maximum bandwidth has been surpassed?",
+    "image": null,
+    "details": {
+      "choices": [
+        "Weighted random early detection",
+        "Traffic policing",
+        "Traffic shaping",
+        "Traffic prioritization"
       ],
       "correct": [2]
     }
