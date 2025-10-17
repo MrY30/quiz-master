@@ -1,726 +1,545 @@
 [
   {
-    "id": 582,
+    "id": 629,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit SW_1 and SW_12 represent two companies that are merging. They use separate network vendors. The VLANs on both sides have been migrated to share IP subnets. Which command sequence must be issued on both sides to join the two companies and pass all VLANs between the companies?",
-    "image": "img/582.png",
+    "question": "Refer to the exhibit. Traffic from R1 to the 10.10.2.0/24 subnet uses 192.168.1.2 as its next hop. A network engineer wants to update the R1 configuration so that traffic with destination 10.10.2.1 passes through router R3, and all other traffic to the 10.10.2.0/24 subnet passes through R2. Which command must be used?",
+    "image": "img/629.png",
     "details": {
       "choices": [
-        "switchport mode trunk\nswitchport trunk encapsulation dot1q",
-        "switchport mode trunk\nswitchport trunk allowed vlan all\nswitchport dot1q ethertype 0800",
-        "switchport mode dynamic desirable\nswitchport trunk allowed vlan all\nswitchport trunk native vlan 7",
-        "switchport dynamic auto\nswitchport nonegotiate"
+        "ip route 10.10.2.0 255.255.255.0 192.168.1.4 100",
+        "ip route 10.10.2.0 255.255.255.0 192.168.1.4 115",
+        "ip route 10.10.2.1 255.255.255.255 192.168.1.4 100",
+        "ip route 10.10.2.1 255.255.255.255 192.168.1.4 115"
       ],
       "correct": [2]
     }
   },
   {
-    "id": 583,
-    "type": "matching",
-    "question": "Drag and drop the characteristic from the left onto the cable type on the right.",
-    "image": null,
-    "details": {
-      "groups": ["multimode fiber", "single-mode fiber"],
-      "items": [
-        { "text": "becomes distorted at longer lengths", "group": "multimode fiber" },
-        { "text": "is typically used for internal datacenter connectivity", "group": "multimode fiber" },
-        { "text": "uses a single wavelength on light", "group": "single-mode fiber" },
-        { "text": "has minimal light reflection as it travels down the core", "group": "single-mode fiber" }
-      ]
-    }
-  },
-  {
-    "id": 584,
+    "id": 630,
     "type": "multiple_choice",
-    "question": "Which property is shared by 10GBase-SR and 10GBase-LR interfaces?",
+    "question": "Why is UDP more suitable than TCP for applicators that require low latency, such as VoIP?",
     "image": null,
     "details": {
       "choices": [
-        "Both use the single-mode fiber type.",
-        "Both use the multimode fiber type.",
-        "Both require fiber cable media for transmission",
-        "Both require UTP cable media for transmission"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 585,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. The My_WLAN wireless LAN was configured with WPA2 Layer 2 PSK security. Which additional configuration must the administrator perform to allow users to connect to this WLAN on a different subnet called Data?",
-    "image": "img/585.png",
-    "details": {
-      "choices": [
-        "Enable Status and enable Broadcast SSID.",
-        "Enable Status and set the NAS-ID to data.",
-        "Enable Broadcast SSID and select data from the Interface/Interface Group drop-down list.",
-        "Enable Status and select data from the Interface/Interface Group drop-down list"
+        "TCP uses congestion control for efficient packet delivery, and UDP uses flow control mechanisms for the delivery of packets.",
+        "UDP reliably guarantees delivery of all packets, and TCP drops packets under heavy load.",
+        "UDP uses sequencing data for packets to arrive in order, and TCP offers the capability to receive packets in random order.",
+        "TCP sends an acknowledgment for every packet that is received, and UDP operates without acknowledgments."
       ],
       "correct": [3]
     }
   },
   {
-    "id": 586,
+    "id": 631,
     "type": "multiple_choice",
-    "question": "Which functionality is provided by the console connection on a Cisco WLC?",
+    "question": "What is the default port-security behavior on a trunk link?",
     "image": null,
     "details": {
       "choices": [
-        "secure in-band connectivity for device administration",
-        "HTTP-based GUI connectivity",
-        "unencrypted in-band connectivity for file transfers",
-        "out-of-band management"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 587,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which format matches the Modified EUI-64 IPv6 interface address for the network 2001:db8::/64?\n\n    GigabitEthernet1 is up, line protocol is up\n    Hardware is CSR VNIC, address is 5000.0004.0000 (bia 5000.0004.0000)\n    Internet address is 192.168.1.1/24\n    MTU 1500 bytes, BW 1000000 Kbit/sec, DLY 10 usec,\n    reliability 255/255, txload 1/255, rxload 1/255\n    Encapsulation ARPA, loopback not set\n    Keepalive set (10 sec)\n    Full Duplex, 1000Mbps, link type is auto, media type is RJ45",
-    "image": null,
-    "details": {
-      "choices": [
-        "2001:db8:4356:4700:96ff:fe04:/64",
-        "2001:db8::5200:00ff:fe04:0000/64",
-        "2001:db8::5000:0004:5678:0090/64",
-        "2001:db8::5000:00ff:fe04:0000/64"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 588,
-    "type": "multiple_choice",
-    "question": "Why is a first-hop redundancy protocol implemented?",
-    "image": null,
-    "details": {
-      "choices": [
-        "to provide load-sharing for a multilink segment",
-        "to enable multiple switches to operate as a single unit",
-        "to prevent loops in a network",
-        "to protect against default gateway failures"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 589,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. What does the host do when using the IPv4 Preferred function?",
-    "image": "img/589.png",
-    "details": {
-      "choices": [
-        "It requests the same IPv4 address when it renews its lease with the DNS server.",
-        "It continues to use a statically assigned IPv4 address",
-        "It forces the DNS server to provide the same IPv4 address at each renewal",
-        "It prefers a pool of addresses when renewing the IPv4 host IP address."
+        "It places the port in the err-disabled state if it learns more than one MAC address.",
+        "It causes a network loop when a violation occurs.",
+        "It disables the native VLAN configuration as soon as port security is enabled.",
+        "It places the port in the err-disabled state after 10 MAC addresses are statically configured."
       ],
       "correct": [0]
     }
   },
   {
-    "id": 590,
+    "id": 632,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. A packet that is sourced from 172.16.3.254 is destined for the IP address of GigabitEthernet0/0/0. What is the subnet mask of the destination route?\n\n    Gateway of last resort is 172.16.2.2 to network 0.0.0.0\n    10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks\n    C 10.10.10.0/24 is directly connected, GigabitEthernet0/0/0\n    L 10.10.10.3/32 is directly connected, GigabitEthernet0/0/0\n    172.16.0.0/16 is variably subnetted, 3 subnets, 2 masks\n    S 172.16.1.33/32 is directly connected, GigabitEthernet0/0/1\n    C 172.16.2.0/23 is directly connected, GigabitEthernet0/0/1\n    L 172.16.2.1/32 is directly connected, GigabitEthernet0/0/1\n    S* 0.0.0.0/0 [1/0] via 172.16.2.2",
-    "image": null,
+    "question": "Refer to the exhibit. Two new switches are being installed. The remote monitoring team uses the support network to monitor both switches. Which configuration is the next step to establish a Layer 2 connection between the two PCs?",
+    "image": "img/632.png",
     "details": {
       "choices": [
-        "0.0.0.0",
-        "255.255.254.0",
-        "255.255.255.0",
-        "255.255.255.255"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 591,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. When router R1 is sending traffic to IP address 10.56.192.1, which interface or next hop address does it use to route the packet?\n\n    Rissho ip route\n    Codes: Llocal, C connected, S static, RRIP, M mobile, B BGP\n    D EIGRP, EX EIGRP external, O OSPF, IA OSPF inter area\n    N1 OSPE NSSA external type 1, N2 OSPF SSSA external type 2\n    E1 OSPF external type 1, E2 OSPF external type 2\n    i IS-IS, su IS-IS summary, L1 IS-I5 level-1, L2 15-IS level-2\n    ia IS-IS inter area, * candidate default, U user static route\n    o ODR, P periodic downloaded static route, H NHRP, l LISP\n    + replicated route, % next hop override\n\n    Gateway of last resort is 10.56.0.1 to network 0.0.0.0\n\n    S* 0.0.0.0/0 [1/0] via 10.56.0.1\n    10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks\n    C 10.56.0.0/17 is directly connected, Vian56\n    L 10.36.0.19/32 is directly connected, Vlan56\n    C 10.56.128.0/18 is directly connected, Vian57\n    L 10.56.128.19/32 is directly connected, Vian57",
-    "image": null,
-    "details": {
-      "choices": [
-        "Vlan57",
-        "10.56.128.19",
-        "10.56.0.1",
-        "0.0.0.0/0"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 592,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Packets are flowing from 192.168.10.1 to the destination at IP address 192.168.20.75. Which next hop will the router select for the packet?\n\n    R_1# show ip route\n\n    192.168.0.0/16 is variably subnetted, 4 subnets, masks\n    D 192.168.20.0/26 [90/24513456] via 10.10.10.1\n    R 192.168.20.0/24 [120/5] via 10.10.10.2\n    O 192.168.0.0/19 [110/219414] via 10.10.10.13\n    D 192.168.20.0/27 [90/4123710] via 10.10.10.12\n    D 192.168.20.0/25 [90/14464211] via 10.10.10.11\n    S* 0.0.0.0/0 [1/0] via 10.10.10.14",
-    "image": null,
-    "details": {
-      "choices": [
-        "10.10.10.1",
-        "10.10.10.11",
-        "10.10 10.12",
-        "10.10.10.14"
+        "SwitchA(config)#interface GigabitEthernet0/1\n SwitchA(config-if)#switchport mode trunk\nSwitchB(config)#interface GigabitEthernet0/1\n SwitchB(config-if)#switchport mode trunk",
+        "SwitchA(config)#interface GigabitEthernet0/1\n SwitchA(config-if)#switchport access vlan 500\n SwitchB(config)#interface GigabitEthernet0/1\n SwitchB(config-if)#switchport access vlan 500",
+        "SwitchA(config)#interface GigabitEthernet0/0\n SwitchA(config-if)#switchport trunk allowed vlan 500, 550\n SwitchB(config)#interface GigabitEthernet0/0\nSwitchB(config-if)#switchport trunk allowed vlan 500, 550",
+        "SwitchA(config)#interface GigabitEthernet0/0\n SwitchA(config-if)#spanning-tree portfast\nSwitchA(config-if)#spanning-tree bpduguard enable\n SwitchB(config)#interface GigabitEthernet0/0\n SwitchB(config-if)#spanning-tree portfast\nSwitchB(config-if)#spanning-tree bpduguard enable"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 593,
+    "id": 633,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. The router R1 is in the process of being configured. Routers R2 and R3 are configured correctly for the new environment. Which two commands must be configured on R1 for PC1 to communicate to all PCs on the 10.10.10.0/24 network?",
-    "image": "img/593.png",
+    "question": "What is a function of store-and-forward switching?",
+    "image": null,
     "details": {
       "choices": [
-        "ip route 10.10.10.0 255.255.255.0 192.168.2.3\nip route 10.10.10.8 255.255.255.252 g0/0",
-        "ip route 10.10.10.0 255.255.255.0 192.168.2.3\nip route 10.10.10.10 255.255.255.255 192.168.2.2",
-        "ip route 10.10.10.0 255.255.255.248 192.168.2.2\nip route 10.10.2.8 255.255.255.252 g0/1",
-        "ip route 10.10.10.0 255.255.255.0 192.168.2.2\nip route 10.10.2.2 255.255.255.255 10.10.10.10"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 594,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Configurations for the switch and PCs are complete. Which configuration must be applied so that VLANs 2 and 3 communicate back and forth?",
-    "image": "img/594.png",
-    "details": {
-      "choices": [
-        "interface GigabitEthernet0/0.10\nencapsulation dot1Q 3\nip address 10.10.2.10 255.255.254.0",
-        "interface GigabitEthernet0/0.3\nencapsulation dot1Q 10\nip address 10.10.2.10 255.255.255.252",
-        "interface GigabitEthernet0/0.3\nencapsulation dot1Q 3 native\nip address 10.10.2.10 255.255.252.0",
-        "interface GigabitEthemet0/0\nip address 10.10.2.10 255.255.252.0"
+        "It produces an effective level of error-free network traffic using CRCs.",
+        "It buffers frames and forwards regardless of errors within the frames.",
+        "It forwards a frame by checking only the destination MAC address.",
+        "It reduces latency by eliminating error checking within the frame."
       ],
       "correct": [0]
     }
   },
   {
-    "id": 595,
+    "id": 634,
     "type": "multiple_choice",
-    "question": "What are two disadvantages of a full-mesh topology? (Choose two.)",
+    "question": "What does a switch do when it receives a frame whose destination MAC address is missing from the MAC address table?",
     "image": null,
     "details": {
       "choices": [
-        "It has a high implementation cost.",
-        "It requires complex configuration.",
-        "It must have point-to-point communication.",
-        "It works only with BGP between sites.",
-        "It needs a high MTU between sites."
+        "It appends the table with a static entry for the MAC and shuts down the port.",
+        "It updates the CAM table with the destination MAC address of the frame.",
+        "It changes the checksum of the frame to a value that indicates an invalid frame.",
+        "It floods the frame unchanged across all remaining ports in the incoming VLAN."
       ],
-      "correct": [0, 1]
+      "correct": [3]
     }
   },
   {
-    "id": 596,
+    "id": 635,
     "type": "multiple_choice",
-    "question": "What is a function of Layer 3 switches?",
+    "question": "What occurs when a switch receives a frame that has a destination that is an unknown MAC address?",
     "image": null,
     "details": {
       "choices": [
-        "They route traffic between devices in different VLANs",
-        "They transmit broadcast traffic when operating in Layer 3 mode exclusively.",
-        "They move frames between endpoints limited to IP addresses.",
-        "They forward Ethernet frames between VLANs using only MAC addresses,"
+        "The frame is flooded to all interfaces in the VLAN to which the frame belongs.",
+        "The MAC address table of the switch is flushed.",
+        "The frame is flooded to all interfaces in the switch.",
+        "The frame is discarded."
       ],
       "correct": [0]
     }
   },
   {
-    "id": 597,
+    "id": 636,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. A new VLAN and switch are added to the network. A remote engineer configures OldSwitch and must ensure that the configuration meets these requirements:\n- accommodates current configured VLANs\n- expands the range to include VLAN 20\n- allows for IEEE standard support for virtual LANS\nWhich configuration on the NewSwitch side of the link meets these requirements?",
-    "image": "img/597.png",
+    "question": "Refer to the exhibit. The switches are connected via a Cat5 Ethernet cable that was successfully tested. The interfaces are configured as access ports and are both in a \"down\" status. What is the cause of this issue?",
+    "image": "img/636.png",
     "details": {
       "choices": [
-        "no switchport mode trunk\nswitchport trunk encapsulation isl\nswitchport mode access vlan 20",
-        "switchport nonegotiate\nno switchport trunk allowed vlan 5,10\nswitchport trunk allowed vlan 5,10,15,20",
-        "switchport mode dynamic\nchannel-group 1 mode active\nswitchport trunk allowed vlan 5,10,15,20",
-        "no switchport trunk encapsulation isl\nswitchport trunk encapsulation dot1q\nswitchport trunk allowed vlan add 20"
+        "The portfast command is missing from the configuration.",
+        "The switches are configured with incompatible duplex settings.",
+        "The distance between the two switches is not supported by Cat5.",
+        "The speed settings on the switches are mismatched."
       ],
       "correct": [3]
     }
   },
   {
-    "id": 598,
+    "id": 637,
     "type": "multiple_choice",
-    "question": "What is the root port in STP?",
+    "question": "An on-site service desk technician must verify the IP address and DNS server information on a user's Windows computer. Which command must the technician enter at the command prompt on the user's computer?",
     "image": null,
     "details": {
       "choices": [
-        "It is the port on the root switch that leads to the designated port on another switch.",
-        "It is the port with the highest priority toward the root bridge.",
-        "It is the port that is elected only when the root bridge has precisely one port on a single LAN segment.",
-        "It is the port on a switch with the lowest cost to reach the root bridge."
+        "show interface",
+        "ifconfig -a",
+        "netstat -r",
+        "ipconfig /all"
       ],
       "correct": [3]
     }
   },
   {
-    "id": 599,
+    "id": 638,
     "type": "multiple_choice",
-    "question": "Which cable type must be used when connecting two like devices together using these criteria?\n• Pins 1 to 3 and 2 to 6 are required.\n• Auto detection MDI-X is unavailable.",
+    "question": "Why would a network administrator choose to implement automaton in a network environment?",
     "image": null,
     "details": {
       "choices": [
-        "straight-through",
-        "console",
-        "crossover",
-        "rollover"
+        "to simplify the process of maintaining a consistent configuration state across all devices",
+        "to centralize device information storage",
+        "deploy the management plane separately from the rest of the network",
+        "to implement centralized user account management"
       ],
-      "correct": [2]
+      "correct": [0]
     }
   },
   {
-    "id": 600,
+    "id": 639,
     "type": "multiple_choice",
-    "question": "How do UTP and STP cables compare?",
-    "image": null,
+    "question": "Refer to the exhibit. What is missing from this output for it to be executed?\n\n    {\n    \"Cisco Devices\": [\n    {\n    \"name\": \"ASA - Security Device\",\n    \"name\": \"Cisco 1100 ASR Router\",\n    \"name\": \"Cisco 6800 Switch\"\n    }\n    ]",
+    "image": "img/639.png",
     "details": {
       "choices": [
-        "STP cables are cheaper to procure and easier to install and UTP cables are more expensive and harder to install.",
-        "STP cables are shielded and protect against electromagnetic interference and UTP lacks the same protection against electromagnetic interference",
-        "UTP cables provide faster and more reliable data transfer rates and STP cables are slower and less reliable.",
-        "UTP cables are less prone to crosstalk and interference and STP cables are more prone to crosstalk and interference."
+        "square bracket ( ) at the beginning",
+        "curly brace (}) at the end",
+        "double quotes (\" \") around the \"Cisco Devices\" string",
+        "exclamation point (!) at the beginning of each line"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 601,
+    "id": 640,
     "type": "multiple_choice",
-    "question": "What is the function of a northbound API?",
+    "question": "Refer to the exhibit. What is represented in line 2 of the JSON schema?\n\n    1 [\n    2 { \"switch\": \"3750\", \"port\": e2 },\n    3 { \"router\": \"2951\", \"port\": e20 },\n    4 { \"switch\": \"3750\", \"port\": e23}\n    5 ]",
     "image": null,
     "details": {
       "choices": [
-        "It upgrades software and restores files.",
+        "array",
+        "object",
+        "key",
+        "value"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 641,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which type of JSON data is shown?\n\n    { \"Employee's name\":\"Arthur\" }",
+    "image": null,
+    "details": {
+      "choices": [
+        "boolean",
+        "object",
+        "array",
+        "key"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 642,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. What is represented by \"R1\" and \"SW1\" within the JSON output?\n\n    \"Routers\":[\"R1\", \"R2\", \"R3\"],\n    \"Switches\":[\"SW1\", \"SW2\", \"SW3\"]",
+    "image": null,
+    "details": {
+      "choices": [
+        "array",
+        "key",
+        "value",
+        "object"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 643,
+    "type": "multiple_choice",
+    "question": "What is a function of a northbound API in an SDN environment?",
+    "image": null,
+    "details": {
+      "choices": [
         "It relies on global provisioning and configuration.",
-        "It supports distributed processing for configuration",
-        "It provides a path between an SDN controller and network applications"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 602,
-    "type": "multiple_choice",
-    "question": "Which plane is centralized in software-defined networking?",
-    "image": null,
-    "details": {
-      "choices": [
-        "application",
-        "services",
-        "data",
-        "control"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 603,
-    "type": "multiple_choice",
-    "question": "What is a characteristic of a collapsed-core network topology?",
-    "image": null,
-    "details": {
-      "choices": [
-        "It enables all workstations in a SOHO environment to connect on a single switch with internet access.",
-        "It enables the core and access layers to connect to one logical distribution device over an EtherChannel.",
-        "It allows wireless devices to connect directly to the core layer, which enables faster data transmission.",
-        "It allows the core and distribution layers to run as a single combined layer."
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 604,
-    "type": "multiple_choice",
-    "question": "Which type of hypervisor operates without an underlying OS to host virtual machines?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Type 1",
-        "Type 2",
-        "Type 3",
-        "Type 12"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 605,
-    "type": "multiple_choice",
-    "question": "A WLC sends alarms about a rogue AP, and the network administrator verifies that the alarms are caused by a legitimate autonomous AP. Which action stops the alarms for the MAC address of the AP?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Remove the AP from WLC management.",
-        "Manually remove the AP from Pending state.",
-        "Place the AP into manual containment.",
-        "Set the AP Class Type to Friendly."
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 606,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. After a recent internal security audit, the network administrator decided to block all P2P-capable devices from the selected SSID. Which configuration setting must the administrator apply?",
-    "image": "img/606.png",
-    "details": {
-      "choices": [
-        "Set the Wi-Fi Direct Client Policy to Not-Allow.",
-        "Set the P2P Block Action to Drop.",
-        "Select a correctly configured Layer 2 ACL.",
-        "Set the MFP Client Protection to Required."
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 607,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. An engineer is investigating why guest users are able to access other guest user devices when the users are connected to the customer guest WLAN. What action resolves this issue?",
-    "image": "img/607.png",
-    "details": {
-      "choices": [
-        "implement P2P blocking",
-        "implement MFP client protection",
-        "implement Wi-Fi direct policy",
-        "implement split tunneling"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 608,
-    "type": "multiple_choice",
-    "question": "When more than one AP-manager interface is provisioned on a wireless LAN controller, how is the request handled by the AP?",
-    "image": null,
-    "details": {
-      "choices": [
-        "The AP join request fails and must be configured statically on the AP-Manager interface",
-        "The first AP-Manager interface to respond is chosen by the AP.",
-        "The AP-Manager with the fewest number of APs is used by the AP to join.",
-        "The discovery response from the AP to the AP-Manager interface disables the WLAN port."
+        "It upgrades software and restores files.",
+        "It provides orchestration and network automation services.",
+        "It supports distributed processing for configuration."
       ],
       "correct": [2]
     }
   },
   {
-    "id": 609,
+    "id": 644,
     "type": "multiple_choice",
-    "question": "A project objective is to minimize the association time to the different access points as mobile devices move around the office. The ideal solution must cover numerous devices and device types, including laptops, mobile phones, tablets and wireless printers. What must be configured?",
+    "question": "Which two northbound APIs are found to a software-defined network? (Choose two.)",
     "image": null,
     "details": {
       "choices": [
-        "802.11ax BSS Configuration",
-        "802.11v Disassociation Imminent",
-        "802.11k Neighbor List Dual Band",
-        "802.1lv BSS Max Idle Service"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 610,
-    "type": "multiple_choice",
-    "question": "What is a reason to configure a trunk port that connects to a WLC distribution port?",
-    "image": null,
-    "details": {
-      "choices": [
-        "Eliminate redundancy with a link failure in the data path.",
-        "Allow multiple VLANs to be used in the data path.",
-        "Permit multiple VLANs to provide out-of-band management",
-        "Provide redundancy if there is a link failure for out-of-band management."
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 611,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. A Cisco engineer creates a new WLAN called lantest. Which two actions must be performed so that only high-speed 2.4-Ghz clients connect? (Choose two.)",
-    "image": "img/611.png",
-    "details": {
-      "choices": [
-        "Enable the Status option.",
-        "Set the Radio Policy option to 802.11g Only.",
-        "Set the Radio Policy option to 802.11a Only.",
-        "Set the Interface/Interface Group(G) to an interface other than guest.",
-        "Enable the Broadcast SSID option."
+        "REST",
+        "SOAP",
+        "OpFlex",
+        "NETCONF",
+        "OpenFlow"
       ],
       "correct": [0, 1]
     }
   },
   {
-    "id": 612,
+    "id": 645,
     "type": "multiple_choice",
-    "question": "Which enhancements were implemented as part of WPA3?",
+    "question": "What must be considered before deploying virtual machines?",
     "image": null,
     "details": {
       "choices": [
-        "802.1x authentication and AES-128 encryption",
-        "forward secrecy and SAE in personal mode for secure initial key exchange",
-        "TKIP encryption improving WEP and per-packet keying",
-        "AES-64 in personal mode and AES-128 in enterprise mode"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 613,
-    "type": "multiple_choice",
-    "question": "Which cipher is supported for wireless encryption only with the WPA2 standard?",
-    "image": null,
-    "details": {
-      "choices": [
-        "RC4",
-        "AES",
-        "AES256",
-        "SHA"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 614,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. A Cisco WLC administrator is creating a new wireless network with enhanced SSID security. The new network must operate at 2.4 Ghz with 54 Mbps of throughput. Which set of tasks must the administrator perform to complete the configuration?",
-    "image": "img/614.png",
-    "details": {
-      "choices": [
-        "Uncheck the Broadcast SSID check box and set the Radio Policy to 802.11a/g only.",
-        "Check the Broadcast SSID check box and set the Radio Policy to 802.11g only.",
-        "Uncheck the Broadcast SSID check box and set the Radio Policy to 802.11g only.",
-        "Check the Broadcast SSID check box and set the Radio Policy to 802.11a only."
+        "location of the virtual machines within the data center environment",
+        "support for physical peripherals, such as monitors, keyboards, and mice",
+        "resource limitations, such as the number of CPU cores and the amount of memory",
+        "whether to leverage VSM to map multiple virtual processors to two or more virtual machines"
       ],
       "correct": [2]
     }
   },
   {
-    "id": 615,
+    "id": 646,
     "type": "multiple_choice",
-    "question": "Which set of 2.4 GHz nonoverlapping wireless channels is standard in the United States?",
+    "question": "Which two characteristics are representative of virtual machines (VMs)? (Choose two.)",
     "image": null,
     "details": {
       "choices": [
-        "channels 1, 6, 11, and 14",
-        "channels 2, 7, 9, and 11",
-        "channels 2, 7, and 11",
-        "channels 1, 6, and 11"
+        "Each VMs operating system depends on its hypervisor.",
+        "Each VM runs independently of any other VM in the same hypervisor.",
+        "A VM runs on a hypervisor is automatically interconnected to other VMs.",
+        "multiple VMs operate on the same underlying hardware.",
+        "A VM on an individual hypervisor shares resources equally."
       ],
-      "correct": [3]
+      "correct": [1, 3]
     }
   },
   {
-    "id": 616,
+    "id": 647,
     "type": "multiple_choice",
-    "question": "Which security method is used to prevent man-in-the-middle attacks?",
+    "question": "Which command configures the Cisco WLC to prevent a serial session with the WLC CLI from being automatically logged out?",
     "image": null,
     "details": {
       "choices": [
-        "authentication",
-        "anti-replay",
-        "authorization",
-        "accounting"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 617,
-    "type": "multiple_choice",
-    "question": "Which two protocols are used by an administrator for authentication and configuration on access points? (Choose two.)",
-    "image": null,
-    "details": {
-      "choices": [
-        "RADIUS",
-        "802.1Q",
-        "Kerberos",
-        "TACACS+",
-        "802.1x"
-      ],
-      "correct": [0, 4]
-    }
-  },
-  {
-    "id": 618,
-    "type": "multiple_choice",
-    "question": "Which iPsec encryption mode is appropriate when the destination of a packet differs from the security termination point?",
-    "image": null,
-    "details": {
-      "choices": [
-        "aggressive",
-        "main",
-        "transport",
-        "tunnel"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 619,
-    "type": "multiple_choice",
-    "question": "To improve corporate security, an organization is planning to implement badge authentication to limit access to the data center. Which element of a security program is being deployed?",
-    "image": null,
-    "details": {
-      "choices": [
-        "user awareness",
-        "user training",
-        "physical access control",
-        "vulnerability verification"
+        "config sessions timeout 0",
+        "config serial timeout 9600",
+        "config serial timeout 0",
+        "config sessions maxsessions 0"
       ],
       "correct": [2]
     }
   },
   {
-    "id": 620,
+    "id": 648,
     "type": "multiple_choice",
-    "question": "What is a purpose of traffic shaping?",
+    "question": "What is the maximum number of concurrent Telnet sessions that a Cisco WLC supports?",
     "image": null,
     "details": {
       "choices": [
-        "It enables policy-based routing",
-        "It limits bandwidth usage",
-        "It enables dynamic flow identification.",
-        "It provides best-effort service."
+        "3",
+        "5",
+        "6",
+        "15"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 621,
-    "type": "matching",
-    "question": "Drag and drop the DHCP snooping terms from the left onto the descriptions on the right.",
-    "image": null,
+    "id": 649,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. A network engineer configures the CCNA WLAN so that clients must reauthenticate hourly and to limit the number of simultaneous connections to the WLAN to 10. Which two actions complete this configuration? (Choose two.)",
+    "image": "img/649.png",
     "details": {
-      "pairs": [
-        {
-          "left": "snooping binding database",
-          "right": "list of hosts on the network that are unknown to the administrative domain"
-        },
-        {
-          "left": "DHCP server",
-          "right": "network component that propagates IP addresses to hosts on the network"
-        },
-        {
-          "left": "trusted",
-          "right": "internal device under the control of the network administrator"
-        },
-        {
-          "left": "spurious DHCP server",
-          "right": "unknown DHCP server within an adminictrative domain"
-        },
-        {
-          "left": "untrusted",
-          "right": "default state of all interfaces"
-        }
-      ]
+      "choices": [
+        "Set the Maximum Allowed Clients value to 10.",
+        "Enable the Wi-Fi Direct Clients Policy option.",
+        "Set the Maximum Allowed Clients Per AP Radio value to 10.",
+        "Enable the Enable Session Timeout option and set the value to 3600.",
+        "Enable the Client Exclusion option and set the value to 3600."
+      ],
+      "correct": [0, 3]
     }
   },
   {
-    "id": 622,
+    "id": 650,
     "type": "multiple_choice",
-    "question": "How are RFC 1918 IP addresses used in a network?",
-    "image": null,
+    "question": "Refer to the exhibit. A network engineer configures the Cisco WLC to authenticate local wireless clients against a RADIUS server. Which action completes this configuration?",
+    "image": "img/650.png",
     "details": {
       "choices": [
-        "They are used by internet service providers to route over the internet.",
-        "They are used with NAT to preserve public IPv4 addresses.",
-        "They are used instead of public addresses for increased security.",
-        "They are used to access the Internet from the internal network without conversion."
+        "Disable the Server Status option.",
+        "Enable the Network User option.",
+        "Enable the Support for CoA option",
+        "Enable the Management option."
       ],
       "correct": [1]
     }
   },
   {
-    "id": 623,
+    "id": 651,
     "type": "multiple_choice",
-    "question": "Which two features introduced in SNMPv2 provide the ability to retrieve large amounts of data in one request and acknowledge a trap using PDUs? (Choose two.)",
-    "image": null,
+    "question": "Refer to the exhibit. Wireless LAN access must be set up to force all clients from the NA WLAN to authenticate against the local database. The WLAN is configured for local EAP authentication. The time that users access the network must not be limited. Which action completes this configuration?",
+    "image": "img/651.png",
     "details": {
       "choices": [
-        "Get",
-        "GetNext",
-        "Set",
-        "GetBulk",
-        "Inform"
+        "Uncheck the Guest User check box.",
+        "Set the Lifetime (seconds) value to 0.",
+        "Check the Guest User Role check box.",
+        "Clear the Lifetime (seconds) value."
       ],
-      "correct": [3, 4]
+      "correct": [0]
     }
   },
   {
-    "id": 624,
+    "id": 652,
     "type": "multiple_choice",
-    "question": "Which SNMP message type is reliable and precedes an acknowledgment response from the SNMP manager?",
+    "question": "When the LAG configuration is updated on a Cisco WLC, which additional task must be performed when changes are complete?",
     "image": null,
     "details": {
       "choices": [
-        "Set",
-        "Traps",
-        "Inform",
-        "Get"
+        "Re-enable the WLC interfaces.",
+        "Flush all MAC addresses from the WLC.",
+        "Reboot the WLC.",
+        "Re-associate the WLC with the access point."
       ],
       "correct": [2]
     }
   },
   {
-    "id": 625,
+    "id": 653,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which address will the client contact to renew their IP address when the current lease expires?",
-    "image": "img/625.png",
-    "details": {
-      "choices": [
-        "192.168.25.100",
-        "192.168.25.103",
-        "192.168.25.254",
-        "192.168.25.1"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 626,
-    "type": "multiple_choice",
-    "question": "Which device segregates a network into separate zones that have their own security policies?",
+    "question": "What is a reason to implement LAG on a Cisco WLC?",
     "image": null,
     "details": {
       "choices": [
-        "firewall",
-        "IPS",
-        "access point",
-        "switch"
-      ],
-      "correct": [0]
-    }
-  },
-  {
-    "id": 627,
-    "type": "multiple_choice",
-    "question": "An engineer must configure a core router with a floating static default route to the backup router at 10.200.0.2. Which command meets the requirements?",
-    "image": null,
-    "details": {
-      "choices": [
-        "ip route 0.0.0.0 0.0.0.0 10.200.0.2 1",
-        "ip route 0.0.0.0 0.0.0.0 10.200.0.2 10",
-        "ip route 0.0.0.0 0.0.0.0 10.200.0.2",
-        "ip route 0.0.0.0 0.0.0.0 10.200.0.2 floating"
+        "Increase security by encrypting management frames",
+        "increase the available throughput on the link",
+        "Allow for stateful failover between WLCS",
+        "Enable the connected switch ports to use different Layer 2 configurations"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 628,
+    "id": 654,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. R1 has just received a packet from host A that is destined to host B. Which route in the routing table is used by R1 to reach host B?",
-    "image": "img/628.png",
+    "question": "A network engineer starts to implement a new wireless LAN by configuring the authentication server and creating the dynamic interface. What must be performed next to complete the basic configuration?",
+    "image": null,
     "details": {
       "choices": [
-        "10.10.13.0/25 [110/2] via 10.10.10.6",
-        "10.10.13.0/25 [1/0] via 10.10.10.2",
-        "10.10.13.0/25 [110/2] via 10.10.10.2",
-        "10.10.13.0/25 [108/0] via 10.10.10.10"
+        "Configure high availability and redundancy for the access points.",
+        "Install the management interface and add the management IP.",
+        "Create the new WLAN and bind the dynamic interface to it.",
+        "Enable Telnet and RADIUS access on the management interface."
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 655,
+    "type": "multiple_choice",
+    "question": "Which interface is used for out-of-band management on a WLC?",
+    "image": null,
+    "details": {
+      "choices": [
+        "virtual",
+        "service port",
+        "management",
+        "dynamic"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 656,
+    "type": "multiple_choice",
+    "question": "Which interface or port on the WLC is the default for in-band device administration and communications between the controller and access points?",
+    "image": null,
+    "details": {
+      "choices": [
+        "management interface",
+        "service port",
+        "console port",
+        "virtual interface"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 657,
+    "type": "multiple_choice",
+    "question": "A Cisco engineer at a new branch office is configuring a wireless network with access points that connect to a controller that is based at corporate headquarters. Wireless client traffic must terminate at the branch office and access-point survivability is required in the event of a WAN outage. Which access point mode must be selected?",
+    "image": null,
+    "details": {
+      "choices": [
+        "Lightweight with local switching disabled",
+        "FlexConnect with local switching enabled",
+        "Local with AP fallback enabled",
+        "Office-Extend with high availability disabled"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 658,
+    "type": "multiple_choice",
+    "question": "What must be considered for a locally switched FlexConnect AP if the VLANs that are used by the AP and client access are different?",
+    "image": null,
+    "details": {
+      "choices": [
+        "IEEE 802.1Q trunking must be disabled on the switch port.",
+        "The APs must be connected to the switch with multiple links in LAG mode.",
+        "The switch port mode must be set to trunk.",
+        "The native VLAN must match the management VLAN of the AP."
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 659,
+    "type": "multiple_choice",
+    "question": "Which type of port is used to connect to the wired network when an autonomous AP maps two VLANs to its WLANs?",
+    "image": null,
+    "details": {
+      "choices": [
+        "trunk",
+        "LAG",
+        "access",
+        "EtherChannel"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 660,
+    "type": "multiple_choice",
+    "question": "What is an advantage of using auto mode versus static mode for power allocation when an access point is connected to a PoE switch port?",
+    "image": null,
+    "details": {
+      "choices": [
+        "All four pairs of the cable are used.",
+        "Power policing is enabled at the same time.",
+        "It detects the device is a powered device.",
+        "The default level is used for the access point."
       ],
       "correct": [3]
+    }
+  },
+  {
+    "id": 661,
+    "type": "multiple_choice",
+    "question": "Which WPA mode uses PSK authentication?",
+    "image": null,
+    "details": {
+      "choices": [
+        "Enterprise",
+        "Client",
+        "Local",
+        "Personal"
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 662,
+    "type": "multiple_choice",
+    "question": "When a 5 GHz wireless network is implemented using 20 MHz channels with no DFS, how many nonoverlapping channels are available?",
+    "image": null,
+    "details": {
+      "choices": [
+        "4",
+        "6",
+        "9",
+        "8"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 663,
+    "type": "multiple_choice",
+    "question": "What is the purpose of the service-set identifier?",
+    "image": null,
+    "details": {
+      "choices": [
+        "It identifies the wireless network to which an application must connect.",
+        "It identifies a wireless network for a mobile device to connect.",
+        "It identifies the wired network to which a user device is connected.",
+        "It identifies the wired network to which a network device is connected."
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 664,
+    "type": "multiple_choice",
+    "question": "What is a difference between an IPv6 multicast address and an IPv6 anycast address?",
+    "image": null,
+    "details": {
+      "choices": [
+        "An IPv6 multicast address uses the prefix 2002::/15 and forwards to one destination, and an IPv6 anycast address uses the prefix ff00::/8 and forwards to any destination in a group.",
+        "An IPv6 multicast address is assigned to numerous interfaces within a subnet, but an IPv6 anycast address is used for a defined group of nodes in an all-IPv6 routers group.",
+        "A packet sent to an IPv6 multicast address is delivered to one or more destinations at once, but a packet sent to an IPv6 anycast address is routed to the closest interface with that address.",
+        "IPv6 multicast addresses are used to transition from IPv4 to IPv6, and IPv6 anycast addresses are used for address aggregation in an IPv6-only environment."
+      ],
+      "correct": [2]
     }
   }
 ]

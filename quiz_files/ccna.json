@@ -8912,6 +8912,549 @@
         ],
         "correct": [3]
       }
+    },
+    {
+      "id": 629,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Traffic from R1 to the 10.10.2.0/24 subnet uses 192.168.1.2 as its next hop. A network engineer wants to update the R1 configuration so that traffic with destination 10.10.2.1 passes through router R3, and all other traffic to the 10.10.2.0/24 subnet passes through R2. Which command must be used?",
+      "image": "img/629.png",
+      "details": {
+        "choices": [
+          "ip route 10.10.2.0 255.255.255.0 192.168.1.4 100",
+          "ip route 10.10.2.0 255.255.255.0 192.168.1.4 115",
+          "ip route 10.10.2.1 255.255.255.255 192.168.1.4 100",
+          "ip route 10.10.2.1 255.255.255.255 192.168.1.4 115"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 630,
+      "type": "multiple_choice",
+      "question": "Why is UDP more suitable than TCP for applicators that require low latency, such as VoIP?",
+      "image": null,
+      "details": {
+        "choices": [
+          "TCP uses congestion control for efficient packet delivery, and UDP uses flow control mechanisms for the delivery of packets.",
+          "UDP reliably guarantees delivery of all packets, and TCP drops packets under heavy load.",
+          "UDP uses sequencing data for packets to arrive in order, and TCP offers the capability to receive packets in random order.",
+          "TCP sends an acknowledgment for every packet that is received, and UDP operates without acknowledgments."
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 631,
+      "type": "multiple_choice",
+      "question": "What is the default port-security behavior on a trunk link?",
+      "image": null,
+      "details": {
+        "choices": [
+          "It places the port in the err-disabled state if it learns more than one MAC address.",
+          "It causes a network loop when a violation occurs.",
+          "It disables the native VLAN configuration as soon as port security is enabled.",
+          "It places the port in the err-disabled state after 10 MAC addresses are statically configured."
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 632,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Two new switches are being installed. The remote monitoring team uses the support network to monitor both switches. Which configuration is the next step to establish a Layer 2 connection between the two PCs?",
+      "image": "img/632.png",
+      "details": {
+        "choices": [
+          "SwitchA(config)#interface GigabitEthernet0/1\n SwitchA(config-if)#switchport mode trunk\nSwitchB(config)#interface GigabitEthernet0/1\n SwitchB(config-if)#switchport mode trunk",
+          "SwitchA(config)#interface GigabitEthernet0/1\n SwitchA(config-if)#switchport access vlan 500\n SwitchB(config)#interface GigabitEthernet0/1\n SwitchB(config-if)#switchport access vlan 500",
+          "SwitchA(config)#interface GigabitEthernet0/0\n SwitchA(config-if)#switchport trunk allowed vlan 500, 550\n SwitchB(config)#interface GigabitEthernet0/0\nSwitchB(config-if)#switchport trunk allowed vlan 500, 550",
+          "SwitchA(config)#interface GigabitEthernet0/0\n SwitchA(config-if)#spanning-tree portfast\nSwitchA(config-if)#spanning-tree bpduguard enable\n SwitchB(config)#interface GigabitEthernet0/0\n SwitchB(config-if)#spanning-tree portfast\nSwitchB(config-if)#spanning-tree bpduguard enable"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 633,
+      "type": "multiple_choice",
+      "question": "What is a function of store-and-forward switching?",
+      "image": null,
+      "details": {
+        "choices": [
+          "It produces an effective level of error-free network traffic using CRCs.",
+          "It buffers frames and forwards regardless of errors within the frames.",
+          "It forwards a frame by checking only the destination MAC address.",
+          "It reduces latency by eliminating error checking within the frame."
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 634,
+      "type": "multiple_choice",
+      "question": "What does a switch do when it receives a frame whose destination MAC address is missing from the MAC address table?",
+      "image": null,
+      "details": {
+        "choices": [
+          "It appends the table with a static entry for the MAC and shuts down the port.",
+          "It updates the CAM table with the destination MAC address of the frame.",
+          "It changes the checksum of the frame to a value that indicates an invalid frame.",
+          "It floods the frame unchanged across all remaining ports in the incoming VLAN."
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 635,
+      "type": "multiple_choice",
+      "question": "What occurs when a switch receives a frame that has a destination that is an unknown MAC address?",
+      "image": null,
+      "details": {
+        "choices": [
+          "The frame is flooded to all interfaces in the VLAN to which the frame belongs.",
+          "The MAC address table of the switch is flushed.",
+          "The frame is flooded to all interfaces in the switch.",
+          "The frame is discarded."
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 636,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. The switches are connected via a Cat5 Ethernet cable that was successfully tested. The interfaces are configured as access ports and are both in a \"down\" status. What is the cause of this issue?",
+      "image": "img/636.png",
+      "details": {
+        "choices": [
+          "The portfast command is missing from the configuration.",
+          "The switches are configured with incompatible duplex settings.",
+          "The distance between the two switches is not supported by Cat5.",
+          "The speed settings on the switches are mismatched."
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 637,
+      "type": "multiple_choice",
+      "question": "An on-site service desk technician must verify the IP address and DNS server information on a user's Windows computer. Which command must the technician enter at the command prompt on the user's computer?",
+      "image": null,
+      "details": {
+        "choices": [
+          "show interface",
+          "ifconfig -a",
+          "netstat -r",
+          "ipconfig /all"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 638,
+      "type": "multiple_choice",
+      "question": "Why would a network administrator choose to implement automaton in a network environment?",
+      "image": null,
+      "details": {
+        "choices": [
+          "to simplify the process of maintaining a consistent configuration state across all devices",
+          "to centralize device information storage",
+          "deploy the management plane separately from the rest of the network",
+          "to implement centralized user account management"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 639,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What is missing from this output for it to be executed?\n\n    {\n    \"Cisco Devices\": [\n    {\n    \"name\": \"ASA - Security Device\",\n    \"name\": \"Cisco 1100 ASR Router\",\n    \"name\": \"Cisco 6800 Switch\"\n    }\n    ]",
+      "image": "img/639.png",
+      "details": {
+        "choices": [
+          "square bracket ( ) at the beginning",
+          "curly brace (}) at the end",
+          "double quotes (\" \") around the \"Cisco Devices\" string",
+          "exclamation point (!) at the beginning of each line"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 640,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What is represented in line 2 of the JSON schema?\n\n    1 [\n    2 { \"switch\": \"3750\", \"port\": e2 },\n    3 { \"router\": \"2951\", \"port\": e20 },\n    4 { \"switch\": \"3750\", \"port\": e23}\n    5 ]",
+      "image": null,
+      "details": {
+        "choices": [
+          "array",
+          "object",
+          "key",
+          "value"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 641,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Which type of JSON data is shown?\n\n    { \"Employee's name\":\"Arthur\" }",
+      "image": null,
+      "details": {
+        "choices": [
+          "boolean",
+          "object",
+          "array",
+          "key"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 642,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. What is represented by \"R1\" and \"SW1\" within the JSON output?\n\n    \"Routers\":[\"R1\", \"R2\", \"R3\"],\n    \"Switches\":[\"SW1\", \"SW2\", \"SW3\"]",
+      "image": null,
+      "details": {
+        "choices": [
+          "array",
+          "key",
+          "value",
+          "object"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 643,
+      "type": "multiple_choice",
+      "question": "What is a function of a northbound API in an SDN environment?",
+      "image": null,
+      "details": {
+        "choices": [
+          "It relies on global provisioning and configuration.",
+          "It upgrades software and restores files.",
+          "It provides orchestration and network automation services.",
+          "It supports distributed processing for configuration."
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 644,
+      "type": "multiple_choice",
+      "question": "Which two northbound APIs are found to a software-defined network? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": [
+          "REST",
+          "SOAP",
+          "OpFlex",
+          "NETCONF",
+          "OpenFlow"
+        ],
+        "correct": [0, 1]
+      }
+    },
+    {
+      "id": 645,
+      "type": "multiple_choice",
+      "question": "What must be considered before deploying virtual machines?",
+      "image": null,
+      "details": {
+        "choices": [
+          "location of the virtual machines within the data center environment",
+          "support for physical peripherals, such as monitors, keyboards, and mice",
+          "resource limitations, such as the number of CPU cores and the amount of memory",
+          "whether to leverage VSM to map multiple virtual processors to two or more virtual machines"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 646,
+      "type": "multiple_choice",
+      "question": "Which two characteristics are representative of virtual machines (VMs)? (Choose two.)",
+      "image": null,
+      "details": {
+        "choices": [
+          "Each VMs operating system depends on its hypervisor.",
+          "Each VM runs independently of any other VM in the same hypervisor.",
+          "A VM runs on a hypervisor is automatically interconnected to other VMs.",
+          "multiple VMs operate on the same underlying hardware.",
+          "A VM on an individual hypervisor shares resources equally."
+        ],
+        "correct": [1, 3]
+      }
+    },
+    {
+      "id": 647,
+      "type": "multiple_choice",
+      "question": "Which command configures the Cisco WLC to prevent a serial session with the WLC CLI from being automatically logged out?",
+      "image": null,
+      "details": {
+        "choices": [
+          "config sessions timeout 0",
+          "config serial timeout 9600",
+          "config serial timeout 0",
+          "config sessions maxsessions 0"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 648,
+      "type": "multiple_choice",
+      "question": "What is the maximum number of concurrent Telnet sessions that a Cisco WLC supports?",
+      "image": null,
+      "details": {
+        "choices": [
+          "3",
+          "5",
+          "6",
+          "15"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 649,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A network engineer configures the CCNA WLAN so that clients must reauthenticate hourly and to limit the number of simultaneous connections to the WLAN to 10. Which two actions complete this configuration? (Choose two.)",
+      "image": "img/649.png",
+      "details": {
+        "choices": [
+          "Set the Maximum Allowed Clients value to 10.",
+          "Enable the Wi-Fi Direct Clients Policy option.",
+          "Set the Maximum Allowed Clients Per AP Radio value to 10.",
+          "Enable the Enable Session Timeout option and set the value to 3600.",
+          "Enable the Client Exclusion option and set the value to 3600."
+        ],
+        "correct": [0, 3]
+      }
+    },
+    {
+      "id": 650,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. A network engineer configures the Cisco WLC to authenticate local wireless clients against a RADIUS server. Which action completes this configuration?",
+      "image": "img/650.png",
+      "details": {
+        "choices": [
+          "Disable the Server Status option.",
+          "Enable the Network User option.",
+          "Enable the Support for CoA option",
+          "Enable the Management option."
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 651,
+      "type": "multiple_choice",
+      "question": "Refer to the exhibit. Wireless LAN access must be set up to force all clients from the NA WLAN to authenticate against the local database. The WLAN is configured for local EAP authentication. The time that users access the network must not be limited. Which action completes this configuration?",
+      "image": "img/651.png",
+      "details": {
+        "choices": [
+          "Uncheck the Guest User check box.",
+          "Set the Lifetime (seconds) value to 0.",
+          "Check the Guest User Role check box.",
+          "Clear the Lifetime (seconds) value."
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 652,
+      "type": "multiple_choice",
+      "question": "When the LAG configuration is updated on a Cisco WLC, which additional task must be performed when changes are complete?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Re-enable the WLC interfaces.",
+          "Flush all MAC addresses from the WLC.",
+          "Reboot the WLC.",
+          "Re-associate the WLC with the access point."
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 653,
+      "type": "multiple_choice",
+      "question": "What is a reason to implement LAG on a Cisco WLC?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Increase security by encrypting management frames",
+          "increase the available throughput on the link",
+          "Allow for stateful failover between WLCS",
+          "Enable the connected switch ports to use different Layer 2 configurations"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 654,
+      "type": "multiple_choice",
+      "question": "A network engineer starts to implement a new wireless LAN by configuring the authentication server and creating the dynamic interface. What must be performed next to complete the basic configuration?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Configure high availability and redundancy for the access points.",
+          "Install the management interface and add the management IP.",
+          "Create the new WLAN and bind the dynamic interface to it.",
+          "Enable Telnet and RADIUS access on the management interface."
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 655,
+      "type": "multiple_choice",
+      "question": "Which interface is used for out-of-band management on a WLC?",
+      "image": null,
+      "details": {
+        "choices": [
+          "virtual",
+          "service port",
+          "management",
+          "dynamic"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 656,
+      "type": "multiple_choice",
+      "question": "Which interface or port on the WLC is the default for in-band device administration and communications between the controller and access points?",
+      "image": null,
+      "details": {
+        "choices": [
+          "management interface",
+          "service port",
+          "console port",
+          "virtual interface"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 657,
+      "type": "multiple_choice",
+      "question": "A Cisco engineer at a new branch office is configuring a wireless network with access points that connect to a controller that is based at corporate headquarters. Wireless client traffic must terminate at the branch office and access-point survivability is required in the event of a WAN outage. Which access point mode must be selected?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Lightweight with local switching disabled",
+          "FlexConnect with local switching enabled",
+          "Local with AP fallback enabled",
+          "Office-Extend with high availability disabled"
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 658,
+      "type": "multiple_choice",
+      "question": "What must be considered for a locally switched FlexConnect AP if the VLANs that are used by the AP and client access are different?",
+      "image": null,
+      "details": {
+        "choices": [
+          "IEEE 802.1Q trunking must be disabled on the switch port.",
+          "The APs must be connected to the switch with multiple links in LAG mode.",
+          "The switch port mode must be set to trunk.",
+          "The native VLAN must match the management VLAN of the AP."
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 659,
+      "type": "multiple_choice",
+      "question": "Which type of port is used to connect to the wired network when an autonomous AP maps two VLANs to its WLANs?",
+      "image": null,
+      "details": {
+        "choices": [
+          "trunk",
+          "LAG",
+          "access",
+          "EtherChannel"
+        ],
+        "correct": [0]
+      }
+    },
+    {
+      "id": 660,
+      "type": "multiple_choice",
+      "question": "What is an advantage of using auto mode versus static mode for power allocation when an access point is connected to a PoE switch port?",
+      "image": null,
+      "details": {
+        "choices": [
+          "All four pairs of the cable are used.",
+          "Power policing is enabled at the same time.",
+          "It detects the device is a powered device.",
+          "The default level is used for the access point."
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 661,
+      "type": "multiple_choice",
+      "question": "Which WPA mode uses PSK authentication?",
+      "image": null,
+      "details": {
+        "choices": [
+          "Enterprise",
+          "Client",
+          "Local",
+          "Personal"
+        ],
+        "correct": [3]
+      }
+    },
+    {
+      "id": 662,
+      "type": "multiple_choice",
+      "question": "When a 5 GHz wireless network is implemented using 20 MHz channels with no DFS, how many nonoverlapping channels are available?",
+      "image": null,
+      "details": {
+        "choices": [
+          "4",
+          "6",
+          "9",
+          "8"
+        ],
+        "correct": [2]
+      }
+    },
+    {
+      "id": 663,
+      "type": "multiple_choice",
+      "question": "What is the purpose of the service-set identifier?",
+      "image": null,
+      "details": {
+        "choices": [
+          "It identifies the wireless network to which an application must connect.",
+          "It identifies a wireless network for a mobile device to connect.",
+          "It identifies the wired network to which a user device is connected.",
+          "It identifies the wired network to which a network device is connected."
+        ],
+        "correct": [1]
+      }
+    },
+    {
+      "id": 664,
+      "type": "multiple_choice",
+      "question": "What is a difference between an IPv6 multicast address and an IPv6 anycast address?",
+      "image": null,
+      "details": {
+        "choices": [
+          "An IPv6 multicast address uses the prefix 2002::/15 and forwards to one destination, and an IPv6 anycast address uses the prefix ff00::/8 and forwards to any destination in a group.",
+          "An IPv6 multicast address is assigned to numerous interfaces within a subnet, but an IPv6 anycast address is used for a defined group of nodes in an all-IPv6 routers group.",
+          "A packet sent to an IPv6 multicast address is delivered to one or more destinations at once, but a packet sent to an IPv6 anycast address is routed to the closest interface with that address.",
+          "IPv6 multicast addresses are used to transition from IPv4 to IPv6, and IPv6 anycast addresses are used for address aggregation in an IPv6-only environment."
+        ],
+        "correct": [2]
+      }
     }
   ]
 }
