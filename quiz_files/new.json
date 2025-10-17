@@ -1,297 +1,1197 @@
 [
   {
-    "id": 501,
+    "id": 522,
     "type": "multiple_choice",
-    "question": "What is a reason to implement LAG on a Cisco WLC?",
+    "question": "What is the function of the controller in a software-defined network?",
     "image": null,
     "details": {
       "choices": [
-        "Increase security and encrypt management frames",
-        "Provide link redundancy and load balancing",
-        "Allow for stateful and link-state failover",
-        "Enable connected switch ports to failover and use different VLANs"
+        "multicast replication at the hardware level",
+        "fragmenting and reassembling packets",
+        "making routing decisions",
+        "forwarding packets"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 523,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. R1 learns all routes via OSPF Which command configures a backup static route on R1 to reach the 192.168.20.0/24 network via R3?",
+    "image": "img/523.png",
+    "details": {
+      "choices": [
+        "R1(config)#ip route 192.168.20.0 255.255.0.0 192.168.30.2",
+        "R1(config)#ip route 192.168.20.0 255.255.255.0 192.168.30.2 90",
+        "R1(config)#ip route 192.168.20.0 255.255.255.0 192.168.30.2 111",
+        "R1(config)#ip route 192.168.20.0 255.255.255.0 192.168.30.2"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 524,
+    "type": "multiple_choice",
+    "question": "Which wireless security protocol relies on Perfect Forward Secrecy?",
+    "image": null,
+    "details": {
+      "choices": ["WPA3", "WPA", "WEP", "WPA2"],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 525,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Router R1 resides in OSPF Area 0. After updating the R1 configuration to influence the paths that it will use to direct traffic, an engineer verified that each of the four Gigabit interfaces has the same route to 10.10.0.0/16.\n\n    R1#show run\n    router ospf 1\n    auto-cost referenge -bandwidth 100000\n    interface GigabitEthecnet0/0\n    bandwidth 10000000\n    !\n    interface GigabitEthernet0/1\n    bandwidth 100000000\n    interface GigabitEthernet0/2\n    ip ospf cost 100\n    !\n    interface GigabitEthernet0/3\n    ip ospf cost 1000\n    end\n\nWhich interface will R1 choose to send traffic to reach the route?",
+    "image": null,
+    "details": {
+      "choices": [
+        "GigabitEthernet0/0",
+        "GigabitEthornet0/1",
+        "GigabitEthernet0/2",
+        "GigabitEthernet0/3"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 502,
+    "id": 526,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. Web traffic is coming in from the WAN interface. Which route takes precedence when the router is processing traffic destined for the LAN network at 10.0.10.0/24?",
-    "image": "img/502.png",
+    "question": "Which two spanning-tree states are bypassed on an interface running PortFast? (Choose two.)",
+    "image": null,
+    "details": {
+      "choices": ["disabled", "listening", "forwarding", "learning", "blocking"],
+      "correct": [1, 3]
+    }
+  },
+  {
+    "id": 527,
+    "type": "multiple_choice",
+    "question": "Which Layer 2 switch function encapsulates packets for different VLANs so that the packets traverse the same port and maintain traffic separation between the VLANs?",
+    "image": null,
+    "details": {
+      "choices": ["VLAN numbering", "VLAN DSCP", "VLAN tagging", "VLAN marking"],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 528,
+    "type": "multiple_choice",
+    "question": "What is an expected outcome when network management automation is deployed?",
+    "image": null,
     "details": {
       "choices": [
-        "via next-hop 10.0.1.5",
-        "via next-hop 10.0.1.4",
-        "via next-hop 10.0.1.50",
-        "via next-hop 10.0.1.100"
+        "A distributed management plane must be used.",
+        "Software upgrades are performed from a central controller",
+        "Complexity increases when new device configurations are added",
+        "Custom applications are needed to configure network devices"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 529,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Packets received by the router from BGP enter via a serial interface at 209.165.201.10.\n\n    EIGRP 10.10.10.0/24[90/1441] via F0/10\n    EIGRP 10.10.10.0/24[90/144] via F0/11\n    EIGRP 10.10.10.0/24 [90/1441] via F0/12\n    OSPF 10.10.10.0/24 [110/20]via F0/13\n    OSPF 10.10.10.0/24 [110/30]via F0/14\n\nEach route is present within the routing table. Which interface is used to forward traffic with a destination IP of 10.10.10.24?",
+    "image": null,
+    "details": {
+      "choices": ["F0/10", "F0/11", "F0/12", "F0/13"],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 530,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. An engineer has started to configure replacement switch SW1.\nTo verify part of the configuration, the engineer issued the commands as shown and noticed that the entry for PC2 is missing.\nWhich change must be applied to SW1 so that PC1 and PC2 communicate normally?",
+    "image": "img/530.png",
+    "details": {
+      "choices": [
+        "SW1(config)#interface fa0/2\nSW1(config-if)#no switchport mode trunk\nSW1(config-if)#no switchport trunk allowed vlan 3\nSW1(config-if)#switchport mode access",
+        "SW1(config)#interface fa0/1\nSW1(config-if)#no switchport access vlan 2\nSW1(config-if)#switchport trunk native vlan 2\nSW1(config-if)#switchport trunk allowed vlan 3",
+        "SW1(config)#interface fa0/1\nSW1(config-if)#no switchport access vlan 2\nSW1(config-if)#switchport access vlan 3\nSW1(config-if)#switchport trunk allowed vlan 2",
+        "SW1(config)#interface fa0/2\nSW1(config-if)#no switchport access vlan 2\nSW1(config-if)#no switchport trunk allowed vlan 3\nSW1(config-if)#switchport trunk allowed vlan 2"
       ],
       "correct": [0]
     }
   },
   {
-    "id": 503,
+    "id": 531,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. All VLANs are present in the VLAN database. Which command sequence must be applied to complete the configuration?",
-    "image": "img/503.png",
+    "question": "Refer to the exhibit. Which action must be taken to ensure that router A is elected as the DR for OSPF area 0?",
+    "image": "img/531.png",
     "details": {
       "choices": [
-        "interface FastEthernet0/1\nswitchport trunk native vlan 10\nswitchport trunk allowed vlan 10,15",
-        "interface FastEthernet0/1\nswitchport mode trunk\nswitchport trunk allowed vlan 10,15",
-        "interface FastEthernet0/1\nswitchport mode access\nswitchport voice vlan 10",
-        "interface FastEthernet0/1\nswitchport trunk allowed vlan add 10\nvlan 10 private-vlan isolated"
+        "Configure the OSPF priority on router A with the lowest value between the three routers.",
+        "Configure router B and router C as OSPF neighbors of router A.",
+        "Configure the router A interfaces with the highest OSPF priority value within the area.",
+        "Configure router A with a fixed OSPF router ID"
       ],
       "correct": [2]
     }
   },
   {
-    "id": 504,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. An engineer is updating the R1 configuration to connect a new server to the management network. The PCs on the management network must be blocked from pinging the default gateway of the new server. Which command must be configured on R1 to complete the task?",
-    "image": "img/504.png",
+    "id": 532,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 address from the left onto the corresponding address types on the right.",
+    "image": null,
     "details": {
-      "choices": [
-        "ip route 172.16.2.2 255.255.255.248 gi0/1",
-        "ip route 172.16.2.2 255.255.255.255 gi0/0",
-        "ip route 172.16.2.0 255.255.255.0 192.168.1.15",
-        "ip route 172.16.2.0 255.255.255.0 192.168.1.5"
-      ],
-      "correct": [1]
+      "groups": ["Global Unicast", "Unique Local"],
+      "items": [
+        {
+          "text": "2001:db8:600d:cafe::123",
+          "group": "Global Unicast"
+        },
+        {
+          "text": "3ffe:e54d:620:a87a::f00d",
+          "group": "Global Unicast"
+        },
+        {
+          "text": "fcba:926a:e8e:7a25:b1:c6d2:1a76:8fdc",
+          "group": "Unique Local"
+        },
+        {
+          "text": "fd6d:c83b:5cef:b6b2::1",
+          "group": "Unique Local"
+        }
+      ]
     }
   },
   {
-    "id": 505,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. The DHCP server and clients are connected to the same switch. What is the next step to complete the DHCP configuration to allow clients on VLAN 1 to receive addresses from the DHCP server?",
-    "image": "img/505.png",
+    "id": 533,
+    "type": "matching",
+    "question": "Drag and drop the HTTP methods used with REST-based APIs from the left onto the descriptions on the right",
+    "image": null,
     "details": {
-      "choices": [
-        "Configure the ip dhcp snooping trust command on the interface connected to the DHCP client",
-        "Configure the ip dhcp relay information option command on the interface connected to the DHCP client",
-        "Configure the ip dhcp snooping trust command on the interface connected to the DHCP server",
-        "Configure the ip dhcp relay information option command on the interface connected to the DHCP server"
-      ],
-      "correct": [2]
+      "pairs": [
+        {
+          "left": "POST",
+          "right": "creates a resource and returns its URL in the response header"
+        },
+        {
+          "left": "PUT",
+          "right": "creates or replaces a previously modified resource using information in the request body"
+        },
+        {
+          "left": "DELETE",
+          "right": "removes a resource"
+        },
+        {
+          "left": "GET",
+          "right": "retrieves a list of a resource's URIS"
+        },
+        {
+          "left": "PATCH",
+          "right": "updates a resource using instructions included in the request body"
+        }
+      ]
     }
   },
   {
-    "id": 506,
+    "id": 534,
+    "type": "matching",
+    "question": "Drag and drop the statement about networking from the left into the Corresponding networking types on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Traditional Networking", "Controller-based Networking"],
+      "items": [
+        {
+          "text": "This type implements changes individually at each device",
+          "group": "Traditional Networking"
+        },
+        {
+          "text": "Maintenance costs are higher than with other networking options",
+          "group": "Traditional Networking"
+        },
+        {
+          "text": "This type leverages controllers to handle network management",
+          "group": "Controller-based Networking"
+        },
+        {
+          "text": "This type provides a centralized view of the network",
+          "group": "Controller-based Networking"
+        }
+      ]
+    }
+  },
+  {
+    "id": 535,
+    "type": "matching",
+    "question": "Drap and drop the IPv6 address details from the left onto the corresponding types on the right",
+    "image": null,
+    "details": {
+      "groups": ["Anycast", "Multicast", "Unicast"],
+      "items": [
+        { "text": "assigned to more than one interface", "group": "Anycast" },
+        { "text": "provides one-to-many communications", "group": "Anycast" },
+        {
+          "text": "derived from the FF00::/8 address range",
+          "group": "Multicast"
+        },
+        {
+          "text": "used exdusively by a non-host device",
+          "group": "Multicast"
+        },
+        {
+          "text": "indudes link-local and loopback addresses",
+          "group": "Unicast"
+        },
+        {
+          "text": "identifies an interface on an IPV6 device",
+          "group": "Unicast"
+        }
+      ]
+    }
+  },
+  {
+    "id": 536,
+    "type": "matching",
+    "question": "Drag and drop each characteristic of device management technologies from the left onto the deployment type on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Cisco DNA Center", "Traditional"],
+      "items": [
+        {
+          "text": "provides greater flexibility for custom and non-standard configurations",
+          "group": "Cisco DNA Center"
+        },
+        {
+          "text": "supports centralized software management",
+          "group": "Cisco DNA Center"
+        },
+        { "text": "supports open APIS", "group": "Cisco DNA Center" },
+        {
+          "text": "orchestrates background device configuration",
+          "group": "Traditional"
+        },
+        { "text": "relies on per-device management", "group": "Traditional" },
+        {
+          "text": "uses individual software management",
+          "group": "Traditional"
+        }
+      ]
+    }
+  },
+  {
+    "id": 537,
+    "type": "matching",
+    "question": "Drag and drop the functions of AAA supporting protocols from the left onto the protocols on the right",
+    "image": null,
+    "details": {
+      "groups": ["RADIUS", "TACACS+"],
+      "items": [
+        {
+          "text": "encrypts only the password when it sends an access request",
+          "group": "RADIUS"
+        },
+        {
+          "text": "combines authentication and authorization",
+          "group": "RADIUS"
+        },
+        { "text": "uses UDP", "group": "RADIUS" },
+        {
+          "text": "encrypts the entire body of the access-request packet",
+          "group": "TACACS+"
+        },
+        {
+          "text": "separates all three AAA operations",
+          "group": "TACACS+"
+        },
+        { "text": "uses TCP", "group": "TACACS+" }
+      ]
+    }
+  },
+  {
+    "id": 538,
+    "type": "matching",
+    "question": "Drag and drop the statements about wireless architectures from the left onto the architectures on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Layer 2 Tunnle", "Layer 3 Tunnle"],
+      "items": [
+        {
+          "text": "It encapsulates LWAPP traffic between the access point and the WLC in EtherType 0xBBBB.",
+          "group": "Layer 2 Tunnle"
+        },
+        {
+          "text": "It facilitates Layer 2 connectivity between the WLC's wired interface and the WLAN clients.",
+          "group": "Layer 2 Tunnle"
+        },
+        {
+          "text": "It requires IP addresses on the access point and the WLC.",
+          "group": "Layer 3 Tunnle"
+        },
+        {
+          "text": "It supports LWAPP tunneling within Ethernet frames and UDP packets.",
+          "group": "Layer 3 Tunnle"
+        }
+      ]
+    }
+  },
+  {
+    "id": 539,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 address descriptions from the left onto the IPv6 address types on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Unique Local Address", "Link-local Addresses"],
+      "items": [
+        {
+          "text": "IPv6 addresses that begin with FD",
+          "group": "Unique Local Address"
+        },
+        {
+          "text": "may be used by multipls organizations at the same time",
+          "group": "Unique Local Address"
+        },
+        {
+          "text": "private IPv6 addresses",
+          "group": "Unique Local Address"
+        },
+        {
+          "text": "serve as next-hop addresses",
+          "group": "Link-local Addresses"
+        },
+        {
+          "text": "unable to serve as destination addresses",
+          "group": "Link-local Addresses"
+        }
+      ]
+    }
+  },
+  {
+    "id": 540,
+    "type": "matching",
+    "question": "Drag and drop the descriptions of AAA services from the left onto the corresponding services on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Authentication", "Authorization", "Accounting"],
+      "items": [
+        { "text": "secures access to routers", "group": "Authentication" },
+        {
+          "text": "validates user credentials",
+          "group": "Authentication"
+        },
+        {
+          "text": "allows the user to change to enable mode",
+          "group": "Authorization"
+        },
+        {
+          "text": "limits the user's access permissions",
+          "group": "Authorization"
+        },
+        { "text": "logs session statistics", "group": "Accounting" },
+        { "text": "records user commands", "group": "Accounting" }
+      ]
+    }
+  },
+  {
+    "id": 541,
+    "type": "matching",
+    "question": "Drag and drop the descriptions from the left onto the configuration-management technologies on the right",
+    "image": null,
+    "details": {
+      "groups": ["Ansible", "Chef", "Puppet"],
+      "items": [
+        {
+          "text": "uses SSH for remote device communication",
+          "group": "Ansible"
+        },
+        {
+          "text": "uses YAML for fundamental configuration elements",
+          "group": "Ansible"
+        },
+        {
+          "text": "uses TCP port 10002 for configuration push jobs",
+          "group": "Chef"
+        },
+        {
+          "text": "uses Ruby for fundamental configuration elements",
+          "group": "Chef"
+        },
+        {
+          "text": "fundamental configuration elements are stored in a manifest",
+          "group": "Puppet"
+        },
+        { "text": "uses TCP 8140 for communication", "group": "Puppet" }
+      ]
+    }
+  },
+  {
+    "id": 542,
     "type": "multiple_choice",
-    "question": "An engineer is configuring remote access to a router from IP subnet 10.139.58.0/28. The domain name, crypto keys, and SSH have been configured. Which configuration enables the traffic on the destination router?",
+    "question": "An engineer has configured the domain name, user name, and password on the local router. What is the next step to complete the configuration for a Secure Shell access RSA key?",
     "image": null,
     "details": {
       "choices": [
-        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.240\naccess-group 120 in\nip access-list extended 120\npermit tcp 10.139.58.0 255.255.255.248 any eq 22",
-        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.252\nip access-group 110 in\nip access-list extended 110\npermit tcp 10.139.58.0 0.0.0.15 host 10.122.49.1 eq 22",
-        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.248\nip access-group 10 in\nip access-list standard 10\npermit udp 10.139.58.0 0.0.0.7 host 10.122.49.1 eq 22",
-        "interface FastEthernet0/0\nip address 10.122.49.1 255.255.255.252\nip access-group 105 in\nip access-list standard 105\npermit tcp 10.139.58.0 0.0.0.7 eq 22 host 10.122.49.1"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 507,
-    "type": "multiple_choice",
-    "question": "Which PoE mode enables powered-device detection and guarantees power when the device is detected?",
-    "image": null,
-    "details": {
-      "choices": ["Dynamic", "Static", "Active", "Auto"],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 508,
-    "type": "multiple_choice",
-    "question": "A Cisco engineer must configure a single switch interface to meet these requirements\naccept untagged frames and place them in VLAN 20\naccept tagged frames in VLAN 30 when CDP detects a Cisco IP phone\nWhich command set must the engineer apply?",
-    "image": null,
-    "details": {
-      "choices": [
-        "switchport mode dynamic desirable\nswitchport access vlan 20\nswitchport trunk allowed vlan 30\nswitchport voice vlan 30",
-        "switchport mode dynamic auto\nswitchport trunk native vlan 20\nswitchport trunk allowed vlan 30\nswitchport voice vlan 30",
-        "switchport mode access\nswitchport access vlan 20\nswitchport voice vlan 30",
-        "switchport mode trunk\nswitchport access vlan 20\nswitchport voice vlan 30"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 509,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which minimum configuration items are needed to enable Secure Shell version 2 access to R15?",
-    "image": "img/509.png",
-    "details": {
-      "choices": [
-        "hostname R15\ncrypto key generate rsa general-keys modulus 1024\nline vty 0 15\ntransport input ssh\nip ssh source-interface Fa0/0\nip ssh stricthostkeycheck",
-        "crypto key generate rsa general-keys modulus 1024\nip ssh version 2\nline vty 0 15\ntransport input ssh\nip ssh logging events\nip ssh stricthostkeycheck",
-        "ip domain-name cisco.com\ncrypto key generate rsa general-keys modulus 1024\nip ssh version 2\nline vty 0 15\ntransport input all\nip ssh logging events",
-        "hostname R15\nip domain-name cisco.com\ncrypto key generate rsa general-keys modulus 1024\nip ssh version 2\nline vty 0 15\ntransport input ssh"
+        "crypto key zeroize rsa",
+        "crypto key pubkey-chain rsa",
+        "crypto key import rsa pem",
+        "crypto key generate rsa"
       ],
       "correct": [3]
     }
   },
   {
-    "id": 510,
+    "id": 543,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. Users need to connect to the wireless network with IEEE 802.11r-compatible devices. The connection must be maintained as users travel between floors or to other areas in the building. What must be the configuration of the connection?",
-    "image": "img/510.png",
+    "question": "Which command implies the use of SNMPv3?",
+    "image": null,
     "details": {
       "choices": [
-        "Select the WPA Policy option with the CCKM option",
-        "Disable AES encryption",
-        "Enable Fast Transition and select the FT 802.1x option",
-        "Enable Fast Transition and select the FT PSK option"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 511,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. How should the configuration be updated to allow PC1 and PC2 access to the Internet?",
-    "image": "img/511.png",
-    "details": {
-      "choices": [
-        "Modify the configured number of the second access list",
-        "Add either the ip nat {inside|outside} command under both interfaces",
-        "Remove the overload keyword from the ip nat inside source command",
-        "Change the ip nat inside source command to use interface GigabitEthernet0/0"
-      ],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 512,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. An engineer is configuring an EtherChannel using LACP between Switches 1 and 2. Which configuration must be applied so that only Switch 1 sends LACP initiation packets?",
-    "image": "img/512.png",
-    "details": {
-      "choices": [
-        "Switch 1 (config-if)#channel-group 1 mode on\nSwrtch2(config-if)#channel-group 1 mode passive",
-        "Switch1(config-if)#channel-group 1 mode passive\nSwitch2(config-if)#channel-group 1 mode active",
-        "Switch1(config-if)#channel-group 1 mode active\nSwitch2(config-if)#channel-group 1 mode passive",
-        "Switch1(config-if)#channel-group 1 mode on\nSwitch2(config-if)#channel-group 1 mode active"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 513,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Which switch becomes the root of a spanning tree for VLAN 20 if all links are of equal speed?",
-    "image": "img/513.png",
-    "details": {
-      "choices": [
-        "SW1 = 24596 0018.184e.3c00",
-        "SW2 = 28692 004a.14e5.4077",
-        "SW3 = 32788 0022.55cf.dd00",
-        "SW4 = 64000 0041.454d.407f"
+        "snmp-server user",
+        "snmp-server host",
+        "snmp-server community",
+        "snmp-server enable traps"
       ],
       "correct": [0]
     }
   },
   {
-    "id": 514,
+    "id": 544,
     "type": "multiple_choice",
-    "question": "Refer to the exhibit. Packets received by the router from BGP enter via a serial interface at 209.165.201.1. Each route is present within the routing table. Which interface is used to forward traffic with a destination IP of 10.1.1.19?",
-    "image": "img/514.png",
-    "details": {
-      "choices": ["F0/4", "F0/0", "F0/1", "F0/3"],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 515,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Users on existing VLAN 100 can reach sites on the Internet. Which action must the administrator take to establish connectivity for VLAN 200?",
-    "image": "img/515.png",
+    "question": "What differentiates device management enabled by Cisco DNA Center from traditional campus device management?",
+    "image": null,
     "details": {
       "choices": [
-        "Define a NAT pool on the router",
-        "Configure static NAT translations for VLAN 200",
-        "Configure the ip nat outside command on another interface for VLAN 200",
-        "Update the NAT_INSIDE_RANGES ACL"
-      ],
-      "correct": [3]
-    }
-  },
-  {
-    "id": 516,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Host A sent a data frame destined for host D. What does the switch do when it receives the frame from host A?",
-    "image": "img/516.png",
-    "details": {
-      "choices": [
-        "It drops the frame from the switch CAM table",
-        "It floods the frame out of all ports except port Fa0/1",
-        "It shuts down port Fa0/1 and places it in err-disable mode",
-        "It experiences a broadcast storm"
+        "device-by-device hands-on",
+        "centralized",
+        "per-device",
+        "CLI-oriented device"
       ],
       "correct": [1]
     }
   },
   {
-    "id": 517,
+    "id": 545,
     "type": "multiple_choice",
-    "question": "Which protocol uses SSL?",
-    "image": null,
-    "details": {
-      "choices": ["HTTP", "SSH", "HTTPS", "Telnet"],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 518,
-    "type": "multiple_choice",
-    "question": "Which value is the unique identifier that an access point uses to establish and maintain wireless connectivity to network devices?",
-    "image": null,
-    "details": {
-      "choices": ["VLAN ID", "SSID", "RFID", "WLAN ID"],
-      "correct": [1]
-    }
-  },
-  {
-    "id": 519,
-    "type": "multiple_choice",
-    "question": "A network engineer is configuring a switch so that it is remotely reachable via SSH. The engineer has already configured the host name on the router. Which additional command must the engineer configure before entering the command to generate the RSA key?",
-    "image": null,
+    "question": "Refer to the exhibit. A network engineer must configure R1 so that it sends all packets destined to the 10.0.0.0/24 network to R3, and all packets destined to PC1 to R2.\nWhich configuration must the engineer implement?",
+    "image": "img/545.png",
     "details": {
       "choices": [
-        "password password",
-        "crypto key generate rsa modulus 1024",
-        "ip domain-name domain",
-        "ip ssh authentication-retries 2"
-      ],
-      "correct": [2]
-    }
-  },
-  {
-    "id": 520,
-    "type": "multiple_choice",
-    "question": "Refer to the exhibit. Switch A is newly configured. All VLANs are present in the VLAN database. The IP phone and PC A on Gi0/1 must be configured for the appropriate VLANs to establish connectivity between the PCs. Which command set fulfills the requirement?",
-    "image": "img/520.png",
-    "details": {
-      "choices": [
-        "SwitchA(config-if)#switchport mode access\nSwitchA(config-if)#switchport access vian 50\nSwitchA(config-if)#switchport voice vlan 51",
-        "SwitchA(config-if)#switchport mode access\nSwitchA(config-if)#switchport access vlan 50\nSwitchA(config-if)#switchport voice vlan untagged",
-        "SwitchA(config-if)#switchport mode trunk\nSwitchA(config-if)#switchport trunk allowed vlan add 50, 51\nSwitchA(config-if)#switchport voice vlan dot1p",
-        "SwitchA(config-if)#switchport mode trunk\nSwitchA(config-if)#switchport trunk allowed vlan 50, 51\nSwitchA(config-if)#mls qos trust cos"
+        "R1(config)#ip route 10.0.0.0 255.255.255.0 192.168.0.2\nR1(config)#ip route 10.0.0.5 255.255.255.255 172.16.0.2",
+        "R1(config)#ip route 10.0.0.0 255.255.0.0 192.168.0.2\nR1(config)#ip route 10.0.0.0 255.255.255.0 172.16.0.2",
+        "R1(config)#ip route 10.0.0.0 255.255.255.0 172.16.0.2\nR1(config)#ip route 10.0.0.5 255.255.255.255 192.168.0.2",
+        "R1(config)#ip route 10.0.0.0 255.255.0.0 172.16.0.2\nR1(config)#ip route 10.0.0.5 255.255.255.255 192.168.0.2"
       ],
       "correct": [0]
     }
   },
   {
-    "id": 521,
+    "id": 546,
     "type": "multiple_choice",
-    "question": "Which QoS traffic handling technique retains excess packets in a queue and reschedules them for later transmission when the configured maximum bandwidth has been surpassed?",
+    "question": "Refer to the exhibit. The following must be considered:\n* SW1 is fully configured for all traffic\n* The SW4 and SW9 links to SW1 have been configured\n* The SW4 interface Gi0/1 and Gi0/O on SW9 have been configured\n* The remaining switches have had all VLANs added to their VLAN database.\nWhich configuration establishes a successful ping from PC2 to PC7 without interruption to traffic flow between other PCs?",
+    "image": "img/546.png",
+    "details": {
+      "choices": [
+        "SW4#\ninterface Gi0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 14\nSW11#\ninterface Gi0/1\nswitchport mode trunk\nswitchport trunk allowed vlan 14\nSW9#\ninterface Gi0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 108",
+        "SW4\ninterface Gi0/7\nswitchport mode trunk\nswitchport trunk allowed vlan 108\ninterface Gi0/2\nswitchport mode access\nswitchport access vlan 14\nSW11#\ninterface Gi0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 14,108\ninterface Gi0/1\nswitchport mode trunk\nswitchport trunk allowed vlan 14,108\nSW9#\ninterface Gi0/2\nswitchport mode access\nswitchport access vlan 14",
+        "SW4#\ninterface Gi0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 14,108\nSW11#\ninterface Gi0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 14,108\ninterface Gi0/1\nswitchport mode trunk\nswitchport trunk allowed vlan 14,108\nSW9#\ninterface Gi0/2\nswitchport mode trunk\nswitchport trunk allowed vlan 14",
+        "SW4#\ninterface Gi0/2\nswitchport mode access\nswitchport access vlan 14\nSW11#\ninterface Gi0/2\nswitchport mode access\nswitchport access vlan14\ninterface Gi0/0\nswitchport mode access\nswitchport access vlan14\ninterface Gi0/1\nswitchport mode trunk\nSW9#\ninterface Gi0/2\nswitchport mode access\nswitchport access vlan 14"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 547,
+    "type": "multiple_choice",
+    "question": "A Cisco engineer is configuring a factory-default router with these three passwords:\n* The user EXEC password for console access is p4ssw0rd1\n* The user EXEC password for Telnet access is s3cr3t2\n* The password for privileged EXEC mode is priv4t3p4ss.\nWhich command sequence must the engineer configured",
     "image": null,
     "details": {
       "choices": [
-        "Weighted random early detection",
-        "Traffic policing",
-        "Traffic shaping",
-        "Traffic prioritization"
+        "enable secret priv4t3p4ss\nline con 0\npassword login p4ssw0rd1\n!\nline vty 0 15\npassword login s3cr3t2\nlogin",
+        "enable secret privilege 15 priv4t3p4ss\n!\nline con 0\npassword p4ssword1\nlogin\n!\nline vty 0 15\npassword s3cr3t2\nlogin",
+        "enable secret priv4t3p4ss\n!\nline con 0\npassword p4ssw0rd1\nlogin\n!\nline vty 0 15\npassword s3cr3t2\nlogin",
+        "enable secret priv4t3p4ss\n!\nline con 0\npassword p4ssw0rd1\n!\nline vty 0 15\npassword s3cr3t2"
+      ],
+      "correct": [1]
+    }
+  },
+  {
+    "id": 548,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. The engineer configured the VLANs on the new AccSw2 switch. A router-on-a-stick is connected to both switches. How must the ports be configured on AccSw2 to establish full connectivity between the two switches and for Server1?",
+    "image": "img/548.png",
+    "details": {
+      "choices": [
+        "interface GigabitEthernet1/1\nswitchport access vlan 11\ninterface GigabitEthernet1/24\nswitchport mode trunk\nswitchport trunk allowed vlan 10,11",
+        "interface GigabitEthernet1/1\nswitchport mode access\nswitchport access vlan 11\ninterface GigabitEthernet1/24\nswitchport mode trunk",
+        "interface GigabitEthernet1/3\nswitchport mode access\nswitchport access vlan 10\ninterface GigabitEthernet1/24\nswitchport mode trunk",
+        "interface GigabitEthernet1/3\nswitchport mode access\nswitchport access vlan 10\ninterface GigabitEthernet1/24\nswitchport mode trunk\nswitchport trunk allowed vlan 2,10"
       ],
       "correct": [2]
+    }
+  },
+  {
+    "id": 549,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Clients on the WL AN are required to use 802 11r. What action must be taken to meet the requirement?",
+    "image": "img/549.png",
+    "details": {
+      "choices": [
+        "Enable CCKM under Authentication Key Management.",
+        "Under Protected Management Frames, set the PMF option to Required.",
+        "Set the Fast Transition option to Enable and enable FT 802.1X under Authentication Key Management",
+        "Set the Fast Transition option and the WPA gtk-randomize State to disable."
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 550,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. What must be configured to enable 802.11w on the WLAN?",
+    "image": "img/550.png",
+    "details": {
+      "choices": [
+        "Enable MAC Filtering.",
+        "Set Fast Transition to Enabled.",
+        "Enable WPA Policy.",
+        "Set PMF to Required."
+      ],
+      "correct": [3]
+    }
+  },
+  {
+    "id": 551,
+    "type": "matching",
+    "question": "Refer to the exhibit. The IP address configurations must be completed on the DC-1 and HQ-1 routers based on these requirements:\nDC-1 Gi1/0 must be the last usable address on a /30\nDC-1 Gi1/1 must be the first usable address on a /29\nDC-1 Gi1/2 must be the last usable address on a /28\nHQ-1 Gi1/3 must be the last usable address on a /29\nDrag and drop the commands from the left onto the destination interfaces on the right. Not all commands are used.",
+    "image": "img/551.png",
+    "details": {
+      "pairs": [
+        { "left": "ip address 209.165.202.130 255.255.255.252", "right": "Gi1/0" },
+        { "left": "ip address 192.168.4.9 255.255.255.248", "right": "Gi1/1" },
+        { "left": "ip address 192.168.3.14 255.255.255.240", "right": "Gi1/2" },
+        { "left": "ip address 192.168.3.14 255.255.255.248", "right": "Gi1/3" }
+      ]
+    }
+  },
+  {
+    "id": 552,
+    "type": "matching",
+    "question": "Drag and drop the traffic types from the left onto the QoS delivery mechanisms on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        { "left": "database synchronization traffic", "right": "best effort" },
+        { "left": "video traffic", "right": "policing" },
+        { "left": "VoIP traffic", "right": "priority queue" },
+        { "left": "standard Web browsing traffic", "right": "shaping" }
+      ]
+    }
+  },
+  {
+    "id": 553,
+    "type": "matching",
+    "question": "Drag and drop the functions of SNMP fault-management from the left onto the definitions on the right",
+    "image": null,
+    "details": {
+      "pairs": [
+        { "left": "The administrator can manually intervene at the source of the fault", "right": "problem resolution" },
+        { "left": "The network management system launches a preconfigured script to restore functionality", "right": "restoration of service" },
+        { "left": "The system groups alarms from related issues", "right": "event correlation and aggregation" },
+        { "left": "The system identifies performance degradation of service interruption", "right": "fault detection" },
+        { "left": "The system reports on the source of the issue", "right": "fault diagnosis and isolation" }
+      ]
+    }
+  },
+  {
+    "id": 554,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 DNS record types from the left onto the description on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        { "left": "CNAME", "right": "aliases one name to another" },
+        {
+          "left": "SOA",
+          "right": "associates the domain serial number with its owner"
+        },
+        {
+          "left": "NS",
+          "right": "correlates a domain with its authoritative name servers"
+        },
+        { "left": "AAAA", "right": "correlates a host name with an IP address" },
+        { "left": "PTR", "right": "supports reverse name lookups" }
+      ]
+    }
+  },
+  {
+    "id": 555,
+    "type": "matching",
+    "question": "Drag and drop the HTTP verbs from the left onto the API operations on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "POST",
+          "right": "creates a subordinate resource under the specified URI"
+        },
+        { "left": "DELETE", "right": "erases a specific resource" },
+        {
+          "left": "PUT",
+          "right": "fully replaces the current version of a specific resource with new content from the payload"
+        },
+        { "left": "PATCH", "right": "partially modifies a specific resource" },
+        {
+          "left": "GET",
+          "right": "requests specific information about a resource"
+        }
+      ]
+    }
+  },
+  {
+    "id": 556,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 address type characteristics from the left to the right.",
+    "image": null,
+    "details": {
+      "groups": ["Global Unicast Address", "Link-Local Address"],
+      "items": [
+        {
+          "text": "equivalent to public IPv4 addresses",
+          "group": "Global Unicast Address"
+        },
+        {
+          "text": "routable and reachable via the Internet",
+          "group": "Global Unicast Address"
+        },
+        {
+          "text": "configured only once per interface",
+          "group": "Link-Local Address"
+        },
+        { "text": "attached to a single subnet", "group": "Link-Local Address" }
+      ]
+    }
+  },
+  {
+    "id": 557,
+    "type": "matching",
+    "question": "Drag and drop the TCP or UDP details from the left onto their corresponding protocols on the right.",
+    "image": null,
+    "details": {
+      "groups": ["TCP", "UDP"],
+      "items": [
+        {
+          "text": "used to reliably share files between devices",
+          "group": "TCP"
+        },
+        { "text": "supports reliable data transmission", "group": "TCP" },
+        {
+          "text": "appropriate for streaming operations with minimal latency",
+          "group": "UDP"
+        },
+        { "text": "provides best-effort service", "group": "UDP" }
+      ]
+    }
+  },
+  {
+    "id": 558,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 addresses from the left onto the corresponding address types on the right.",
+    "image": null,
+    "details": {
+      "groups": [
+        "Global Unicast",
+        "Link-Local Unicast",
+        "Multicast",
+        "Unique Local"
+      ],
+      "items": [
+        { "text": "3ffe:e54d:620:a87a::f00d", "group": "Global Unicast" },
+        {
+          "text": "fe80::a00:27ff:feeh:89aa",
+          "group": "Link-Local Unicast"
+        },
+        { "text": "ff05::1:3", "group": "Multicast" },
+        { "text": "fd6d:c83b:5cef:b6b2::1", "group": "Unique Local" }
+      ]
+    }
+  },
+  {
+    "id": 559,
+    "type": "matching",
+    "question": "Drag and drop the Cisco IOS attack mitigation features from the left onto the types of network attack they mitigate on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "rogue server that spoofs IP configuration",
+          "right": "DHCP snooping"
+        },
+        { "left": "cache poisoning", "right": "Dynamic ARP Inspection" },
+        {
+          "left": "flood attacks",
+          "right": "storm control"
+        },
+        { "left": "rogue clients on the network", "right": "IP Source Guard" }
+      ]
+    }
+  },
+  {
+    "id": 560,
+    "type": "matching",
+    "question": "Drag and drop the QOS terms from the left onto the description on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "categorizes packets based on the value of a traffic descriptor",
+          "right": "classification"
+        },
+        { "left": "guarantees minimum bandwidth to specific traffic classes when an interface is congested", "right": "congestion" },
+        {
+          "left": "prevents congestion by reducing the flow of outbound traffic",
+          "right": "shaping"
+        },
+        { "left": "outcome of overutilization", "right": "policing" },
+        { "left": "uses defined criteria to limit the transmission of one or more classes of traffic", "right": "class-based weighted fair queueing" }
+      ]
+    }
+  },
+  {
+    "id": 561,
+    "type": "matching",
+    "question": "Drag and drop the AAA features from the left onto the corresponding AAA security services on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Authentication", "Authorization"],
+      "items": [
+        { "text": "It leverages a RADIUS server to grand user access to reverse Telnet session.", "group": "Authentication" },
+        {
+          "text": "It verifies the user before granting access to the device",
+          "group": "Authentication"
+        },
+        {
+          "text": "It enables the device to allow user- or group-based access",
+          "group": "Authorization"
+        },
+        {
+          "text": "It restricts the CLI commands that a user is able to perform",
+          "group": "Authorization"
+        }
+      ]
+    }
+  },
+  {
+    "id": 562,
+    "type": "matching",
+    "question": "Drag and drop the elements of a security program from the left onto the corresponding desccriptions on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "document that outlines an organization's security goals and practices and the rolers and responsibilities of the organizaton's personnel",
+          "right": "security policy"
+        },
+        { "left": "tactical document that sets out specific tasks and methods to maintain security", 
+          "right": "security standard" 
+        },
+        {
+          "left": "user-awareness learning level that focuses on learning about topics and practices beyond what is typically required by the user's job",
+          "right": "education"
+        },
+        { "left": "user-awareness learning level that focuses on security practices that all employees must understand and enforce", 
+          "right": "awareness" 
+        },
+        { "left": "user-awareness learning level that focuses on teaching employees how to perform tasks specifically required by their jobs", 
+          "right": "training" 
+        }
+      ]
+    }
+  },
+  {
+    "id": 563,
+    "type": "matching",
+    "question": "Refer to the exhibit. Drag and drop the prefix lengths from the left onto the corresponding prefixes on the right.",
+    "image": "img/563.png",
+    "details": {
+      "pairs": [
+        { "left": "255.255.255.128", "right": "10.10.13.0" },
+        { "left": "255.255.255.240", "right": "10.10.13.144" },
+        { "left": "255.255.255.248", "right": "10.10.13.160" },
+        { "left": "255.255.255.224", "right": "209.165.202.128" }
+      ]
+    }
+  },
+  {
+    "id": 564,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 address types from the left onto their descriptions on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "FF05::23:becf:22:1111",
+          "right": "multicast address used only locally within the site"
+        },
+        {
+          "left": "FE80::abcf:ffff:12de:3992",
+          "right": "address that is automatically created on a link when IPv6 is enabled on an interface"
+        },
+        {
+          "left": "2001:DB8::bced:1234:456d:aacc",
+          "right": "address that is prohibited from routing to the Internet"
+        },
+        {
+          "left": "FD00:0000:0000:1a2d:a153:3992:a19d:ccca",
+          "right": "address that is unique and reserved for documentation purposes"
+        }
+      ]
+    }
+  },
+  {
+    "id": 565,
+    "type": "matching",
+    "question": "Drag and drop the device behaviors from the left onto the matching HSRP state on the right.",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "is forwarding packets",
+          "right": "Active"
+        },
+        {
+          "left": "is waiting to hear from the neighbor device",
+          "right": "Learn"
+        },
+        {
+          "left": "has heard from the neighbor device and is receiving hello packets",
+          "right": "Listen"
+        },
+        {
+          "left": "is transmitting and receiving hello packets",
+          "right": "Speak"
+        },
+        {
+          "left": "is ready to forward packets if the device that is currently forwarding packets fails",
+          "right": "Standby"
+        }
+      ]
+    }
+  },
+  {
+    "id": 566,
+    "type": "matching",
+    "question": "Drag and drop the statement about device management from the left onto the corresponding types on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Traditional Campus Device Management", "Cisco DNA Center"],
+      "items": [
+        {
+          "text": "leverages Cisco Prime Infrastructure",
+          "group": "Traditional Campus Device Management"
+        },
+        {
+          "text": "requires manual configuration of complex protocols",
+          "group": "Traditional Campus Device Management"
+        },
+        {
+          "text": "lacks support for SDA",
+          "group": "Traditional Campus Device Management"
+        },
+        {
+          "text": "reduces the workload for enterprise customers",
+          "group": "Cisco DNA Center"
+        },
+        {
+          "text": "uses algorithms to detect security threats",
+          "group": "Cisco DNA Center"
+        },
+        { "text": "uses northbound APIs", "group": "Cisco DNA Center" }
+      ]
+    }
+  },
+  {
+    "id": 567,
+    "type": "matching",
+    "question": "Drag and drop the characteristic from the left onto the IPv6 address type on the right",
+    "image": null,
+    "details": {
+      "groups": ["Multicast", "Anycast"],
+      "items": [
+        {
+          "text": "sends packets to a group address rather than a single address",
+          "group": "Multicast"
+        },
+        {
+          "text": "is used exclusively by a non-host device",
+          "group": "Multicast"
+        },
+        {
+          "text": "is routed to the nearest interface that has the address",
+          "group": "Anycast"
+        },
+        { "text": "cannot be used as a source address", "group": "Anycast" }
+      ]
+    }
+  },
+  {
+    "id": 568,
+    "type": "matching",
+    "question": "Drag and drop the RF terms from the left onto the corresponding statements on the right",
+    "image": null,
+    "details": {
+      "pairs": [
+        {
+          "left": "receiver sensitivity",
+          "right": "measure of the minimum power required to decode a radio signal without excessive errors"
+        },
+        {
+          "left": "noise floor",
+          "right": "measure of the total unwanted signals at the receiver"
+        },
+        {
+          "left": "reflection",
+          "right": "deviation from the propagation path that occurs when a signal encounters an obstacle"
+        },
+        {
+          "left": "absorption",
+          "right": "reduction of energy in a signal as it travels away from the access point and encounters free space or obstacles"
+        },
+        {
+          "left": "signal-to-noise ratio",
+          "right": "relative power of the desired radio signal to unwanted signals at the receiver"
+        }
+      ]
+    }
+  },
+  {
+    "id": 569,
+    "type": "matching",
+    "question": "Drag and drop the characteristic from the left onto the IPv6 address type on the right.",
+    "image": null,
+    "details": {
+      "groups": ["Unique Local", "Multicast"],
+      "items": [
+        {
+          "text": "is unable to route on the internet",
+          "group": "Unique Local"
+        },
+        {
+          "text": "allows sites to be combined without address conflicts",
+          "group": "Unique Local"
+        },
+        { "text": "has a unicast source sent to a group", "group": "Multicast" },
+        {
+          "text": "sends packets to a group address rather than a single address",
+          "group": "Multicast"
+        }
+      ]
+    }
+  },
+  {
+    "id": 570,
+    "type": "matching",
+    "question": "Drag and drop the characteristic from the left onto the cable type on the right.",
+    "image": null,
+    "details": {
+      "groups": ["copper", "single mode fiber"],
+      "items": [
+        {
+          "text": "contains a conductor, bedding, and sheathing",
+          "group": "copper"
+        },
+        {
+          "text": "is typically used in small office applications",
+          "group": "copper"
+        },
+        {
+          "text": "is ideal over longer distances with little loss of integrity",
+          "group": "single mode fiber"
+        },
+        {
+          "text": "uses a single wavelength of light",
+          "group": "single mode fiber"
+        }
+      ]
+    }
+  },
+  {
+    "id": 571,
+    "type": "matching",
+    "question": "Drag and drop the IPv6 address from the left onto the type on the right.",
+    "image": null,
+    "details": {
+      "groups": [
+        "Global Unicast",
+        "Link-Local Unicast",
+        "Multicast",
+        "Unique Local"
+      ],
+      "items": [
+        {
+          "text": "2000:ec7d:429f:fa4d:ba4b:2936:0c9c:1",
+          "group": "Global Unicast"
+        },
+        {
+          "text": "fe80:eb15:852e:5b62:59c6:0231:f9dc:7",
+          "group": "Link-Local Unicast"
+        },
+        {
+          "text": "ff00:3536:7200:de16:af6f:3bb2:cd68:12",
+          "group": "Multicast"
+        },
+        {
+          "text": "fc00:c9ba:e043:b677:342d:f23e:f543:3",
+          "group": "Unique Local"
+        }
+      ]
+    }
+  },
+  {
+    "id": 572,
+    "type": "multiple_choice",
+    "question": "An engineer is installing a new wireless printer with a static IP address on the Wi-Fi network. Which feature must be enabled and configured to prevent connection issues with the printer?",
+    "image": null,
+    "details": {
+      "choices": [
+        "passive client",
+        "client exclusion",
+        "static IP tunneling",
+        "DHCP address assignment"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 573,
+    "type": "multiple_choice",
+    "question": "An engineer is configuring router R1 with an IPv6 static route for prefix 2019:C15C:0CAF:001::/64. The next hop must be 2019:C15C:0CAF:E002:1. The route must be reachable via the R1 Gigabit 0/0 interface. Which command configures the designated route?",
+    "image": null,
+    "details": {
+      "choices": [
+        "R1(config-if)#ipv6 route 2019:C15C:0CAF:E001::/64 2019:C15C:0CAF:E002:1",
+        "R1(configif)#ip route 2019:C15C:0CAF:E001::/64 GigabitEthernet 0/0",
+        "R1(config)#ipv6 route 2019:C1 5C:0CAF:E001::/64 2019:C15C:0CAF:E002::1",
+        "R1(confg)#ip route 2019:C15C:0CAF:E001::/64 GigabitEthernet 0/0"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 574,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Which interface is chosen to forward traffic to the host at 192.168.0.55?\n\n    Gateway of last resort is 0.0.0.0 to network 0.0.0.0\n    S* 0.0.0.0/0 is directly connected, Null0\n       10.0.0.0/8 is variably subnetted, 6 subnets, 2 masks\n    C  10.0.12.0/24 is directly connected, GigabitEthernet0/1\n    L  10.0.12.1/32 is directly connected, GigabitEthernet0/1\n    C  10.0.13.0/24 is directly connected, GigabitEthernet0/2\n    L  10.0.13.1/32 is directly connected, GigabitEthernet0/2\n    C  10.0.14.0/24 is directly connected, GigabitEthernet0/3\n    L  10.0.14.1/32 is directly connected, GigabitEthernet0/3\n    D  192.168.0.0/16 [90/130816) via 10.0.13.3, 00:10:09, GigabitEthernet0/2\n    O  192.168.0.0/23 [110/2] via 10.0.14.4, 00:00:46, GigabitEthernet0/3\n    S  192.168.0.0/24 [100/0 via 10.0.12.2",
+    "image": null,
+    "details": {
+      "choices": [
+        "Null0",
+        "GigabitEthernet0/2",
+        "GigabitEthernet0/1",
+        "GigabitEthernet0/3"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 575,
+    "type": "multiple_choice",
+    "question": "Refer to the exhibit. Routers R1 and R2 have been configured with their respective LAN interfaces. The two circuits are operational and reachable across WAN. Which command set establishes failover redundancy if the primary circuit goes down?",
+    "image": "img/575.png",
+    "details": {
+      "choices": [
+        "R1(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.6 2\nR2(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.5 2",
+        "R1(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.6\nR2(config)#ip route 0.0.0.0 0.0.0.0 10.10.10.5"
+      ],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 576,
+    "type": "multiple_choice",
+    "question": "How must a switch interface be configured when an AP is in FlexConnect mode?",
+    "image": null,
+    "details": {
+      "choices": ["trunk port", "PoE port", "EtherChannel", "access port"],
+      "correct": [0]
+    }
+  },
+  {
+    "id": 577,
+    "type": "multiple_choice",
+    "question": "What is a zero-day exploit?",
+    "image": null,
+    "details": {
+      "choices": [
+        "It is when the perpetrator inserts itself in a conversation between two parties and captures or alters data.",
+        "It is when an attacker inserts malicious code into a SQL server.",
+        "It is when a new network vulnerability is discovered before a fix is available.",
+        "It is when the network is saturated with malicious traffic that overloads resources and bandwidth."
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 578,
+    "type": "multiple_choice",
+    "question": "What is the role of disaggregation in controller-based networking?",
+    "image": null,
+    "details": {
+      "choices": [
+        "It streamlines traffic handling by assigning individual devices to perform either Layer2 or Layer3 functions.",
+        "It enables a network topology to quickly adjust from a ring network to a star network",
+        "It divides the control-plane and data-plane functions",
+        "It summarizes the routes between the core and distribution layers of the network topology."
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 579,
+    "type": "multiple_choice",
+    "question": "What is the collapsed layer in collapsed core architectures?",
+    "image": null,
+    "details": {
+      "choices": [
+        "core and WAN",
+        "distribution and access",
+        "core and distribution",
+        "access and WAN"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 580,
+    "type": "multiple_choice",
+    "question": "Refer to the. exhibit. Routers R1 and R2 are configured with RIP as the dynamic routing protocol. A network engineer must configure R1 with a floating static route to serve as a backup route to network 192.168.23. Which command must the engineer configure on R1?",
+    "image": "img/580.png",
+    "details": {
+      "choices": [
+        "ip route 192.168.23.0 255.255.255.255 192.168.13.3 121",
+        "ip route 192.168.23.0 255.255.255.0 192.168.13.3",
+        "ip route 192.168.23.0 255.255.255.0 192.168.13.3 121",
+        "ip route 192.168.23.0 255.255.255.0 192.168.13.3 100"
+      ],
+      "correct": [2]
+    }
+  },
+  {
+    "id": 581,
+    "type": "matching",
+    "question": "Drag and drop the commands from the left onto the destination interfaces on the right. Not all commands are used.",
+    "image": null,
+    "details": {
+      "groups": ["Access Point", "Wireless LAN Controller"],
+      "items": [
+        { "text": "ability to boost a wi-fi signal", "group": "Access Point" },
+        {
+          "text": "configurable as a workgroup bridge",
+          "group": "Access Point"
+        },
+        {
+          "text": "requires a special adapter for PoE",
+          "group": "Access Point"
+        },
+        {
+          "text": "uses templates to implement QOS configuration",
+          "group": "Wireless LAN Controller"
+        },
+        {
+          "text": "supplies user connection data within a device group",
+          "group": "Wireless LAN Controller"
+        }
+      ]
     }
   }
 ]
