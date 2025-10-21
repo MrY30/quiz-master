@@ -3630,7 +3630,7 @@
       "image": "img/275.png",
       "details": {
         "choices": ["Switch 1", "Switch 2", "Switch 3", "Switch 4"],
-        "correct": [2]
+        "correct": [1]
       }
     },
     {
@@ -3996,7 +3996,7 @@
       "image": null,
       "details": {
         "choices": ["PortFast", "BPDU guard", "UplinkFast", "BackboneFast"],
-        "correct": [2]
+        "correct": [0]
       }
     },
     {
@@ -5073,7 +5073,7 @@
           "Eliminating training needs",
           "Increasing reliance on self-diagnostic and self-healing",
           "Policy-derived provisioning of resources",
-          "Providing a single entry point for resource provisioning",
+          "Providing a ship entry point for resource provisioning",
           "Reducing hardware footprint"
         ],
         "correct": [2, 3]
