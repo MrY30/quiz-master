@@ -52,11 +52,33 @@ class QuizApp {
     }
 
     // Start the quiz
-    startQuiz() {
-        const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
+    // startQuiz() {
+    //     const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
         
-        // Prepare questions
-        this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
+    //     // Prepare questions
+    //     this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
+    //     this.currentIndex = 0;
+    //     this.userAnswers = [];
+    //     this.score = 0;
+    //     this.timeStarted = new Date();
+
+    //     // Hide modal and show quiz
+    //     document.getElementById("startModal").classList.add("hidden");
+    //     document.querySelector(".quiz-container").classList.remove("hidden");
+
+    //     this.showQuestion();
+    // }
+
+    // modified start quiz function
+    // Start the quiz
+    startQuiz(reuseQuestions = false) {
+        if (!reuseQuestions) {
+            // Only shuffle and select new questions if not reusing
+            const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
+            this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
+        }
+        // If reuseQuestions is true, keep the existing this.questions array
+        
         this.currentIndex = 0;
         this.userAnswers = [];
         this.score = 0;
@@ -409,11 +431,15 @@ class QuizApp {
                     </div>
                 </div>
                 <div class="results-actions">
-                    <button class="btn" onclick="location.reload()">Take Quiz Again</button>
+                    <button class="btn" id="retakeSameButton">🔄 Retake Same Quiz</button>
+                    <button class="btn" onclick="location.reload()">Take New Quiz</button>
                     <button class="btn" id="reviewButton">Review Answers</button>
                 </div>
             </div>
         `;
+
+        // Add event listener for retake same quiz button
+        document.getElementById("retakeSameButton").addEventListener("click", () => this.retakeSameQuiz());
 
         // Add event listener for review button
         document.getElementById("reviewButton").addEventListener("click", () => this.showReview());
@@ -423,6 +449,16 @@ class QuizApp {
         document.getElementById("nextButton").classList.add("hidden");
         document.querySelector(".quiz-controls").style.display = "none";
     }
+
+    // Retake the same quiz with reshuffled choices
+    retakeSameQuiz() {
+        // Reset to quiz view
+        document.querySelector(".quiz-controls").style.display = "flex";
+        
+        // Restart with the same questions (choices will be reshuffled when displayed)
+        this.startQuiz(true);
+    }
+
     showReview(filter = 'all') {
         const container = document.getElementById("quiz-question");
         const incorrectCount = this.questions.length - this.score;
@@ -457,11 +493,17 @@ class QuizApp {
                     ${questionsToShow.map((answer, index) => this.renderReviewQuestion(answer, index)).join('')}
                 </div>
                 <div style="text-align: center; margin-top: var(--spacing-3xl); display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                    <button class="btn" id="retakeSameFromReview">🔄 Retake Same Quiz</button>
                     <button class="btn" id="exportPdfButton">📄 Export to PDF</button>
-                    <button class="btn btn-secondary" onclick="location.reload()">Take Quiz Again</button>
+                    <button class="btn btn-secondary" onclick="location.reload()">Take New Quiz</button>
                 </div>
             </div>
         `;
+        
+        // Add event listener for retake same quiz from review
+        document.getElementById('retakeSameFromReview').addEventListener('click', () => {
+            this.retakeSameQuiz();
+        });
         
         // Add event listeners for filter buttons
         container.querySelectorAll('.filter-btn').forEach(btn => {
