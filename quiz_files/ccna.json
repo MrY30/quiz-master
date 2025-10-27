@@ -7498,7 +7498,7 @@
           "enable secret priv4t3p4ss\n!\nline con 0\npassword p4ssw0rd1\nlogin\n!\nline vty 0 15\npassword s3cr3t2\nlogin",
           "enable secret priv4t3p4ss\n!\nline con 0\npassword p4ssw0rd1\n!\nline vty 0 15\npassword s3cr3t2"
         ],
-        "correct": [1]
+        "correct": [2]
       }
     },
     {
