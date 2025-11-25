@@ -716,6 +716,14 @@ body {
                 <label for="question-count">Number of Questions:</label>
                 <input type="number" id="question-count" min="1" max="50" value="10">
             </div>
+            <!-- ADD THIS NEW INPUT GROUP -->
+            <div class="input-group">
+                <label for="id-range">Question ID Range (optional):</label>
+                <input type="text" id="id-range" placeholder="e.g., 1-100 or leave empty for all">
+                <small style="color: var(--color-text-light); font-size: 0.85em; margin-top: 5px; display: block;">
+                    Format: start-end (e.g., 1-100) or leave empty to use all questions
+                </small>
+            </div>
             <button id="startButton" class="btn">Start Quiz</button>
         </div>
     </div>
@@ -748,6 +756,6 @@ body {
     <!-- Load jsPDF and html2canvas from CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="script3.js"></script>
+    <script src="script4.js"></script>
 </body>
 </html>
