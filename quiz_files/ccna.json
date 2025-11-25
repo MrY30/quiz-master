@@ -881,7 +881,7 @@
       "id": 68,
       "type": "multiple_choice",
       "question": "Refer to the exhibit.What two conclusions should be made about this configuration?(choose two)",
-      "image": null,
+      "image": "img/68.png",
       "details": {
         "choices": ["The root port is FastEthernet 2/1",
                     "The spanning-tree mode is Rapid PVST+",

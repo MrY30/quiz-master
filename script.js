@@ -70,32 +70,32 @@ class QuizApp {
     }
 
     // Start the quiz SPECIFIC QUESTION
-    // startQuiz() {
-    //     const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
+    startQuiz() {
+        const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
         
-    //     // FOR TESTING: Show only question with ID 89
-    //     const testQuestionId = 334;
-    //     const specificQuestion = this.quizData.questions.find(q => q.id === testQuestionId);
+        // FOR TESTING: Show only question with ID 89
+        const testQuestionId = 334;
+        const specificQuestion = this.quizData.questions.find(q => q.id === testQuestionId);
         
-    //     if (specificQuestion) {
-    //         this.questions = [specificQuestion]; // Show only this question
-    //     } else {
-    //         console.error(`Question with ID ${testQuestionId} not found!`);
-    //         // Fallback to normal behavior
-    //         this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
-    //     }
+        if (specificQuestion) {
+            this.questions = [specificQuestion]; // Show only this question
+        } else {
+            console.error(`Question with ID ${testQuestionId} not found!`);
+            // Fallback to normal behavior
+            this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
+        }
         
-    //     this.currentIndex = 0;
-    //     this.userAnswers = [];
-    //     this.score = 0;
-    //     this.timeStarted = new Date();
+        this.currentIndex = 0;
+        this.userAnswers = [];
+        this.score = 0;
+        this.timeStarted = new Date();
 
-    //     // Hide modal and show quiz
-    //     document.getElementById("startModal").classList.add("hidden");
-    //     document.querySelector(".quiz-container").classList.remove("hidden");
+        // Hide modal and show quiz
+        document.getElementById("startModal").classList.add("hidden");
+        document.querySelector(".quiz-container").classList.remove("hidden");
 
-    //     this.showQuestion();
-    // }
+        this.showQuestion();
+    }
 
     // Display current question ORIGINAL
     // showQuestion() {

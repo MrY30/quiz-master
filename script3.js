@@ -51,24 +51,6 @@ class QuizApp {
         document.getElementById("nextButton").addEventListener("click", () => this.nextQuestion());
     }
 
-    // Start the quiz
-    // startQuiz() {
-    //     const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
-        
-    //     // Prepare questions
-    //     this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
-    //     this.currentIndex = 0;
-    //     this.userAnswers = [];
-    //     this.score = 0;
-    //     this.timeStarted = new Date();
-
-    //     // Hide modal and show quiz
-    //     document.getElementById("startModal").classList.add("hidden");
-    //     document.querySelector(".quiz-container").classList.remove("hidden");
-
-    //     this.showQuestion();
-    // }
-
     // modified start quiz function
     // Start the quiz
     startQuiz(reuseQuestions = false) {
@@ -90,6 +72,37 @@ class QuizApp {
 
         this.showQuestion();
     }
+
+    // START QUIZ WITH SPECIFIC QUESTION
+    // startQuiz(reuseQuestions = false) {
+    //     if (!reuseQuestions) {
+    //         // Only shuffle and select new questions if not reusing
+    //         const count = parseInt(document.getElementById("question-count").value, 10) || this.quizData.questions.length;
+    //         // FOR TESTING: Show only question with ID 89
+    //         const testQuestionId = 172;
+    //         const specificQuestion = this.quizData.questions.find(q => q.id === testQuestionId);
+            
+    //         if (specificQuestion) {
+    //             this.questions = [specificQuestion]; // Show only this question
+    //         } else {
+    //             console.error(`Question with ID ${testQuestionId} not found!`);
+    //             // Fallback to normal behavior
+    //             this.questions = this.shuffle([...this.quizData.questions]).slice(0, count);
+    //         }
+    //     }
+    //     // If reuseQuestions is true, keep the existing this.questions array
+        
+    //     this.currentIndex = 0;
+    //     this.userAnswers = [];
+    //     this.score = 0;
+    //     this.timeStarted = new Date();
+
+    //     // Hide modal and show quiz
+    //     document.getElementById("startModal").classList.add("hidden");
+    //     document.querySelector(".quiz-container").classList.remove("hidden");
+
+    //     this.showQuestion();
+    // }
 
     // Display current question
     showQuestion() {
