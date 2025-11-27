@@ -574,8 +574,8 @@
     },
     {
       "id": 45,
-      "type": "What is an advantage of Cisco DNA Center versus traditional campus device management?",
-      "question": "which WPA3 enhancement protects against hackers viewing traffic on the Wi-Fi network?",
+      "type": "multiple_choice",
+      "question": "What is an advantage of Cisco DNA Center versus traditional campus device management?",
       "image": null,
       "details": {
         "choices": ["It supports numerous extensibility options including cross-domain adapters and third-party SDKs.",
